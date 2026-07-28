@@ -25,20 +25,6 @@
     );
     border: 3px solid cyan;
     animation: b 3s ease-in-out infinite;
-    scrollbar-color: #67d9ff #111b2e; /* Firefox Colors */
-}
-
-/* Custom Scrollbar Colors (Chrome/WebView) */
-#c::-webkit-scrollbar-track {
-    background: rgba(255, 255, 255, 0.08);
-}
-
-#c::-webkit-scrollbar-thumb {
-    background: linear-gradient(#38bdf8, #f43f5e);
-}
-
-#c::-webkit-scrollbar-thumb:hover {
-    background: linear-gradient(#67d9ff, #ff6b6b);
 }
 
 /* Border Glow Animation Keyframes */
