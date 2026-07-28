@@ -31,20 +31,20 @@
     border-radius: 10px;
     overflow-y: auto;
     overflow-x: hidden;
-    scrollbar-width: thin;              /* Firefox */
+    scrollbar-width: thin !important;              /* Firefox */
 }
 
 /* Scrollbar Layout & Structure (Chrome/WebView) */
 #c::-webkit-scrollbar {
-    width: 5px;
+    width: 5px !important;
 }
 
 #c::-webkit-scrollbar-track {
-    border-radius: 5px;
+    border-radius: 5px !important;
 }
 
 #c::-webkit-scrollbar-thumb {
-    border-radius: 5px;
+    border-radius: 5px !important;
 }
 
 /* Paragraph & Content Wrapper */
