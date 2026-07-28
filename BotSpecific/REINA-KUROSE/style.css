@@ -24,7 +24,21 @@
         #2A4665 100%
     );
     border: 3px solid cyan;
-    animation: b 3s ease-in-out infinite;overflow-y: auto;        /* Firefox */
+    animation: b 3s ease-in-out infinite;
+    scrollbar-color: #67d9ff #111b2e; /* Firefox Colors */
+}
+
+/* Custom Scrollbar Colors (Chrome/WebView) */
+#c::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.08);
+}
+
+#c::-webkit-scrollbar-thumb {
+    background: linear-gradient(#38bdf8, #f43f5e);
+}
+
+#c::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(#67d9ff, #ff6b6b);
 }
 
 /* Border Glow Animation Keyframes */
@@ -72,8 +86,8 @@ h2.h {
 #foot {
     color: #ef4444;
     border-top: 1px solid #dc2626;
-    padding:10px;
-    text-shadow: 0 0 8px rgba(220, 38, 38, .4);
+    padding: 10px;
+    text-shadow: 0 0 8px rgba(220, 38, 38, 0.4);
 }
 
 /* Button Background Wrapper */
@@ -94,5 +108,3 @@ h2.h {
     background: #D8D1A3;
     color: #0a0a0c;
 }
-
-
