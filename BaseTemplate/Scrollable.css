@@ -29,7 +29,23 @@
     aspect-ratio: 9/16;
     width: 100%;
     border-radius: 10px;
-    overflow: scroll;
+    overflow-y: auto;
+    overflow-x: hidden;
+    scrollbar-width:thin ;              /* Firefox */
+    scrolpbar-color: #67d9ff #111b2e;
+}
+
+/* Chrome/WebView */
+#c::-webkit-scrollbar{
+    width: 5px;
+}
+
+#c::-webkit-scrollbar-track{
+    border-radius: 5px;
+}
+
+#c::-webkit-scrollbar-thumb{
+    border-radius: 5px;
 }
 
 /* Paragraph & Content Wrapper */
