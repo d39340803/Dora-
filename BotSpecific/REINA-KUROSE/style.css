@@ -24,7 +24,22 @@
         #2A4665 100%
     );
     border: 3px solid cyan;
-    animation: b 3s ease-in-out infinite;
+    animation: b 3s ease-in-out infinite;overflow-y: auto;        /* Firefox */
+    scrollbar-color: #67d9ff #111b2e;
+}
+
+/* Chrome/WebView */
+
+#c::-webkit-scrollbar-track{
+    background: rgba(255,255,255,.08);
+}
+
+#c::-webkit-scrollbar-thumb{
+    background: linear-gradient(#38bdf8, #f43f5e);
+}
+
+#c::-webkit-scrollbar-thumb:hover{
+    background: linear-gradient(#67d9ff,#ff6b6b);
 }
 
 /* Border Glow Animation Keyframes */
