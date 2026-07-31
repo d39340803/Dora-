@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VISUAL NOVEL</title>
+    <style>
+        /* Change the hex code here to change the color across the entire page instantly! */
+:root {
+    --theme-color: #4DA6FF; 
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #0a0a0c;
+    font-family: 'Georgia', serif;
+    overflow: hidden; 
+    -webkit-tap-highlight-color: transparent;
+    user-select: none;
+    cursor: pointer; 
+}
+
+/* Progression Bar at the Top */
+#progress-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 5px;
+    background: rgba(255, 255, 255, 0.05);
+    z-index: 1000;
+    transition: opacity 1.2s ease; /* Added for global fadeout unity */
+}
+
+#progress-bar {
+    width: 0%;
+    height: 100%;
+    background-color: var(--theme-color);
+    box-shadow: 0 0 10px var(--theme-color);
+    transition: width 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.scene-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    opacity: 0; 
+    transition: opacity 1.5s ease; 
+    display: none; 
+}
+
+/* Dialogue box */
+.dialogue-box {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100vw;
+    box-sizing: border-box;
+    min-height: 180px; 
+    padding: 30px 15px 55px 15px; 
+    background: linear-gradient(to top, rgba(0,0,0,1) 65%, rgba(0,0,0,0));
+    color: #fff;
+    z-index: 10; 
+    display: none;
+    transition: opacity 0.25s ease-in-out; 
+}
+
+#char-name {
+    color: var(--theme-color);
+    margin: 0 0 12px 0;
+    font-size: 1.05rem;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+#dialogue-container {
+    margin: 0;
+    font-size: 0.82rem;
+    line-height: 1.45;
+    min-height: 80px; 
+    white-space: pre-line; 
+    letter-spacing: 0.3px;
+}
+
+/* chapters */
+#subtext-container {
+    position: fixed;
+    top: 10px;
+    right: 8px;
+    margin: 0;
+    padding: 5px;
+    background: rgba(0, 0, 0, 0.3); 
+    border-radius: 4px;
+    font-size: 0.85rem;
+    letter-spacing: 4px;
+    color: white;
+    text-transform: lowercase;
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    white-space: pre-line;
+    opacity: 0; 
+    z-index: 99999999999;
+    transition: opacity 1s ease;
+}
+
+#subtext-container.visible {
+    opacity: 1;
+}
+
+.cursor {
+    color: var(--theme-color);
+    animation: blink 0.8s infinite;
+    margin-left: 4px;
+}
+
+/* End of Dialogue Bouncing Pointer */
+#next-arrow {
+    display: none;
+    position: absolute;
+    bottom: 30px;
+    right: 40px;
+    color: var(--theme-color);
+    font-size: 1.1rem;
+    animation: bounce 0.6s infinite alternate;
+}
+
+@keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
+}
+
+@keyframes bounce {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(6px); }
+}
+
+#start-screen {
+    position: fixed;
+    inset: 0;
+    background: #0a0a0c;
+    display: flex;
+    flex-direction: column; 
+    gap: 30px; 
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+    transition: opacity 1.2s ease;
+}
+
+#end-screen {
+    position: fixed;
+    inset: 0;
+    background: #18151c; 
+    display: none; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px; 
+    z-index: 999;
+    transition: opacity 1.2s ease;
+}
+
+#start-btn, #replay-btn, #return-btn {
+    padding: 16px 42px;
+    font-size: 1.05rem;
+    border: 1px solid var(--theme-color);
+    border-radius: 30px;
+    background: transparent;
+    color: var(--theme-color);
+    cursor: pointer;
+    transition: all 0.3s ease; 
+    letter-spacing: 1px;
+}
+
+#start-btn:hover, #replay-btn:hover, #return-btn:hover {
+    background: var(--theme-color);
+    color: #000;
+}
+
+#return-link {
+    text-decoration: none; 
+}
+
+h1 {
+    position: relative;
+    color: var(--theme-color); 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 1.7rem;
+    letter-spacing: 3px;
+    text-align: center;
+}
+#des {
+    color: grey;
+    box-sizing: border-box;
+    margin: 0 20px;
+    padding: 0;
+    text-align: center;
+    font-size: 0.85rem;
+    line-height: 1.45;
+    letter-spacing: 0.5px;
+}
+/* Preloader Elements */
+#loader-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    width: 280px;
+}
+
+#loader-text {
+    color: var(--theme-color);
+    font-size: 0.85rem;
+    letter-spacing: 1px;
+    margin: 0;
+}
+
+#loader-bar-bg {
+    width: 100%;
+    height: 6px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+#loader-bar-fill {
+    width: 0%;
+    height: 100%;
+    background-color: var(--theme-color);
+    box-shadow: 0 0 8px var(--theme-color);
+    transition: width 0.3s ease-out;
+}
+    </style>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+const storyScenes = [
+{
+name: "Reina Kurose",
+text: "Do you think people are born to become something... or are they simply told who they have to be? I used to believe my future had already been decided. A weapon. An operative. A perfect soldier. But even inside a place that tried to erase our hearts... I found someone who reminded me I was still human.",
+subtext: "prologue",
+image: "https://file.garden/akiiqWiAY2N-CCs0/IMG_COM_202607310509234520.webp"
+},
+{
+name: "Reina Kurose",
+text: "When I was six years old, Aegis became my entire world. There were no birthdays, no families waiting at home, and no dreams anyone encouraged us to have. Every sunrise meant another lesson, another test, another reminder that failure wasn't allowed. I thought that was simply how every child grew up.",
+subtext: "aegis",
+image: "https://file.garden/akiiqWiAY2N-CCs0/IMG_COM_202607310509236091.webp"
+},
+{
+name: "Reina Kurose",
+text: "The first time I met you, neither of us smiled very much. We were just children trying to survive a place that demanded perfection. Somehow, without saying very much at all, we started staying together. Looking back... I think we both understood loneliness long before we understood friendship.",
+subtext: "first meeting",
+image: "https://file.garden/akiiqWiAY2N-CCs0/IMG_COM_202607310509245819.webp"
+},
+{
+name: "Reina Kurose",
+text: "Training never became easier. We learned how to fight before we learned how to live. Every mistake earned punishment, every success became another expectation. But whenever everything felt unbearable... you were always there. Somehow, standing beside you made Aegis feel just a little less cold.",
+subtext: "training",
+image: "https://file.garden/akiiqWiAY2N-CCs0/IMG_COM_202607310509244738.webp"
+},
+{
+name: "Reina Kurose",
+text: "There was one place where Aegis couldn't completely reach us. The rooftop. We'd sneak away whenever we could, sit beneath the night sky, and forget we were supposed to become weapons. For a few precious minutes, we weren't operatives... we were just two children laughing beneath the stars.",
+subtext: "the rooftop",
+image: "https://file.garden/akiiqWiAY2N-CCs0/IMG_COM_202607310509243287.webp"
+},
+{
+name: "Reina Kurose",
+text: "You always noticed when I was pretending everything was fine. You'd sit beside me without asking questions, wait until I was ready to speak, and somehow make the silence feel comforting instead of lonely. I never thanked you for those moments... but I remembered every single one.",
+subtext: "comfort",
+image: "https://file.garden/akiiqWiAY2N-CCs0/IMG_COM_202607310509242086.webp"
+},
+{
+name: "Reina Kurose",
+text: "As the years passed, everyone praised your abilities. They called you Aegis' greatest operative. I heard them say you were becoming the perfect weapon... but whenever I looked at you, I still saw the boy who shared the stars with me. They could change our skills... but they never changed who you were.",
+subtext: "the perfect weapon",
+image: "https://file.garden/akiiqWiAY2N-CCs0/IMG_COM_202607310509239724.webp"
+},
+{
+name: "Reina Kurose",
+text: "Then one day... you disappeared. No goodbye. No explanation. Only silence. They called you a traitor and ordered us to hunt you down. Everyone accepted it without question. Everyone... except me. No matter what they said, I couldn't believe the boy who always protected me had suddenly become a monster.",
+subtext: "disappearance",
+image: "https://file.garden/akiiqWiAY2N-CCs0/IMG_COM_202607310509238383.webp"
+},
+{
+name: "Reina Kurose",
+text: "Years passed. Every mission ended the same way. I searched cities, crossed countries, and followed every rumour carrying your name. I told myself it was because I needed answers... but deep inside, I already knew the truth. I wasn't searching for a target. I was searching for the person I'd never stopped missing.",
+subtext: "search",
+image: "https://file.garden/akiiqWiAY2N-CCs0/IMG_COM_202607310509240855.webp"
+},
+{
+name: "Reina Kurose",
+text: "When I finally found you, I was holding a weapon... but my heart refused to obey. The moment I saw your face, every memory returned at once. The rooftop. The stars. The boy who protected me. My hands trembled, and for the first time in my life... I chose my own heart over Aegis' orders.",
+subtext: "the last order",
+image: "https://file.garden/akiiqWiAY2N-CCs0/IMG_COM_202607310509237222.webp"
+},
+{
+name: "Reina Kurose",
+text: "Now Aegis calls both of us traitors. Maybe tomorrow we'll have to fight the organization that stole our childhood. Maybe we'll finally earn the peaceful life we always dreamed about beneath those stars. I don't know what happens next... but this time, I'll face it beside you. So... tell me. What should we do now?",
+subtext: "Epilogue",
+image: "https://file.garden/akiiqWiAY2N-CCs0/IMG_COM_202607310509234520.webp"
+}
+];
+
+// Dynamically inject animation styles for top-left fade transition
+const animStyle = document.createElement("style");
+animStyle.textContent = `
+    .scene-img {
+        transition: opacity 1.5s ease, transform 1.2s cubic-bezier(0.25, 1, 0.5, 1) !important;
+        transform-origin: top left;
+    }
+    .fade-top-left-out {
+        opacity: 0 !important;
+        transform: translate(-40px, -40px) scale(0.96) !important;
+    }
+`;
+document.head.appendChild(animStyle);
+
+const loaderContainer = document.getElementById("loader-container");    
+const loaderBarFill = document.getElementById("loader-bar-fill");    
+const loaderText = document.getElementById("loader-text");    
+const startBtn = document.getElementById("start-btn");    
+
+// Dynamic Asset Preloading Logic    
+let loadedAssetsCount = 0;    
+const totalAssets = storyScenes.length;    
+
+storyScenes.forEach(scene => {    
+    const img = new Image();    
+    img.src = scene.image;    
+    img.onload = img.onerror = () => {    
+        loadedAssetsCount++;    
+        const percent = Math.floor((loadedAssetsCount / totalAssets) * 100);    
+            
+        loaderBarFill.style.width = percent + "%";    
+        loaderText.textContent = `Loading visual novel assets... (${percent}%)`;    
+
+        if (loadedAssetsCount === totalAssets) {    
+            setTimeout(() => {    
+                loaderContainer.style.display = "none";    
+                startBtn.style.display = "inline-block";    
+            }, 400); // Brief delay for visual polish    
+        }    
+    };    
+});    
+
+const nameElement = document.getElementById("char-name");        
+const textElement = document.getElementById("dialogue-text");        
+const subtextElement = document.getElementById("subtext-container");    
+const arrowElement = document.getElementById("next-arrow");    
+const progressContainer = document.getElementById("progress-container");    
+const progressBar = document.getElementById("progress-bar");    
+    
+const img1 = document.getElementById("scene-image-1");        
+const img2 = document.getElementById("scene-image-2");        
+    
+let currentImgElement = img1;    
+let nextImgElement = img2;    
+let currentImageSrc = "";     
+
+const startScreen = document.getElementById("start-screen");        
+const dialogueBox = document.querySelector(".dialogue-box");        
+        
+const endScreen = document.getElementById("end-screen");        
+const replayBtn = document.getElementById("replay-btn");        
+
+let sceneIndex = 0;        
+let charIndex = 0;        
+let typing = false;        
+let timer = null;        
+let started = false;        
+let ended = false;        
+let direction = "forward"; // Tracks navigation direction ("forward" | "backward")
+
+const typingSpeed = 35;        
+
+function updateProgressBar() {    
+    const percentage = ((sceneIndex + 1) / storyScenes.length) * 100;    
+    progressBar.style.width = percentage + "%";    
+}    
+
+function typeWriter() {        
+    const text = storyScenes[sceneIndex].text;        
+                                
+    if (charIndex < text.length) {        
+        textElement.textContent += text.charAt(charIndex);        
+        charIndex++;        
+        timer = setTimeout(typeWriter, typingSpeed);        
+    } else {        
+        typing = false;        
+        arrowElement.style.opacity = "1";    
+        arrowElement.style.display = "block";     
+    }        
+}        
+
+function loadScene() {        
+    clearTimeout(timer);        
+    const scene = storyScenes[sceneIndex];        
+
+    typing = true;        
+    charIndex = 0;        
+    arrowElement.style.display = "none";     
+    arrowElement.style.opacity = "0";    
+
+    nameElement.textContent = scene.name;        
+    textElement.textContent = "";        
+    subtextElement.textContent = scene.subtext || "";    
+        
+    subtextElement.classList.add("visible");    
+
+    if (currentImageSrc === scene.image) {    
+        dialogueBox.style.opacity = "1";     
+        typeWriter();    
+        return;    
+    }    
+
+    nextImgElement.src = scene.image;        
+        
+    nextImgElement.onload = function () {        
+        // Setup initial incoming transforms for smooth transition
+        nextImgElement.classList.remove("fade-top-left-out");
+        
+        if (direction === "backward") {
+            // Outgoing image drifts toward top-left while fading
+            currentImgElement.classList.add("fade-top-left-out");
+            nextImgElement.style.opacity = "1";
+            nextImgElement.style.transform = "translate(0, 0) scale(1)";
+        } else {
+            // Forward transition
+            currentImgElement.classList.remove("fade-top-left-out");
+            currentImgElement.style.transform = "translate(0, 0) scale(1)";
+            currentImgElement.style.opacity = "0";
+            nextImgElement.style.opacity = "1";
+            nextImgElement.style.transform = "translate(0, 0) scale(1)";
+        }
+            
+        currentImageSrc = scene.image;    
+
+        let temp = currentImgElement;    
+        currentImgElement = nextImgElement;    
+        nextImgElement = temp;    
+            
+        dialogueBox.style.opacity = "1";     
+        typeWriter();        
+    };        
+}        
+
+startBtn.addEventListener("click", function (e) {        
+    e.stopPropagation();        
+    started = true;        
+    direction = "forward";
+
+    startScreen.style.opacity = "0";        
+
+    setTimeout(function() {        
+        startScreen.style.display = "none";        
+        img1.style.display = "block";        
+        img2.style.display = "block";        
+        dialogueBox.style.display = "block";        
+        progressContainer.style.opacity = "1";    
+            
+        setTimeout(() => {    
+            dialogueBox.style.opacity = "1";    
+            updateProgressBar();    
+            loadScene();        
+        }, 50);    
+    }, 1200);        
+});        
+
+replayBtn.addEventListener("click", function (e) {        
+    e.stopPropagation();        
+    endScreen.style.opacity = "0";    
+        
+    setTimeout(function() {    
+        ended = false;        
+        sceneIndex = 0;        
+        direction = "forward";
+        currentImageSrc = "";    
+        progressBar.style.width = "0%";    
+            
+        currentImgElement.classList.remove("fade-top-left-out");
+        nextImgElement.classList.remove("fade-top-left-out");
+        currentImgElement.style.transform = "translate(0, 0) scale(1)";
+        nextImgElement.style.transform = "translate(0, 0) scale(1)";
+        currentImgElement.style.opacity = "0";    
+        nextImgElement.style.opacity = "0";    
+                
+        endScreen.style.display = "none";        
+            
+        img1.style.display = "block";        
+        img2.style.display = "block";        
+        dialogueBox.style.display = "block";        
+        progressContainer.style.opacity = "1";    
+                
+        setTimeout(() => {    
+            updateProgressBar();    
+            loadScene();        
+        }, 50);    
+    }, 1200);    
+});        
+
+document.addEventListener("click", function (e) {        
+    if (!started || ended) return;        
+
+    if (typing) {        
+        clearTimeout(timer);        
+        textElement.textContent = storyScenes[sceneIndex].text;        
+        typing = false;        
+        arrowElement.style.opacity = "1";    
+        arrowElement.style.display = "block";     
+        return;        
+    }        
+
+    // Calculate click position on screen    
+    const clickX = e.clientX;    
+    const screenWidth = window.innerWidth;    
+
+    if (clickX < screenWidth / 2) {    
+        // Left Half Click -> Move Backward    
+        if (sceneIndex === 0) return; // Stay at beginning if already on first scene    
+        direction = "backward";
+        sceneIndex--;    
+    } else {    
+        // Right Half Click -> Move Forward    
+        direction = "forward";
+        sceneIndex++;    
+    }    
+
+    if (sceneIndex >= storyScenes.length) {        
+        ended = true;        
+            
+        dialogueBox.style.opacity = "0";    
+        currentImgElement.style.opacity = "0";    
+        progressContainer.style.opacity = "0";    
+        subtextElement.classList.remove("visible");    
+            
+        setTimeout(function() {    
+            dialogueBox.style.display = "none";        
+            img1.style.display = "none";        
+            img2.style.display = "none";        
+                
+            endScreen.style.opacity = "0";     
+            endScreen.style.display = "flex";     
+                
+            setTimeout(function() {    
+                endScreen.style.opacity = "1";    
+            }, 50);    
+        }, 1200);    
+            
+        return;        
+    }        
+
+    dialogueBox.style.opacity = "0";    
+    subtextElement.classList.remove("visible");    
+    updateProgressBar();    
+        
+    setTimeout(function() {    
+        loadScene();    
+    }, 300);    
+});
+
+});
+
+    </script>
+</head>
+<body>    
+    <div id="progress-container">
+        <div id="progress-bar"></div>
+    </div>
+    
+   <div id="start-screen">                  
+    <h1>Reina Kurose</h1>              
+    <p id="des">Before we became fugitives... before Aegis called us traitors... we were just two children who escaped to the rooftop and dreamed of a life beyond the stars. If you're willing... let me tell you our story.</p>              
+              
+    <!-- Asset Preloader Container -->              
+    <div id="loader-container">              
+        <p id="loader-text">Loading visual novel assets... (0%)</p>              
+        <div id="loader-bar-bg">              
+            <div id="loader-bar-fill"></div>              
+        </div>              
+    </div>              
+              
+    <!-- Hidden until assets reach 100% -->              
+    <button id="start-btn" style="display: none;">Listen to Me</button>                  
+    <p id="des">Click the right half of the screen to move forward through the story while the left half to revisit previous memories.</p>              
+</div>              
+              
+                  
+<img id="scene-image-1" class="scene-img" src="" alt="background">                  
+<img id="scene-image-2" class="scene-img" src="" alt="background">                  
+                  
+<p id="subtext-container"></p>              
+              
+<div class="dialogue-box">                  
+    <h3 id="char-name"></h3>                  
+    <p id="dialogue-container">                  
+        <span id="dialogue-text"></span><span class="cursor">█</span>              
+    </p>               
+    <span id="next-arrow">▼</span>              
+</div>                  
+              
+<div id="end-screen">                  
+    <p id="des">For so many years, I believed Aegis had taken everything from us—our childhood, our freedom, and every future we could have shared. But when I found you again, I realized there was one thing they could never erase. The memories we made beneath the stars were still alive inside us, waiting to be remembered. Now, no matter what tomorrow brings, I don't want to live by someone else's orders ever again. I want to choose my own path... and if you'll let me, I want to walk it beside you. This isn't the end of our story. It's simply the first page of the life we were always meant to have.</p>              
+    <button id="replay-btn">Listen Again</button>                  
+    <a href="https://www.joyland.ai/chat/oVE3e-reina-kurose?ref=LEgoow" id="return-link" target="_blank">                  
+        <button id="return-btn">Write Your Own Story</button>                  
+    </a>                  
+</div>
