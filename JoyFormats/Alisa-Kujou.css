@@ -1,0 +1,110 @@
+/* Background/Main App */
+div[data-v-69bc9330].chat-main {
+  background-image: url('https://files.catbox.moe/ifb4jm.webp') !important;
+  background-size: cover !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  background-attachment: fixed !important;
+}
+/* Header avatar/name pill container (back region) */
+.p-1.bg-fill-default\/60.rounded-full.backdrop-blur-\[10px\]{background: rgba(255, 255, 255, 0.15) !important;
+  backdrop-filter: blur(10px) !important;
+  -webkit-backdrop-filter: blur(10px) !important;
+  color:white !important;
+  border: 1px solid rgba(255, 255, 255, 0.2) !important;}
+/*notice*/
+.notice-desc{background: rgba(255, 255, 255, 0.15) !important;
+  backdrop-filter: blur(10px) !important;
+  -webkit-backdrop-filter: blur(10px) !important;
+  color:#fff !important;
+  border: 1px solid rgba(255, 255, 255, 0.2) !important;}
+
+/* Avatar Name  pill */
+
+div[data-v-94151dcb].background-text-container .main.bg-fill-default{background-color: rgba(255, 255, 255, 0.1) !important;
+  backdrop-filter: blur(10px) !important;
+  border: 1px solid rgba(255, 255, 255, 0.2) !important;
+  -webkit-backdrop-filter: blur(10px) !important;}
+
+/* effect for bot chat bubbles */
+.chat-list-item .robot-text-box .content-box .body-text {
+   background-color: #E6E1F9 !important; 
+    color: #1c1c1e !important;
+   border-radius:16px 16px 16px 4px !important;
+}
+
+/* User chat bubble effect */
+.chat-list-item .user-text-box .content-box .body-text {
+  padding: 0 !important; border-radius:16px 16px 4px 16px !important;
+}
+/* Child: this is now the only visual layer — true glass */
+.chat-list-item .user-text-box .content-box .body-text .markdown-body {
+  padding: 10px !important;
+      background-color: #4A4E69 !important; 
+      border-radius:16px 16px 4px 16px !important;
+    color: #ffffff !important;
+}
+
+/*Action Pills*/
+div[data-v-86a9349e].action.px-4 > div {
+  background: transparent !important; /* remove wrapper's own bg */
+}
+
+/* Target the actual visible pill surface (3rd nested div) */
+div[data-v-86a9349e].action.px-4 > div > div:nth-child(3) {
+  background: rgba(255, 255, 255, 0.10) !important;
+  backdrop-filter: blur(14px) !important;
+  -webkit-backdrop-filter: blur(14px) !important;
+  border: 1px solid rgba(255, 255, 255, 0.18) !important;
+  border-radius: 999px !important;
+}
+
+/* Neutralize Joyland's built-in radial-gradient + secondary blur layers */
+div[data-v-86a9349e].action.px-4 > div > div:first-child,
+div[data-v-86a9349e].action.px-4 > div > div:nth-child(2) {
+  background: transparent !important;
+}
+
+/* Pill text + icons readable on glass */
+div[data-v-86a9349e].action.px-4 span.text-xs,
+div[data-v-86a9349e].action.px-4 .icon-persona,
+div[data-v-86a9349e].action.px-4 .text-main {
+  color: #fff !important;
+}
+
+/*Textarea suggestion container*/
+/* Suggestion And textarea Conatainer */
+div[data-v-86a9349e].form{
+   background-color: #E6E1F9 !important; 
+    color: #1c1c1e !important;
+   border-radius:16px 16px 16px 4px !important;
+}
+/* Suggestion chips */
+li[data-v-e604a1c2].group.bg-fill-default {
+  background-color: #4A4E69 !important;
+  color: #fff !important;
+  border-radius: 16px 16px 16px 4px !important;
+}
+
+li[data-v-e604a1c2].group.bg-fill-default > div.bg-fill-light {
+  background-color: #4A4E69 !important;
+  border-radius: 16px 16px 16px 4px !important; /* slightly less, since it's inset 1px */
+}
+
+/* textarea*/
+/*  Message input pill only */
+div[data-v-86a9349e].flex-1.items-center.bg-fill-light {
+  background-color: #4A4E69 !important;
+  border-radius: 30px !important;
+}
+
+textarea[data-v-86a9349e].form-input {
+  color: #fff !important;
+  background-color: transparent !important;
+}
+
+textarea[data-v-86a9349e].form-input::placeholder {
+  color: rgba(255, 255, 255, 0.6) !important;
+}
+
+
