@@ -16,7 +16,7 @@ div[data-v-69bc9330].chat-main {
 .notice-desc{background: rgba(255, 255, 255, 0.15) !important;
   backdrop-filter: blur(10px) !important;
   -webkit-backdrop-filter: blur(10px) !important;
-  color:#fff !important;
+  color:#000000 !important;
   border: 1px solid rgba(255, 255, 255, 0.2) !important;}
 
 /* Avatar Name  pill */
