@@ -7,24 +7,46 @@ div[data-v-69bc9330].chat-main {
   background-attachment: fixed !important;
 }
 /* Header avatar/name pill container (back region) */
-.p-1.bg-fill-default\/60.rounded-full.backdrop-blur-\[10px\]{background: rgba(255, 255, 255, 0.15) !important;
+.p-1.bg-fill-default\/60.rounded-full.backdrop-blur-\[10px\]{
+  background: rgba(255, 255, 255, 0.15) !important;
   backdrop-filter: blur(10px) !important;
   -webkit-backdrop-filter: blur(10px) !important;
   color:white !important;
-  border: 1px solid rgba(255, 255, 255, 0.2) !important;}
+  border: 1px solid rgba(255, 255, 255, 0.2) !important;
+}
+/* Home and Hamburger/Setting Icon */
+a[href="https://www.joyland.ai/"] .size-7.flex.items-center.justify-center,
+[data-slot="drawer-trigger"].size-7.flex.items-center.justify-center {
+  width: 36px !important;
+  height: 36px !important;
+  border-radius: 50% !important;
+  background: rgba(255, 255, 255, 0.2) !important;
+  backdrop-filter: blur(10px) !important;
+  -webkit-backdrop-filter: blur(10px) !important;
+  border: 1px solid rgba(255, 255, 255, 0.3) !important;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15) !important;
+  color: #ffffff !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  box-sizing: border-box !important;
+}
 /*notice*/
-.notice-desc{background: rgba(255, 255, 255, 0.15) !important;
+.notice-desc{
+  background: rgba(255, 255, 255, 0.15) !important;
   backdrop-filter: blur(10px) !important;
   -webkit-backdrop-filter: blur(10px) !important;
   color:#000000 !important;
-  border: 1px solid rgba(255, 255, 255, 0.2) !important;}
+  border: 1px solid rgba(255, 255, 255, 0.2) !important;
+}
 
-/* Avatar Name  pill */
-
-div[data-v-94151dcb].background-text-container .main.bg-fill-default{background-color: rgba(255, 255, 255, 0.1) !important;
+/* Scenario Container */
+div[data-v-94151dcb].background-text-container .main.bg-fill-default{
+  background-color: rgba(255, 255, 255, 0.1) !important;
   backdrop-filter: blur(10px) !important;
   border: 1px solid rgba(255, 255, 255, 0.2) !important;
-  -webkit-backdrop-filter: blur(10px) !important;}
+  -webkit-backdrop-filter: blur(10px) !important;
+}
 
 /* effect for bot chat bubbles */
 .chat-list-item .robot-text-box .content-box .body-text {
@@ -40,9 +62,9 @@ div[data-v-94151dcb].background-text-container .main.bg-fill-default{background-
 /* Child: this is now the only visual layer — true glass */
 .chat-list-item .user-text-box .content-box .body-text .markdown-body {
   padding: 10px !important;
-      background-color: #4A4E69 !important; 
-      border-radius:16px 16px 4px 16px !important;
-    color: #ffffff !important;
+  background-color: #4A4E69 !important; 
+  border-radius:16px 16px 4px 16px !important;
+  color: #ffffff !important;
 }
 
 /*Action Pills*/
@@ -76,7 +98,7 @@ div[data-v-86a9349e].action.px-4 .text-main {
 /* Suggestion And textarea Conatainer */
 div[data-v-86a9349e].form{
    background-color: #E6E1F9 !important; 
-    color: #1c1c1e !important;
+   color: #1c1c1e !important;
    border-radius:16px 16px 16px 4px !important;
 }
 /* Suggestion chips */
@@ -92,7 +114,7 @@ li[data-v-e604a1c2].group.bg-fill-default > div.bg-fill-light {
 }
 
 /* textarea*/
-/*  Message input pill only */
+/*  Message input field only */
 div[data-v-86a9349e].flex-1.items-center.bg-fill-light {
   background-color: #4A4E69 !important;
   border-radius: 30px !important;
