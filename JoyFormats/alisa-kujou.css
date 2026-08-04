@@ -42,7 +42,7 @@ a[href="https://www.joyland.ai/"] .size-7.flex.items-center.justify-center,
 
 /* Scenario Container */
 div[data-v-94151dcb].background-text-container .main.bg-fill-default{
-  background-color: rgba(0, 0, 0, 0.6) !important;
+  background: rgba(0, 0, 0, 0.6) !important;
   backdrop-filter: blur(0px) !important;
   border: 1px solid rgba(255, 255, 255, 0.2) !important;
   -webkit-backdrop-filter: blur(0px) !important;
@@ -50,26 +50,28 @@ div[data-v-94151dcb].background-text-container .main.bg-fill-default{
 
 /* effect for bot chat bubbles */
 .chat-list-item .robot-text-box .content-box .body-text {
-   background-color: #E6E1F9 !important; 
-    color: #1c1c1e !important;
+   background: #E6E1F9 !important; 
+   color: #1c1c1e !important;
    border-radius:16px 16px 16px 4px !important;
 }
 
 /* User chat bubble effect */
 .chat-list-item .user-text-box .content-box .body-text {
-  padding: 0 !important; border-radius:16px 16px 4px 16px !important;
+  /* do not change this block */
+  --fill-assist:transparent;
+  padding: 0 !important; 
 }
-/* Child: this is now the only visual layer — true glass */
+/* Block to style USER CHAT BUBBLE */
 .chat-list-item .user-text-box .content-box .body-text .markdown-body {
   padding: 10px !important;
-  background-color: #4A4E69 !important; 
+  background: #4A4E69 !important; 
   border-radius:16px 16px 4px 16px !important;
   color: #ffffff !important;
 }
 
 /*Action Pills*/
 div[data-v-86a9349e].action.px-4 > div {
-  background: transparent !important; /* remove wrapper's own bg */
+  background: transparent !important; /* remove wrapper's bg */
 }
 
 /* Target the actual visible pill surface (3rd nested div) */
@@ -97,32 +99,37 @@ div[data-v-86a9349e].action.px-4 .text-main {
 /*Textarea suggestion container*/
 /* Suggestion And textarea Conatainer */
 div[data-v-86a9349e].form{
-   background-color: #E6E1F9 !important; 
+   background: #E6E1F9 !important; 
    color: #1c1c1e !important;
    border-radius:16px 16px 16px 4px !important;
 }
 /* Suggestion chips */
 li[data-v-e604a1c2].group.bg-fill-default {
-  background-color: #4A4E69 !important;
+  background: #4A4E69 !important;
   color: #fff !important;
   border-radius: 16px 16px 16px 4px !important;
 }
 
 li[data-v-e604a1c2].group.bg-fill-default > div.bg-fill-light {
-  background-color: #4A4E69 !important;
-  border-radius: 16px 16px 16px 4px !important; /* slightly less, since it's inset 1px */
+  /* This block and the immediate block above it must have same background and radius ideally */
+  background: #4A4E69 !important;
+  border-radius: 16px 16px 16px 4px !important; 
+}
+/* Kill the built-in blue radial gradient layer on suggestion chips */
+li[data-v-e604a1c2] > div[class*="bg-radial-"] {
+  background: none !important;
 }
 
 /* textarea*/
 /*  Message input field only */
 div[data-v-86a9349e].flex-1.items-center.bg-fill-light {
-  background-color: #4A4E69 !important;
+  background: #4A4E69 !important;
   border-radius: 30px !important;
 }
 
 textarea[data-v-86a9349e].form-input {
   color: #fff !important;
-  background-color: transparent !important;
+  background: transparent !important;
 }
 
 textarea[data-v-86a9349e].form-input::placeholder {
