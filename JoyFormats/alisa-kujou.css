@@ -96,7 +96,7 @@ div[data-v-86a9349e].action.px-4 .text-main {
   color: #fff !important;
 }
 
-/* Suggestion And textarea Conatainer */
+/* Suggestion And textarea Outer-Conatainer */
 div[data-v-86a9349e].form{
    background: #E6E1F9 !important; 
    color: #1c1c1e !important;
@@ -116,10 +116,10 @@ li[data-v-e604a1c2].group.bg-fill-default > div.bg-fill-light {
 }
 /* Kill the built-in blue radial gradient layer on suggestion chips */
 li[data-v-e604a1c2] > div[class*="bg-radial-"] {
+  /* Don't Change this block */
   background: none !important;
 }
 
-/* textarea*/
 /*  Message input field only */
 div[data-v-86a9349e].flex-1.items-center.bg-fill-light {
   background: #4A4E69 !important;
