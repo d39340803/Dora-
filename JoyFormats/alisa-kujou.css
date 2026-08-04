@@ -111,7 +111,7 @@ li[data-v-e604a1c2].group.bg-fill-default {
 }
 
 li[data-v-e604a1c2].group.bg-fill-default > div.bg-fill-light {
-  /* This block and the immediate block above it must have same background and radius ideally */
+  /* Give Same "bg" and "radius" to this block and immediate block above it */
   background: #4A4E69 !important;
   border-radius: 16px 16px 16px 4px !important; 
 }
