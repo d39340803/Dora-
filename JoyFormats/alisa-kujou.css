@@ -89,14 +89,13 @@ div[data-v-86a9349e].action.px-4 > div > div:nth-child(2) {
   background: transparent !important;
 }
 
-/* Pill text + icons readable on glass */
+/* Pill text + icons readable */
 div[data-v-86a9349e].action.px-4 span.text-xs,
 div[data-v-86a9349e].action.px-4 .icon-persona,
 div[data-v-86a9349e].action.px-4 .text-main {
   color: #fff !important;
 }
 
-/*Textarea suggestion container*/
 /* Suggestion And textarea Conatainer */
 div[data-v-86a9349e].form{
    background: #E6E1F9 !important; 
