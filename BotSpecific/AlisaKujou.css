@@ -11,11 +11,13 @@ body {
 /* Header & Status Bar Colors */
 #b {
   background: #ffffff;
+  color: #000000;
   border-bottom: 1px solid #cccccd;
 }
 
 #n {
   background: #ffffff;
+  color: #000000; 
   border-bottom: 1px solid #eeeeee;
 }
 
