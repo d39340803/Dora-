@@ -1,83 +1,25 @@
-/* Outer Page Background */
-body {
-  background: #000000;
+#g{
+    background:#000;
 }
-
-/* Phone Container Frame */
-#c {
-  background: #000000; /* Dark neutral phone background */
-}
-
-/* Header & Status Bar Colors */
-#b {
-  background: #ffffff;
-  color: #000000;
-  border-bottom: 1px solid #cccccd;
-}
-
-#n {
-  background: #ffffff;
-  color: #000000; 
-  border-bottom: 1px solid #eeeeee;
-}
-
-#n .pic {
-  background-color: #dddddd;
-}
-
-.user-info::after {
-  color: #808080;
-}
-
-/* Background Image Overlay Opacity */
 #bg {
-  opacity: 0.5;
+    opacity:0.6;
 }
-
-/* Bot Message Bubbles (Left) */
-#msg .a.f {
-  background-color: #E6E1F9;
-  color: #1c1c1e;
+#msg .f{
+    background-color: #E6E1F9;
+    color: #1c1c1e;
 }
-
-/* User Message Bubbles (Right) */
-#msg .a.m {
-  background-color: #4A4E69;
-  color: #ffffff;
+#msg .m{
+    background-color: #4A4E69;
+    color: #fff;
 }
-
-/* System Messages & Date Headers */
-#msg .d,
-#msg .sys {
-  color: #000000;
-  background: rgba(255, 255, 255, 0.5);
-}
-
-/* Image Post Card */
-#msg p.pic {
-  background: #E6E1F9;
-}
-
-#msg p.pic small {
-  color: #444444;
-}
-
-/* Typing Dots Color */
-#msg .dots span {
-  color: #666666;
-}
-
-/* Footer Control Colors */
-#foot {
-  background: #f0f0f0;
-  border-top: 1px solid #dddddd;
-}
-
 #foot p {
-  color: #666666;
+  color:#666666;
 }
 
-#foot p span:nth-child(1),
-#foot > span {
+#foot p span:nth-child(1) {
   color: #007bff;
+}
+
+#foot > span {
+  color:#007bff;
 }
