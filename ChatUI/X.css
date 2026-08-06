@@ -16,8 +16,7 @@ div[data-v-69bc9330].chat-main {
   border: 1px solid rgba(255, 255, 255, 0.2) !important;
 }
 /* Home and Hamburger/Setting Icon */
-a[href="https://www.joyland.ai/"] .size-7.flex.items-center.justify-center,
-[data-slot="drawer-trigger"].size-7.flex.items-center.justify-center {
+a[href="https://www.joyland.ai/"] .justify-center, [data-slot="drawer-trigger"].justify-center{
   width: 36px !important;
   height: 36px !important;
   border-radius: 50% !important;
@@ -42,28 +41,33 @@ a[href="https://www.joyland.ai/"] .size-7.flex.items-center.justify-center,
 }
 
 /* Scenario Container */
-div[data-v-94151dcb].background-text-container .main.bg-fill-default{
-  background: rgba(0, 0, 0, 0.6) !important;
+div[data-v-94151dcb].background-text-container .main{
+  background: rgba(255, 255, 255, 0.3) !important;
   backdrop-filter: blur(0px) !important;
   border: 1px solid rgba(255, 255, 255, 0.2) !important;
   -webkit-backdrop-filter: blur(0px) !important;
 }
+/* styles the scenario text and svg */
+div[data-v-94151dcb] [data-v-94151dcb], div[data-v-94151dcb] svg{
+  color:#000 !important ;
+  stroke: #000 !important;
+}
 
 /* effect for bot chat bubbles */
-.chat-list-item .robot-text-box .content-box .body-text {
+.robot-text-box .body-text {
    background: #E6E1F9 !important; 
    color: #1c1c1e !important;
    border-radius:16px 16px 16px 4px !important;
 }
 
 /* User chat bubble effect */
-.chat-list-item .user-text-box .content-box .body-text {
-  /* do not change this block */
+.user-text-box .body-text {
+  /* Don't change this block */
   --fill-assist:transparent;
   padding: 0 !important; 
 }
 /* Block to style USER CHAT BUBBLE */
-.chat-list-item .user-text-box .content-box .body-text .markdown-body {
+.user-text-box .markdown-body {
   padding: 10px !important;
   background: #4A4E69 !important; 
   border-radius:16px 16px 4px 16px !important;
@@ -91,9 +95,9 @@ div[data-v-86a9349e].action.px-4 > div > div:nth-child(2) {
 }
 
 /* Pill text + icons readable */
-div[data-v-86a9349e].action.px-4 span.text-xs,
-div[data-v-86a9349e].action.px-4 .icon-persona,
-div[data-v-86a9349e].action.px-4 .text-main {
+div[data-v-86a9349e] .text-xs,
+div[data-v-86a9349e] .icon-persona,
+div[data-v-86a9349e] .text-main {
   color: #fff !important;
 }
 
@@ -104,13 +108,13 @@ div[data-v-86a9349e].form{
    border-radius:16px 16px 16px 4px !important;
 }
 /* Suggestion chips */
-li[data-v-e604a1c2].group.bg-fill-default {
+li[data-v-e604a1c2].bg-fill-default {
   background: #4A4E69 !important;
   color: #fff !important;
   border-radius: 16px 16px 16px 4px !important;
 }
 
-li[data-v-e604a1c2].group.bg-fill-default > div.bg-fill-light {
+li[data-v-e604a1c2].bg-fill-default > div.bg-fill-light {
   /* Give Same "bg" and "radius" to this block and immediate block above it */
   background: #4A4E69 !important;
   border-radius: 16px 16px 16px 4px !important; 
@@ -122,7 +126,7 @@ li[data-v-e604a1c2] > div[class*="bg-radial-"] {
 }
 
 /*  Message input field only */
-div[data-v-86a9349e].flex-1.items-center.bg-fill-light {
+div[data-v-86a9349e].bg-fill-light {
   background: #4A4E69 !important;
   border-radius: 30px !important;
 }
@@ -137,15 +141,15 @@ textarea[data-v-86a9349e].form-input::placeholder {
 }
 /* Entire Chat Setting container  having all settings*/
 div[data-slot="drawer-content"][role="dialog"]{
-background: #E6E1F9 !important; 
+  background: #E6E1F9 !important; 
 }
 /* Chat Setting drag handle*/
 [data-slot="drawer-content"] > .bg-muted.w-\[100px\]{
-background:#4A4E69 !important;
+  background:#4A4E69 !important;
 }
 /* text: Chat Settings */
  [data-slot="drawer-content"] .relative > .space-y-3 > .text-base.text-bold.text-center {
-    color: #1c1c1e !important;
+  color: #1c1c1e !important;
 }
 /* Selects All 5 Chat Settings */
 [data-slot="drawer-content"] .space-y-3 .bg-fill-light{
