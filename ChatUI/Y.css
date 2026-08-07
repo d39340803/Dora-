@@ -178,5 +178,112 @@ div[data-slot="drawer-content"][role="dialog"]{
     background:#4A4E69 !important;
     color:#fff !important;
 }
-
+/* pin, edit, copy, delete */
+[data-v-75d77c10] .common-icon{
+   background-color: rgba(123, 75, 96, 0.85) !important;
+   border: 1px solid #fff;
+   color: rgb(200, 193, 226) !important;
+}
+/* Changes the time color */
+[data-v-c490741b] .body-text-time{ 
+   color: #7B4B60 !important;
+}
+/* Don't Change the block below */
+.rate-container{
+   background:transparent !important
+}
+/* before click */
+.like-static .circle, .dislike-static .circle, .rate-container .feedback{
+   background:rgba(200, 193, 226, 0.7) !important; 
+   color:rgb(74, 78, 105) !important;
+}
+/* after click */
+.like-active .circle, .dislike-active .circle{
+   background:rgba(200, 193, 226, 0.9) !important; 
+   color:rgb(74, 78, 105) !important;
+}
+.chat-list-item .refresh,
+.chat-list-item .o-item.l-item,
+.chat-list-item .o-item.r-item {
+    background: rgba(200, 193, 226, 0.7) !important;
+}
+.chat-list-item .refresh span,
+.chat-list-item .o-item.l-item span,
+.chat-list-item .o-item.r-item span{
+   color:rgb(74, 78, 105) !important;
+}
+/* Dialogue Regeneration */
+[data-v-414f0041].border{
+   background:#4A4E69 !important;
+}
+/* Text: Regenerate */
+[data-v-414f0041]> [data-v-a319c704].text-sm{
+   color:#fff;
+}
+/* Text below Regenerate */
+[data-v-414f0041]> [data-v-a319c704].mb-4 {
+   color:#E6E1F9;
+}
+/* Regenerated Dialogues */
+[data-v-a319c704] > [data-v-a319c704].bg-fill-light{
+   background: #E6E1F9 !important; 
+   color: #1c1c1e !important;
+   border-radius:16px 16px 16px 4px !important;
+}
+/*Select button*/
+button[data-v-a319c704].bg-main.text-white\!{
+   --color-white:#000;
+   background: #E6E1F9 !important; 
+}
+/* Cancel Button */
+button[data-v-a319c704].bg-\(--neutral-20\).text-\(--text-4\){
+   background:#221F33 !important;
+   color:#fff !important;
+}
+/* Feedback Container Color and bg */
+[data-vaul-drawer][data-slot="drawer-content"]{
+   background:#E6E1F9 !important;
+   color:#000;
+}
+[data-vaul-drawer] > .text-base{
+   color:#000;
+}
+/* Drag Handle*/
+[data-vaul-drawer] > .bg-muted.rounded-full{
+   background:#4A4E69 !important;
+}
+/* Textarea */
+[data-vaul-drawer] > .bg-fill-light.rounded-lg.mb-5{
+   background:#4A4E69 ;
+   color:#fff;
+}
+/* Dont change this*/
+[data-vaul-drawer] textarea[data-slot="textarea"]{
+   background:transparent ;
+}
+/* Textarea Placeholder */
+[data-vaul-drawer] textarea::placeholder{
+   color:#fff !important;
+}
+/* buttons */
+[data-vaul-drawer]  button:nth-child(1), [data-vaul-drawer] button:nth-child(2){
+   color:#4A4E69;
+}
+/* Desktop Mode */
+/* Icon Triggering pop */
+[data-slot="popover-trigger"] .size-11 {
+   background:#4A4E69 !important;
+   color: #fff !important;
+}
+/* Chat Setting Container */
+[data-reka-popper-content-wrapper], [data-slot="popover-content"].bg-popover, div[data-slot="popover-content"] > div.p-1{
+   box-shadow:none;
+   background: #E6E1F9 !important ;
+}
+/* Selects all 5 Settings */
+[data-slot="popover-content"] div.w-\[200px\] > div.px-3{
+   background:#4A4E69 !important;
+   color: #fff !important;
+   margin:5px;
+}
 
