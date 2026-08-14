@@ -1,0 +1,69 @@
+/* === BASE STRUCTURE & LAYOUT === */
+
+/* Web Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Inter:wght@300;400;500;600;700&family=Cinzel:wght@500;700&family=Montserrat:wght@400;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,400&family=Poppins:wght@300;400;500;600&family=Lora:ital,wght@0,400;0,600;1,400&display=swap');
+
+/* Music Widget */
+#music {
+    width: 100%;
+    height: 85px;
+    border: none;
+    top: 0;
+    position: sticky;
+    z-index: 9;
+}
+
+/* Main Container */
+#c {
+    position: relative;
+    aspect-ratio: 9/16;
+    width: 100%;
+    border-radius: 16px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    scrollbar-width: thin !important;  /* Firefox */
+}
+
+/* Scrollbar Layout (Chrome/WebView) */
+#c::-webkit-scrollbar {
+    width: 3px !important;
+}
+
+#c::-webkit-scrollbar-track {
+    border-radius: 5px !important;
+}
+
+#c::-webkit-scrollbar-thumb {
+    border-radius: 5px !important;
+}
+
+/* Main Header Title (h1) */
+#h {
+    text-align: center;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 34px;
+    margin: 8px 0;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+/* Subheadings (h2) */
+h2.h {
+    text-align: center;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 23px;
+    margin: 18px 0 10px;
+    letter-spacing: 0.5px;
+}
+
+/* Paragraph Content Wrapper */
+#p {
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    line-height: 1.55;
+    margin: 8px 0;
+    padding: 18px;
+    position: relative;
+    z-index: 2;
+}
+
