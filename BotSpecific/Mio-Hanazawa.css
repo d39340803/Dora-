@@ -1,0 +1,24 @@
+/* Main Container Theme */
+#c {
+    background: linear-gradient(135deg, #E9D9E9 0%, #D5C1DC 45%, #D8C0B0 75%, #E8D1B9 100%);
+    box-shadow:0 0 12px rgba(239, 167, 183, 0.5), 0 0 30px rgba(239, 167, 183, 0.8), 0 0 60px rgba(239, 167, 183, 0.6);
+}
+
+/* Scrollbar Theme */
+#c::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+#c::-webkit-scrollbar-thumb {
+    background: #9B6BA8;
+}
+
+/* Typography Theme */
+#h {
+    color: #7D4B8A;
+}
+
+#p {
+    color: #4F4053;
+}
+
