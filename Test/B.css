@@ -94,13 +94,13 @@ div[data-v-86a9349e].form{
 }
 /* Suggestion chips */
 li[data-v-e604a1c2].bg-fill-default {
-  background: transparent !important;
+  background: linear-gradient(135deg, #E9D9E9 0%, #D5C1DC 45%, #D8C0B0 75%, #E8D1B9 100%) !important;
   color: #4F4053 !important;
 }
 
 li[data-v-e604a1c2].bg-fill-default > div.bg-fill-light {
   /* Give Same "bg" and "radius" to this block and immediate block above it */
-  background: transparent !important;
+  background: linear-gradient(135deg, #E9D9E9 0%, #D5C1DC 45%, #D8C0B0 75%, #E8D1B9 100%) !important;
 }
 /* Kill the built-in blue radial gradient layer on suggestion chips */
 li[data-v-e604a1c2] > div[class*="bg-radial-"] {
@@ -128,7 +128,7 @@ div[data-slot="drawer-content"][role="dialog"]{
 }
 /* Chat Setting drag handle*/
 [data-slot="drawer-content"] > .bg-muted.w-\[100px\]{
-  background: #C5ACCF !important;
+  background: #E8D1B9 !important;
 }
 /* text: Chat Settings */
  [data-slot="drawer-content"] .relative > .space-y-3 > .text-base.text-bold.text-center {
