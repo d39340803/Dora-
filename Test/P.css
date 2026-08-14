@@ -128,7 +128,7 @@ div[data-slot="drawer-content"][role="dialog"]{
 }
 /* Chat Setting drag handle*/
 [data-slot="drawer-content"] > .bg-muted.w-\[100px\]{
-  background: #E8D1B9 !important;
+  background:#4A4E69 !important;
 }
 /* text: Chat Settings */
  [data-slot="drawer-content"] .relative > .space-y-3 > .text-base.text-bold.text-center {
