@@ -123,15 +123,15 @@ textarea[data-v-86a9349e].form-input {
 }
 
 textarea[data-v-86a9349e].form-input::placeholder {
-  color: rgba(255, 255, 255, 0.6) !important;
+  color: rgba(0, 0, 0, 0.6) !important;
 }
 /* Entire Chat Setting container  having all settings*/
 div[data-slot="drawer-content"][role="dialog"]{
   background: #C5ACCF !important; 
 }
 /* Chat Setting drag handle*/
-[data-slot="drawer-content"] > .bg-muted.w-\[100px\]{
-  background:#4A4E69 !important;
+div.bg-muted.mx-auto.mt-4.h-2.w-\[100px\].shrink-0.rounded-full{
+  background:#E8D1B9 !important;
 }
 /* text: Chat Settings */
  [data-slot="drawer-content"] .relative > .space-y-3 > .text-base.text-bold.text-center {
