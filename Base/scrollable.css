@@ -57,7 +57,9 @@
     position: relative;
     z-index: 2;
 }
-
+p {
+    margin:10px 0 0 0;
+}
 /* Main Header Title (h1) */
 #h {
     text-align: center;
