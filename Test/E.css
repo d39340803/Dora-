@@ -7,6 +7,9 @@ div[data-v-69bc9330].chat-main {
   background-repeat: no-repeat !important;
   background-attachment: fixed !important;
 }
+span.icon.iconfont.icon-back1 {
+  color: #000;
+}
 /* Header avatar/name pill container (back region) */
 .p-1.bg-fill-default\/60.rounded-full.backdrop-blur-\[10px\]{
   background: rgba(255, 255, 255, 0.15) !important;
