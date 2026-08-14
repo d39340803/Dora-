@@ -1,7 +1,7 @@
 /* CREATED BY Dora */
 /* Background/Main App */
 div[data-v-69bc9330].chat-main {
-  background-image: url('https://i.ibb.co/qMRhnjjc/1.webp') !important;
+  background-image: url('https://files.catbox.moe/ifb4jm.webp') !important;
   background-size: cover !important;
   background-position: center !important;
   background-repeat: no-repeat !important;
@@ -12,7 +12,7 @@ div[data-v-69bc9330].chat-main {
   background: rgba(255, 255, 255, 0.15) !important;
   backdrop-filter: blur(10px) !important;
   -webkit-backdrop-filter: blur(10px) !important;
-  color:white !important;
+  color: #4F4053 !important;
   border: 1px solid rgba(255, 255, 255, 0.2) !important;
 }
 /* Home and Hamburger/Setting Icon */
@@ -25,7 +25,7 @@ a[href="https://www.joyland.ai/"] .justify-center, [data-slot="drawer-trigger"].
   -webkit-backdrop-filter: blur(10px) !important;
   border: 1px solid rgba(255, 255, 255, 0.3) !important;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15) !important;
-  color: #ffffff !important;
+  color: #4F4053 !important;
   display: flex !important;
   align-items: center !important;
   justify-content: center !important;
@@ -84,7 +84,7 @@ div[data-v-86a9349e].action.px-4 > div > div:nth-child(2) {
 div[data-v-86a9349e] .text-xs,
 div[data-v-86a9349e] .icon-persona,
 div[data-v-86a9349e] .text-main {
-  color: #fff !important;
+  color: #4F4053 !important;
 }
 
 /* Suggestion And textarea Outer-Conatainer */
@@ -128,7 +128,7 @@ div[data-slot="drawer-content"][role="dialog"]{
 }
 /* Chat Setting drag handle*/
 [data-slot="drawer-content"] > .bg-muted.w-\[100px\]{
-  background:#E9D9E9 !important;
+  background: #C5ACCF !important;
 }
 /* text: Chat Settings */
  [data-slot="drawer-content"] .relative > .space-y-3 > .text-base.text-bold.text-center {
@@ -220,7 +220,7 @@ button[data-v-a319c704].bg-main.text-white\!{
 /* Cancel Button */
 button[data-v-a319c704].bg-\(--neutral-20\).text-\(--text-4\){
    background:#C5ACCF !important;
-   color:#fff !important;
+   color: #4F4053 !important;
 }
 /* Feedback Container Color and bg */
 [data-vaul-drawer][data-slot="drawer-content"]{
@@ -237,7 +237,7 @@ button[data-v-a319c704].bg-\(--neutral-20\).text-\(--text-4\){
 /* Textarea */
 [data-vaul-drawer] > .bg-fill-light.rounded-lg.mb-5{
    background:#E9D9E9 ;
-   color:#fff;
+   color: #4F4053 !important;
 }
 /* Dont change this*/
 [data-vaul-drawer] textarea[data-slot="textarea"]{
