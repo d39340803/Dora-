@@ -206,6 +206,9 @@ div.bg-muted.mx-auto.mt-4.h-2.w-\[100px\].shrink-0.rounded-full{
    background: linear-gradient(135deg, #211B1A 0%, #2A2321 48%, #C9A77D 100%) !important;
    color: #E8D2B5 !important;
 }
+[data-v-a319c704] > [data-v-a319c704].bg-fill-light em{
+    color: #AFC7D8 !important;
+}
 /*Select button*/
 button[data-v-a319c704].bg-main.text-white\!{
    --color-white:#C9A77D;
