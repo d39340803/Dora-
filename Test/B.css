@@ -8,7 +8,7 @@ div[data-v-69bc9330].chat-main {
   background-attachment: fixed !important;
 }
 span.icon.iconfont.icon-back1 {
-  color: #E8D2B5;
+  color: #E8D2B5 !important;
 }
 /* Header avatar/name pill container (back region) */
 .p-1.bg-fill-default\/60.rounded-full.backdrop-blur-\[10px\]{
@@ -57,7 +57,11 @@ div[data-v-94151dcb] [data-v-94151dcb], div[data-v-94151dcb] svg{
 /* effect for chat bubbles */
 .robot-text-box .body-text, .user-text-box .body-text {
    --fill-assist:transparent;
-   background: linear-gradient(135deg, #211B1A 0%, #2A2321 48%, #C9A77D 100%) !important;
+   background: linear-gradient(135deg, #211B1A 0%, #28211F 48%, #8A684A 100%) !important;
+   color: #E8D2B5 !important;
+}
+.robot-text-box .body-text *,
+.user-text-box .body-text * {
    color: #E8D2B5 !important;
 }
 /*Action Pills*/
@@ -90,11 +94,12 @@ div[data-v-86a9349e].form{
 }
 /* Suggestion chips */
 li[data-v-e604a1c2].bg-fill-default {
-  background: linear-gradient(135deg, #211B1A 0%, #2A2321 48%, #C9A77D 100%) !important;
+  background: linear-gradient(135deg, #211B1A 0%, #28211F 48%, #8A684A 100%) !important;
   color: #E8D2B5 !important;
 }
 li[data-v-e604a1c2].bg-fill-default > div.bg-fill-light {
-  background: linear-gradient(135deg, #211B1A 0%, #2A2321 48%, #C9A77D 100%) !important;
+  background: linear-gradient(135deg, #211B1A 0%, #28211F 48%, #8A684A 100%) !important;
+  color: #E8D2B5 !important;
 }
 /* Kill the built-in blue radial gradient layer on suggestion chips */
 li[data-v-e604a1c2] > div[class*="bg-radial-"] {
@@ -102,7 +107,7 @@ li[data-v-e604a1c2] > div[class*="bg-radial-"] {
 }
 /*  Message input field only */
 div[data-v-86a9349e].bg-fill-light {
-  background: linear-gradient(135deg, #211B1A 0%, #2A2321 48%, #C9A77D 100%) !important;
+  background: linear-gradient(135deg, #211B1A 0%, #28211F 48%, #8A684A 100%) !important;
   border-radius: 30px !important;
 }
 textarea[data-v-86a9349e].form-input {
@@ -126,12 +131,12 @@ div.bg-muted.mx-auto.mt-4.h-2.w-\[100px\].shrink-0.rounded-full{
 }
 /* Selects All 5 Chat Settings */
 [data-slot="drawer-content"] .space-y-3 .bg-fill-light{
-  background: linear-gradient(135deg, #211B1A 0%, #2A2321 48%, #C9A77D 100%) !important;
+  background: linear-gradient(135deg, #211B1A 0%, #28211F 48%, #8A684A 100%) !important;
   color: #E8D2B5 !important;
 }
 /* Save and Start New Chat Conatainer */
 [role="alertdialog"]{
-    background: linear-gradient(135deg, #211B1A 0%, #2A2321 48%, #C9A77D 100%) !important;
+    background: linear-gradient(135deg, #211B1A 0%, #28211F 48%, #8A684A 100%) !important;
 }
 /* Text Save and Start New Chat */
 [role="alertdialog"] .text-lg{
@@ -199,7 +204,7 @@ div.bg-muted.mx-auto.mt-4.h-2.w-\[100px\].shrink-0.rounded-full{
 }
 /* Regenerated Dialogues */
 [data-v-a319c704] > [data-v-a319c704].bg-fill-light{
-   background: linear-gradient(135deg, #211B1A 0%, #2A2321 48%, #C9A77D 100%) !important;
+   background: linear-gradient(135deg, #211B1A 0%, #28211F 48%, #8A684A 100%) !important;
    color: #E8D2B5 !important;
 }
 /*Select button*/
@@ -215,7 +220,7 @@ button[data-v-a319c704].bg-\(--neutral-20\).text-\(--text-4\){
 }
 /* Feedback Container Color and bg */
 [data-vaul-drawer][data-slot="drawer-content"]{
-   background:linear-gradient(135deg, #211B1A 0%, #2A2321 48%, #C9A77D 100%) !important;
+   background:linear-gradient(135deg, #211B1A 0%, #28211F 48%, #8A684A 100%) !important;
    color:#E8D2B5;
 }
 [data-vaul-drawer] > .text-base{
@@ -255,7 +260,7 @@ button[data-v-a319c704].bg-\(--neutral-20\).text-\(--text-4\){
 }
 /* Selects all 5 Settings */
 [data-slot="popover-content"] div.w-\[200px\] > div.px-3{
-   background:linear-gradient(135deg, #211B1A 0%, #2A2321 48%, #C9A77D 100%) !important;
+   background:linear-gradient(135deg, #211B1A 0%, #28211F 48%, #8A684A 100%) !important;
    color: #E8D2B5 !important;
    margin:5px;
 }
