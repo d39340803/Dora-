@@ -1,0 +1,28 @@
+/* Main Container Theme */
+#c {
+    background: linear-gradient(135deg, #211B1A 0%, #2A2321 48%, #C9A77D 100%);
+    box-shadow: 0 0 12px rgba(201, 167, 125, 0.45),0 0 30px rgba(201, 167, 125, 0.35), 0 0 60px rgba(201, 167, 125, 0.2);
+}
+
+/* Scrollbar Theme */
+#c::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+#c::-webkit-scrollbar-thumb {
+    background: #C9A77D;
+}
+
+/* Typography Theme */
+#h {
+    color: #E8D2B5;
+}
+
+#c #p h2 {
+    color: #C9A77D;
+    text-align:center ;
+}
+
+#p {
+    color: #E8D2B5;
+}
