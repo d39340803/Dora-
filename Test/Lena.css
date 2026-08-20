@@ -1,0 +1,273 @@
+/* CREATED BY Dora */
+/* Background/Main App */
+div[data-v-69bc9330].chat-main {
+  background-image: url('https://i.ibb.co/qMRhnjjc/1.webp') !important;
+  background-size: cover !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  background-attachment: fixed !important;
+}
+span.icon.iconfont.icon-back1 {
+  color: #E8D2B5;
+}
+/* Header avatar/name pill container (back region) */
+.p-1.bg-fill-default\/60.rounded-full.backdrop-blur-\[10px\]{
+  background: rgba(33, 27, 26, 0.65) !important;
+  backdrop-filter: blur(10px) !important;
+  -webkit-backdrop-filter: blur(10px) !important;
+  color: #E8D2B5 !important;
+  border: 1px solid rgba(232, 210, 181, 0.25) !important;
+}
+/* Home and Hamburger/Setting Icon */
+a[href="https://www.joyland.ai/"] .justify-center, [data-slot="drawer-trigger"].justify-center{
+  width: 36px !important;
+  height: 36px !important;
+  border-radius: 50% !important;
+  background: rgba(33, 27, 26, 0.65) !important;
+  backdrop-filter: blur(10px) !important;
+  -webkit-backdrop-filter: blur(10px) !important;
+  border: 1px solid rgba(232, 210, 181, 0.3) !important;
+  box-shadow: 0 4px 12px rgba(33, 27, 26, 0.35) !important;
+  color: #E8D2B5 !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  box-sizing: border-box !important;
+}
+/*notice*/
+.notice-desc{
+  background: rgba(33, 27, 26, 0.72) !important;
+  backdrop-filter: blur(10px) !important;
+  -webkit-backdrop-filter: blur(10px) !important;
+  color:#E8D2B5 !important;
+  border: 1px solid rgba(232, 210, 181, 0.25) !important;
+}
+
+/* Scenario Container */
+div[data-v-94151dcb].background-text-container .main{
+  background: rgba(33, 27, 26, 0.55) !important;
+  backdrop-filter: blur(0px) !important;
+  border: 1px solid rgba(232, 210, 181, 0.2) !important;
+  -webkit-backdrop-filter: blur(0px) !important;
+}
+/* styles the scenario text and svg */
+div[data-v-94151dcb] [data-v-94151dcb], div[data-v-94151dcb] svg{
+  color:#E8D2B5 !important ;
+  stroke: #E8D2B5 !important;
+}
+
+/* effect for chat bubbles */
+.robot-text-box .body-text, .user-text-box .body-text {
+   --fill-assist:transparent;
+   background: linear-gradient(135deg, #211B1A 0%, #2B2421 48%, #E8D2B5 100%) !important;
+   color: #E8D2B5 !important;
+}
+
+/*Action Pills*/
+div[data-v-86a9349e].action.px-4 > div {
+  background: transparent !important; /* remove wrapper's bg */
+}
+
+/* Target the actual visible pill surface (3rd nested div) */
+div[data-v-86a9349e].action.px-4 > div > div:nth-child(3) {
+  background: rgba(33, 27, 26, 0.65) !important;
+  backdrop-filter: blur(14px) !important;
+  -webkit-backdrop-filter: blur(14px) !important;
+  border: 1px solid rgba(232, 210, 181, 0.22) !important;
+  border-radius: 999px !important;
+}
+
+/* Neutralize Joyland's built-in radial-gradient + secondary blur layers */
+div[data-v-86a9349e].action.px-4 > div > div:first-child,
+div[data-v-86a9349e].action.px-4 > div > div:nth-child(2) {
+  background: transparent !important;
+}
+
+/* Pill text + icons readable */
+div[data-v-86a9349e] .text-xs,
+div[data-v-86a9349e] .icon-persona,
+div[data-v-86a9349e] .text-main {
+  color: #E8D2B5 !important;
+}
+
+/* Suggestion And textarea Outer-Conatainer */
+div[data-v-86a9349e].form{
+   background: #211B1A !important;
+   color: #E8D2B5 !important;
+}
+/* Suggestion chips */
+li[data-v-e604a1c2].bg-fill-default {
+  background: linear-gradient(135deg, #211B1A 0%, #E8D2B5 100%) !important;
+  color: #211B1A !important;
+}
+
+li[data-v-e604a1c2].bg-fill-default > div.bg-fill-light {
+  /* Give Same "bg" and "radius" to this block and immediate block above it */
+  background: linear-gradient(135deg, #211B1A 0%, #E8D2B5 100%) !important;
+}
+/* Kill the built-in blue radial gradient layer on suggestion chips */
+li[data-v-e604a1c2] > div[class*="bg-radial-"] {
+  /* Don't Change this block */
+  background: none !important;
+}
+
+/*  Message input field only */
+div[data-v-86a9349e].bg-fill-light {
+  background: linear-gradient(135deg, #211B1A 0%, #2B2421 48%, #E8D2B5 100%) !important;
+  border-radius: 30px !important;
+}
+
+textarea[data-v-86a9349e].form-input {
+  color: #E8D2B5 !important;
+  background: transparent !important;
+}
+
+textarea[data-v-86a9349e].form-input::placeholder {
+  color: rgba(232, 210, 181, 0.6) !important;
+}
+/* Entire Chat Setting container  having all settings*/
+div[data-slot="drawer-content"][role="dialog"]{
+  background: #211B1A !important;
+}
+/* Chat Setting drag handle*/
+div.bg-muted.mx-auto.mt-4.h-2.w-\[100px\].shrink-0.rounded-full{
+  background:#E8D2B5 !important;
+}
+/* text: Chat Settings */
+ [data-slot="drawer-content"] .relative > .space-y-3 > .text-base.text-bold.text-center {
+  color: #E8D2B5 !important;
+}
+/* Selects All 5 Chat Settings */
+[data-slot="drawer-content"] .space-y-3 .bg-fill-light{
+  background: linear-gradient(135deg, #211B1A 0%, #E8D2B5 100%) !important;
+  color: #211B1A !important;
+}
+/* Save and Start New Chat Conatainer */
+[role="alertdialog"]{
+    background: linear-gradient(135deg, #211B1A 0%, #E8D2B5 100%) !important;
+}
+/* Text Save and Start New Chat */
+[role="alertdialog"] .text-lg{
+    color:#211B1A !important;
+}
+/* The Text Below Save and Start New Chat */
+[role="alertdialog"] .text-center .text-left{
+    color:#211B1A !important;
+}
+/* No Button */
+[data-slot="alert-dialog-footer"] [type="button"]{
+    background:#211B1A !important;
+    color:#E8D2B5 !important;
+}
+/* Yes Button */
+[data-slot="alert-dialog-footer"] [data-slot="button"]{
+    background:#E8D2B5 !important;
+    color:#211B1A !important;
+}
+/* pin, edit, copy, delete */
+[data-v-75d77c10] .common-icon{
+   background-color: #E8D2B5 !important;
+   border: 1px solid #211B1A;
+   color: #211B1A !important;
+}
+/* Changes the time color */
+[data-v-c490741b] .body-text-time{
+   color: #E8D2B5 !important;
+}
+/* Don't Change the block below */
+.rate-container{
+   background:transparent !important
+}
+/* before click */
+.like-static .circle, .dislike-static .circle, .rate-container .feedback{
+   background:#E8D2B5 !important;
+   color:#211B1A !important;
+}
+/* after click */
+.like-active .circle, .dislike-active .circle{
+   background:#E8D2B5 !important;
+   color:#211B1A !important;
+}
+.chat-list-item .refresh,
+.chat-list-item .o-item.l-item,
+.chat-list-item .o-item.r-item {
+    background: #E8D2B5 !important;
+}
+.chat-list-item .refresh span,
+.chat-list-item .o-item.l-item span,
+.chat-list-item .o-item.r-item span{
+   color:#211B1A !important;
+}
+/* Dialogue Regeneration */
+[data-v-414f0041].border{
+   background:#211B1A !important;
+}
+/* Text: Regenerate */
+[data-v-414f0041]> [data-v-a319c704].text-sm{
+   color:#E8D2B5;
+}
+/* Text below Regenerate */
+[data-v-414f0041]> [data-v-a319c704].mb-4 {
+   color:#E8D2B5;
+}
+/* Regenerated Dialogues */
+[data-v-a319c704] > [data-v-a319c704].bg-fill-light{
+   background: linear-gradient(135deg, #211B1A 0%, #E8D2B5 100%) !important;
+   color: #211B1A !important;
+}
+/*Select button*/
+button[data-v-a319c704].bg-main.text-white\!{
+   --color-white:#211B1A;
+   background: #E8D2B5 !important;
+}
+/* Cancel Button */
+button[data-v-a319c704].bg-\(--neutral-20\).text-\(--text-4\){
+   background:#211B1A !important;
+   color: #E8D2B5 !important;
+}
+/* Feedback Container Color and bg */
+[data-vaul-drawer][data-slot="drawer-content"]{
+   background:linear-gradient(135deg, #211B1A 0%, #E8D2B5 100%) !important;
+   color:#211B1A;
+}
+[data-vaul-drawer] > .text-base{
+   color:#211B1A;
+}
+/* Drag Handle*/
+[data-vaul-drawer] > .bg-muted.rounded-full{
+   background:#E8D2B5 !important;
+}
+/* Textarea */
+[data-vaul-drawer] > .bg-fill-light.rounded-lg.mb-5{
+   background:#211B1A;
+   color: #E8D2B5 !important;
+}
+/* Dont change this*/
+[data-vaul-drawer] textarea[data-slot="textarea"]{
+   background:transparent ;
+}
+/* Textarea Placeholder */
+[data-vaul-drawer] textarea::placeholder{
+   color:rgba(232, 210, 181, 0.6) !important;
+}
+/* buttons */
+[data-vaul-drawer]  button:nth-child(1), [data-vaul-drawer] button:nth-child(2){
+   color:#E8D2B5;
+}
+/* Desktop Mode */
+/* Icon Triggering pop */
+[data-slot="popover-trigger"] .size-11 {
+   background:#E8D2B5 !important;
+   color: #211B1A !important;
+}
+/* Chat Setting Container */
+[data-reka-popper-content-wrapper], [data-slot="popover-content"].bg-popover, div[data-slot="popover-content"] > div.p-1{
+   box-shadow:none;
+   background: #211B1A !important ;
+}
+/* Selects all 5 Settings */
+[data-slot="popover-content"] div.w-\[200px\] > div.px-3{
+   background:linear-gradient(135deg, #211B1A 0%, #E8D2B5 100%) !important;
+   color: #211B1A !important;
+   margin:5px;
+}
