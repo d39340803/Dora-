@@ -44,7 +44,7 @@ a[href="https://www.joyland.ai/"] .justify-center, [data-slot="drawer-trigger"].
 }
 /* Scenario Container */
 div[data-v-94151dcb].background-text-container .main{
-  background: rgba(33, 27, 26, 0.65) !important;
+  background: rgba(33, 27, 26, 0.5) !important;
   backdrop-filter: blur(4px) !important;
   border: 1px solid rgba(232, 210, 181, 0.2) !important;
   -webkit-backdrop-filter: blur(4px) !important;
@@ -213,11 +213,13 @@ div.bg-muted.mx-auto.mt-4.h-2.w-\[100px\].shrink-0.rounded-full{
 button[data-v-a319c704].bg-main.text-white\!{
    --color-white:#C9A77D;
    background: #211B1A !important;
+   border: 1px solid #AFC7D8 !important;
    color:#C9A77D !important;
 }
 /* Cancel Button */
 button[data-v-a319c704].bg-\(--neutral-20\).text-\(--text-4\){
    background:#211B1A !important;
+   border: 1px solid #AFC7D8 !important;
    color: #C9A77D !important;
 }
 /* Feedback Container Color and bg */
