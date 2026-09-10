@@ -12,7 +12,7 @@ span.icon.iconfont.icon-back1 {
 }
 /* Header avatar/name pill container (back region) */
 .p-1.bg-fill-default\/60.rounded-full.backdrop-blur-\[10px\]{
-  background: rgba(42, 28, 43, 0.5) !important;
+  background: rgba(42, 28, 43, 0.2) !important;
   backdrop-filter: blur(10px) !important;
   -webkit-backdrop-filter: blur(10px) !important;
   color: #F1D9E2 !important;
@@ -23,7 +23,7 @@ a[href="https://www.joyland.ai/"] .justify-center, [data-slot="drawer-trigger"].
   width: 36px !important;
   height: 36px !important;
   border-radius: 50% !important;
-  background: rgba(42, 28, 43, 0.5) !important;
+  background: rgba(42, 28, 43, 0.2) !important;
   backdrop-filter: blur(10px) !important;
   -webkit-backdrop-filter: blur(10px) !important;
   border: 1px solid rgba(241, 217, 226, 0.3) !important;
@@ -36,7 +36,7 @@ a[href="https://www.joyland.ai/"] .justify-center, [data-slot="drawer-trigger"].
 }
 /*notice*/
 .notice-desc{
-  background: rgba(42, 28, 43, 0.5) !important;
+  background: rgba(42, 28, 43, 0.2) !important;
   backdrop-filter: blur(10px) !important;
   -webkit-backdrop-filter: blur(10px) !important;
   color:#F1D9E2 !important;
@@ -44,7 +44,7 @@ a[href="https://www.joyland.ai/"] .justify-center, [data-slot="drawer-trigger"].
 }
 /* Scenario Container */
 div.background-text .main{
-  background: rgba(42, 28, 43, 0.5) !important;
+  background: rgba(42, 28, 43, 0.2) !important;
   backdrop-filter: blur(4px) !important;
   border: 1px solid rgba(241, 217, 226, 0.2) !important;
   -webkit-backdrop-filter: blur(4px) !important;
