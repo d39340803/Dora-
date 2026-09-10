@@ -70,7 +70,7 @@ div.background-text .desc, div.background-text .expand-buttton svg{
 }
 /* Target the actual visible pill surface (3rd nested div) */
 #chat-footer .action.px-4 > div > div:nth-child(3) {
-  background: rgba(42, 28, 43, 0.5) !important;
+  background: rgba(42, 28, 43, 0.2) !important;
   backdrop-filter: blur(14px) !important;
   -webkit-backdrop-filter: blur(14px) !important;
   border: 1px solid rgba(241, 217, 226, 0.3) !important;
