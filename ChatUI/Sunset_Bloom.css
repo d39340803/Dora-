@@ -50,7 +50,7 @@ div.background-text .main{
   -webkit-backdrop-filter: blur(4px) !important;
 }
 /* styles the scenario text and svg */
-div.background-text .desc, div.background-text .expand-buttton svg{
+div.background-text .intro, div.background-text .desc, div.background-text .expand-button svg.collapse-icon {
   color:#F1D9E2 !important;
   stroke: #F1D9E2 !important;
 }
