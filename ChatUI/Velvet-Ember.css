@@ -1,6 +1,6 @@
 /* CREATED BY Dora */
-/* Background/Main App */
-div[data-v-69bc9330].chat-main {
+/* Background Main App */
+div.chat-main {
   background-image: url('https://i.ibb.co/Q3JLYD2X/1.webp') !important;
   background-size: cover !important;
   background-position: center !important;
@@ -43,14 +43,14 @@ a[href="https://www.joyland.ai/"] .justify-center, [data-slot="drawer-trigger"].
   border: 1px solid rgba(232, 210, 181, 0.3) !important;
 }
 /* Scenario Container */
-div[data-v-94151dcb].background-text-container .main{
+div.background-text .main{
   background: rgba(33, 27, 26, 0.5) !important;
   backdrop-filter: blur(4px) !important;
   border: 1px solid rgba(232, 210, 181, 0.2) !important;
   -webkit-backdrop-filter: blur(4px) !important;
 }
 /* styles the scenario text and svg */
-div[data-v-94151dcb] [data-v-94151dcb], div[data-v-94151dcb] svg{
+div.background-text .intro, div.background-text .desc, div.background-text .expand-button svg.collapse-icon{
   color:#E8D2B5 !important;
   stroke: #E8D2B5 !important;
 }
@@ -65,11 +65,11 @@ div[data-v-94151dcb] [data-v-94151dcb], div[data-v-94151dcb] svg{
     color: #AFC7D8 !important;
 }
 /*Action Pills*/
-div[data-v-86a9349e].action.px-4 > div {
+#chat-footer .action.px-4 > div {
   background: transparent !important;
 }
 /* Target the actual visible pill surface (3rd nested div) */
-div[data-v-86a9349e].action.px-4 > div > div:nth-child(3) {
+#chat-footer .action.px-4 > div > div:nth-child(3) {
   background: rgba(33, 27, 26, 0.5) !important;
   backdrop-filter: blur(14px) !important;
   -webkit-backdrop-filter: blur(14px) !important;
@@ -77,43 +77,43 @@ div[data-v-86a9349e].action.px-4 > div > div:nth-child(3) {
   border-radius: 999px !important;
 }
 /* Neutralize Joyland's built-in radial-gradient + secondary blur layers */
-div[data-v-86a9349e].action.px-4 > div > div:first-child,
-div[data-v-86a9349e].action.px-4 > div > div:nth-child(2) {
+#chat-footer .action.px-4 > div > div:first-child,
+#chat-footer .action.px-4 > div > div:nth-child(2) {
   background: transparent !important;
 }
 /* Pill text + icons readable */
-div[data-v-86a9349e] .text-xs,
-div[data-v-86a9349e] .icon-persona,
-div[data-v-86a9349e] .text-main {
+#chat-footer .text-xs,
+#chat-footer .icon-persona,
+#chat-footer .text-main {
   color: #E8D2B5 !important;
 }
 /* Suggestion And textarea Outer-Conatainer */
-div[data-v-86a9349e].form{
+#chat-footer .form{
    background: #211B1A !important;
    color: #E8D2B5 !important;
 }
 /* Suggestion chips */
-li[data-v-e604a1c2].bg-fill-default {
+li.relative.bg-fill-default {
   background: linear-gradient(135deg, #211B1A 0%, #2A2321 48%, #C9A77D 100%) !important;
   color: #E8D2B5 !important;
 }
-li[data-v-e604a1c2].bg-fill-default > div.bg-fill-light {
+li.relative.bg-fill-default > div.bg-fill-light {
   background: linear-gradient(135deg, #211B1A 0%, #2A2321 48%, #C9A77D 100%) !important;
 }
 /* Kill the built-in blue radial gradient layer on suggestion chips */
-li[data-v-e604a1c2] > div[class*="bg-radial-"] {
+li.relative > div[class*="bg-radial-"] {
   background: none !important;
 }
 /*  Message input field only */
-div[data-v-86a9349e].bg-fill-light {
+#chat-footer .bg-fill-light {
   background: linear-gradient(135deg, #211B1A 0%, #2A2321 48%, #C9A77D 100%) !important;
   border-radius: 30px !important;
 }
-textarea[data-v-86a9349e].form-input {
+#chat-footer textarea.form-input {
   color: #E8D2B5 !important;
   background: transparent !important;
 }
-textarea[data-v-86a9349e].form-input::placeholder {
+#chat-footer textarea.form-input::placeholder {
   color: rgba(232, 210, 181, 0.6) !important;
 }
 /* Entire Chat Setting container  having all settings */
@@ -121,7 +121,7 @@ div[data-slot="drawer-content"][role="dialog"]{
   background: #211B1A !important;
 }
 /* Chat Setting drag handle*/
-div.bg-muted.mx-auto.mt-4.h-2.w-\[100px\].shrink-0.rounded-full{
+[data-slot="drawer-content"] .bg-muted.mx-auto{
   background:#C9A77D !important;
 }
 /* text: Chat Settings */
@@ -156,13 +156,13 @@ div.bg-muted.mx-auto.mt-4.h-2.w-\[100px\].shrink-0.rounded-full{
     color:#C9A77D !important;
 }
 /* pin, edit, copy, delete */
-[data-v-75d77c10] .common-icon{
+.edit-icon-box .common-icon{
    background-color: #211B1A !important;
    border: 1px solid #C9A77D;
    color: #C9A77D !important;
 }
 /* Changes the time color */
-[data-v-c490741b] .body-text-time{
+.body-text .body-text-time{
    color: #C9A77D !important;
 }
 /* Don't Change the block below */
@@ -190,65 +190,65 @@ div.bg-muted.mx-auto.mt-4.h-2.w-\[100px\].shrink-0.rounded-full{
    color:#E8D2B5 !important;
 }
 /* Dialogue Regeneration */
-[data-v-414f0041].border{
+[data-slot="dialog-content"].border{
    background:#211B1A !important;
 }
 /* Text: Regenerate */
-[data-v-414f0041]> [data-v-a319c704].text-sm{
+[data-slot="dialog-content"]> .text-sm{
    color:#E8D2B5 !important;
 }
 /* Text below Regenerate */
-[data-v-414f0041]> [data-v-a319c704].mb-4 {
+[data-slot="dialog-content"]> .mb-4 {
    color:#E8D2B5 !important;
 }
 /* Regenerated Dialogues */
-[data-v-a319c704] > [data-v-a319c704].bg-fill-light{
+.regenerate-content .message-item > .bg-fill-light{
    background: linear-gradient(135deg, #211B1A 0%, #2A2321 48%, #C9A77D 100%) !important;
    color: #E8D2B5 !important;
 }
-[data-v-a319c704] > [data-v-a319c704].bg-fill-light em{
+.regenerate-content .message-item > .bg-fill-light em{
     color: #AFC7D8 !important;
 }
 /*Select button*/
-button[data-v-a319c704].bg-main.text-white\!{
+[data-slot="dialog-content"] [data-slot="button"].bg-main{
    --color-white:#C9A77D;
    background: #211B1A !important;
    border: 1px solid #AFC7D8 !important;
    color:#C9A77D !important;
 }
 /* Cancel Button */
-button[data-v-a319c704].bg-\(--neutral-20\).text-\(--text-4\){
+[data-slot="dialog-content"] [data-slot="button"].bg-\(--neutral-20\){
    background:#211B1A !important;
    border: 1px solid #AFC7D8 !important;
    color: #C9A77D !important;
 }
 /* Feedback Container Color and bg */
-[data-vaul-drawer][data-slot="drawer-content"]{
+[data-slot="drawer-content"]{
    background:linear-gradient(135deg, #211B1A 0%, #2A2321 48%, #C9A77D 100%) !important;
    color:#E8D2B5;
 }
-[data-vaul-drawer] > .text-base{
+[data-slot="drawer-content"] > .text-base{
    color:#E8D2B5;
 }
 /* Drag Handle*/
-[data-vaul-drawer] > .bg-muted.rounded-full{
+[data-slot="drawer-content"] > .bg-muted.rounded-full{
    background:#C9A77D !important;
 }
 /* Textarea */
-[data-vaul-drawer] > .bg-fill-light.rounded-lg.mb-5{
+[data-slot="drawer-content"] > .bg-fill-light.rounded-lg.mb-5{
    background:#211B1A !important;
    color: #E8D2B5 !important;
 }
 /* Dont change this*/
-[data-vaul-drawer] textarea[data-slot="textarea"]{
+[data-slot="drawer-content"] textarea[data-slot="textarea"]{
    background:transparent ;
 }
 /* Textarea Placeholder */
-[data-vaul-drawer] textarea::placeholder{
+[data-slot="drawer-content"] textarea::placeholder{
    color:rgba(232, 210, 181, 0.6) !important;
 }
 /* buttons */
-[data-vaul-drawer] button:nth-child(1), [data-vaul-drawer] button:nth-child(2){
+[data-slot="drawer-content"] button:nth-child(1), [data-slot="drawer-content"] button:nth-child(2){
    color:#C9A77D !important;
 }
 /* Desktop Mode */
@@ -258,13 +258,72 @@ button[data-v-a319c704].bg-\(--neutral-20\).text-\(--text-4\){
    color: #C9A77D !important;
 }
 /* Chat Setting Container */
-[data-reka-popper-content-wrapper], [data-slot="popover-content"].bg-popover, div[data-slot="popover-content"] > div.p-1{
+div[style*="--reka-popper-"], [data-slot="popover-content"].bg-popover, div[data-slot="popover-content"] > div.p-1{
    box-shadow:none;
    background: #211B1A !important;
 }
 /* Selects all 5 Settings */
-[data-slot="popover-content"] div.w-\[200px\] > div.px-3{
+[data-slot="popover-content"] div.min-w-56 > div.px-3{
    background:linear-gradient(135deg, #211B1A 0%, #2A2321 48%, #C9A77D 100%) !important;
    color: #E8D2B5 !important;
    margin:5px;
 }
+
+/*Persona Container*/
+div.flex.items-center.justify-between.relative.z-2, div.relative.z-2 .text-xs, div.persona-get-pro-title, span.pro-text{
+    color: #E8D2B5 !important;
+}
+.persona-get-pro-btn div.black-btn{
+    background: #211B1A !important;
+    border: 1px solid #AFC7D8 !important;
+}
+/*last btn in persona*/
+[data-slot="drawer-content"] .relative.flex [data-slot="button"]{
+    --color-white:#C9A77D;
+    background: #211B1A !important;
+    border: 1px solid #AFC7D8 !important;
+    color:#C9A77D !important;
+}
+/*Persona Form that appear after clicking Edit*/
+.persona-form input, .persona-form label,.persona-form .label, .persona-form textarea, .persona-form .form-extra {
+    background: transparent !important; /*Don't change this*/
+    color: #E8D2B5 !important;
+}
+.persona-form input::placeholder, .persona-form textarea::placeholder{
+    color: rgba(232, 210, 181, 0.5) !important;
+}
+.persona-form span{
+    color: #E8D2B5;
+}    
+/* Model Selection */
+[data-slot="dialog-content"] .container .header, [data-slot="dialog-content"] .container .mr-0\.5, [data-slot="dialog-content"] .container .desc{
+    color: #E8D2B5 !important;
+}
+/* sidebar */
+/*sidebar header*/
+.bg-sidebar{
+    background: #211B1A !important;
+}
+[data-slot="sidebar-header"] svg{
+    color: #C9A77D !important;
+}
+/*sidebar content*/
+[data-slot="sidebar-content"] [data-slot="sidebar-menu-item"] div svg,
+[data-slot="sidebar-content"] [data-slot="sidebar-menu-item"] div span {
+    --text-4: #E8D2B5;
+    color: #E8D2B5 !important;
+}
+[data-slot="sidebar-content"] [data-slot="sidebar-menu-item"] a svg {
+    color: #C9A77D !important;
+}
+[data-slot="sidebar-content"] [data-slot="sidebar-menu-item"] a span {
+    --text-4: #E8D2B5;
+    color: #E8D2B5 !important;
+}
+/*sidebar footer*/
+[data-slot="sidebar-footer"] [data-slot="popover-trigger"] div svg,
+[data-slot="sidebar-footer"] [data-slot="popover-trigger"] div span, .text-sidebar-foreground {
+    --sidebar-foreground: #E8D2B5;
+    color: #E8D2B5 !important;
+}
+
