@@ -1,0 +1,37 @@
+/* Main Container Theme */        
+#c {        
+    background: linear-gradient(135deg, #2A1C2B 0%, #3A2940 48%, #C47F9B 100%);
+    background-size: 200% 200%;
+    animation: gradientShift 8s ease infinite;
+    box-shadow: 0 0 12px rgba(196, 127, 155, 0.45),0 0 30px rgba(196, 127, 155, 0.35), 0 0 60px rgba(196, 127, 155, 0.2);
+}        
+
+@keyframes gradientShift {
+    0% {
+        background-position: 0% 0%;
+    }
+    50% {
+        background-position: 100% 100%;
+    }
+    100% {
+        background-position: 0% 0%;
+    }
+}
+
+/* Scrollbar Theme */        
+#c::-webkit-scrollbar-track {        
+    background: transparent;        
+}        
+
+#c::-webkit-scrollbar-thumb {        
+    background: #C47F9B;        
+}        
+
+/* Typography Theme */        
+#h {        
+    color: #F0AFC3;        
+}     
+
+#p {        
+    color: #F1D9E2;        
+}
