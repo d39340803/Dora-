@@ -1,34 +1,34 @@
 /* CREATED BY Dora */
-/* Background/Main App */
-div[data-v-69bc9330].chat-main {
-  background-image: url('https://i.ibb.co/mVRkhNLS/1.webp') !important;
+/* Background Main App */
+div.chat-main {
+  background-image: url('https://files.catbox.moe/ifb4jm.webp') !important;
   background-size: cover !important;
   background-position: center !important;
   background-repeat: no-repeat !important;
   background-attachment: fixed !important;
 }
 span.icon.iconfont.icon-back1 {
-  color: #E8D2B5;
+  color: #4A4E69;
 }
 /* Header avatar/name pill container (back region) */
 .p-1.bg-fill-default\/60.rounded-full.backdrop-blur-\[10px\]{
-  background: rgba(33, 27, 26, 0.5) !important;
+  background: rgba(255, 255, 255, 0.15) !important;
   backdrop-filter: blur(10px) !important;
   -webkit-backdrop-filter: blur(10px) !important;
-  color: #E8D2B5 !important;
-  border: 1px solid rgba(232, 210, 181, 0.3) !important;
+  color: #ffffff !important;
+  border: 1px solid rgba(255, 255, 255, 0.2) !important;
 }
 /* Home and Hamburger/Setting Icon */
 a[href="https://www.joyland.ai/"] .justify-center, [data-slot="drawer-trigger"].justify-center{
   width: 36px !important;
   height: 36px !important;
   border-radius: 50% !important;
-  background: rgba(33, 27, 26, 0.5) !important;
+  background: rgba(255, 255, 255, 0.2) !important;
   backdrop-filter: blur(10px) !important;
   -webkit-backdrop-filter: blur(10px) !important;
-  border: 1px solid rgba(232, 210, 181, 0.3) !important;
-  box-shadow: 0 4px 12px rgba(33, 27, 26, 0.35) !important;
-  color: #E8D2B5 !important;
+  border: 1px solid rgba(255, 255, 255, 0.3) !important;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15) !important;
+  color: #ffffff !important;
   display: flex !important;
   align-items: center !important;
   justify-content: center !important;
@@ -36,134 +36,150 @@ a[href="https://www.joyland.ai/"] .justify-center, [data-slot="drawer-trigger"].
 }
 /*notice*/
 .notice-desc{
-  background: rgba(33, 27, 26, 0.5) !important;
+  background: rgba(255, 255, 255, 0.15) !important;
   backdrop-filter: blur(10px) !important;
   -webkit-backdrop-filter: blur(10px) !important;
-  color:#E8D2B5 !important;
-  border: 1px solid rgba(232, 210, 181, 0.3) !important;
+  color:#000000 !important;
+  border: 1px solid rgba(255, 255, 255, 0.2) !important;
 }
+
 /* Scenario Container */
-div[data-v-94151dcb].background-text-container .main{
-  background: rgba(33, 27, 26, 0.5) !important;
+div.background-text .main{
+  background: rgba(255, 255, 255, 0.3) !important;
   backdrop-filter: blur(4px) !important;
-  border: 1px solid rgba(232, 210, 181, 0.2) !important;
+  border: 1px solid rgba(255, 255, 255, 0.2) !important;
   -webkit-backdrop-filter: blur(4px) !important;
 }
 /* styles the scenario text and svg */
-div[data-v-94151dcb] [data-v-94151dcb], div[data-v-94151dcb] svg{
-  color:#E8D2B5 !important;
-  stroke: #E8D2B5 !important;
+div.background-text .intro, div.background-text .desc, div.background-text .expand-button svg.collapse-icon {
+  color:#000 !important;
+  stroke: #000 !important;
 }
-/* effect for chat bubbles */
-.robot-text-box .body-text, .user-text-box .body-text {
-   --fill-assist:transparent;
-   background: linear-gradient(135deg, #211B1A 0%, #2A2321 48%, #C9A77D 100%) !important;
-   color: #E8D2B5 !important;
+/* effect for bot chat bubbles */  
+.robot-text-box .body-text {  
+   background: #E6E1F9 !important;   
+   color: #1c1c1e !important;  
+   border-radius:16px 16px 16px 4px !important;  
+}  
+.robot-text-box .body-text em {  
+   color: #ffffff !important;  
 }
-.robot-text-box .body-text em,
-.user-text-box .body-text em {
-    color: #AFC7D8 !important;
+/* User chat bubble effect */  
+.user-text-box .body-text {  
+  /* Don't change this block */  
+  --fill-assist:transparent;  
+  padding: 0 !important;   
+}  
+/* Block to style USER CHAT BUBBLE */  
+.user-text-box .markdown-body {  
+  padding: 10px !important;  
+  background: #4A4E69 !important;   
+  border-radius:16px 16px 4px 16px !important;  
+  color: #ffffff !important;  
+}  
+.robot-text-box .body-text em {  
+   color: #1c1c1e!important;  
 }
 /*Action Pills*/
-div[data-v-86a9349e].action.px-4 > div {
+#chat-footer .action.px-4 > div {
   background: transparent !important;
 }
 /* Target the actual visible pill surface (3rd nested div) */
-div[data-v-86a9349e].action.px-4 > div > div:nth-child(3) {
-  background: rgba(33, 27, 26, 0.5) !important;
+#chat-footer .action.px-4 > div > div:nth-child(3) {
+  background: rgba(255, 255, 255, 0.10) !important;
   backdrop-filter: blur(14px) !important;
   -webkit-backdrop-filter: blur(14px) !important;
-  border: 1px solid rgba(232, 210, 181, 0.3) !important;
+  border: 1px solid rgba(255, 255, 255, 0.18) !important;
   border-radius: 999px !important;
 }
 /* Neutralize Joyland's built-in radial-gradient + secondary blur layers */
-div[data-v-86a9349e].action.px-4 > div > div:first-child,
-div[data-v-86a9349e].action.px-4 > div > div:nth-child(2) {
+#chat-footer .action.px-4 > div > div:first-child,
+#chat-footer .action.px-4 > div > div:nth-child(2) {
   background: transparent !important;
 }
 /* Pill text + icons readable */
-div[data-v-86a9349e] .text-xs,
-div[data-v-86a9349e] .icon-persona,
-div[data-v-86a9349e] .text-main {
-  color: #E8D2B5 !important;
+#chat-footer .text-xs,
+#chat-footer .icon-persona,
+#chat-footer .text-main {
+  color: #fff !important;
 }
 /* Suggestion And textarea Outer-Conatainer */
-div[data-v-86a9349e].form{
-   background: #211B1A !important;
-   color: #E8D2B5 !important;
+#chat-footer .form{
+   background: #E6E1F9 !important;
+   color: #1c1c1e !important;
 }
 /* Suggestion chips */
-li[data-v-e604a1c2].bg-fill-default {
-  background: linear-gradient(135deg, #211B1A 0%, #2A2321 48%, #C9A77D 100%) !important;
-  color: #E8D2B5 !important;
+li.relative.bg-fill-default {
+  background: #4A4E69 !important;
+  color: #fff !important;
 }
-li[data-v-e604a1c2].bg-fill-default > div.bg-fill-light {
-  background: linear-gradient(135deg, #211B1A 0%, #2A2321 48%, #C9A77D 100%) !important;
+li.relative.bg-fill-default > div.bg-fill-light {
+  background: #4A4E69 !important;
 }
 /* Kill the built-in blue radial gradient layer on suggestion chips */
-li[data-v-e604a1c2] > div[class*="bg-radial-"] {
+li.relative > div[class*="bg-radial-"] {
   background: none !important;
 }
 /*  Message input field only */
-div[data-v-86a9349e].bg-fill-light {
-  background: linear-gradient(135deg, #211B1A 0%, #2A2321 48%, #C9A77D 100%) !important;
+#chat-footer .bg-fill-light {
+  background: #4A4E69 !important;
   border-radius: 30px !important;
 }
-textarea[data-v-86a9349e].form-input {
-  color: #E8D2B5 !important;
+#chat-footer textarea.form-input {
+  color: #fff !important;
   background: transparent !important;
 }
-textarea[data-v-86a9349e].form-input::placeholder {
-  color: rgba(232, 210, 181, 0.6) !important;
+#chat-footer textarea.form-input::placeholder {
+  color: rgba(255, 255, 255, 0.6) !important;
 }
 /* Entire Chat Setting container  having all settings */
 div[data-slot="drawer-content"][role="dialog"]{
-  background: #211B1A !important;
+  background: #E6E1F9 !important;
 }
 /* Chat Setting drag handle*/
-div.bg-muted.mx-auto.mt-4.h-2.w-\[100px\].shrink-0.rounded-full{
-  background:#C9A77D !important;
+[data-slot="drawer-content"] .bg-muted.mx-auto{
+  background:#4A4E69 !important;
 }
 /* text: Chat Settings */
 [data-slot="drawer-content"] .relative > .space-y-3 > .text-base.text-bold.text-center {
-  color: #E8D2B5 !important;
+  color: #1c1c1e !important;
 }
 /* Selects All 5 Chat Settings */
 [data-slot="drawer-content"] .space-y-3 .bg-fill-light{
-  background: linear-gradient(135deg, #211B1A 0%, #2A2321 48%, #C9A77D 100%) !important;
-  color: #E8D2B5 !important;
+  background: #4A4E69 !important;
+  color: #fff !important;
 }
 /* Save and Start New Chat Conatainer */
 [role="alertdialog"]{
-    background: linear-gradient(135deg, #211B1A 0%, #2A2321 48%, #C9A77D 100%) !important;
+    background: #E6E1F9 !important;
 }
 /* Text Save and Start New Chat */
 [role="alertdialog"] .text-lg{
-    color:#E8D2B5 !important;
+    color:#000 !important;
 }
 /* The Text Below Save and Start New Chat */
 [role="alertdialog"] .text-center .text-left{
-    color:#E8D2B5 !important;
+    color:#666666 !important;
 }
 /* No Button */
 [data-slot="alert-dialog-footer"] [type="button"]{
-    background:#211B1A !important;
-    color:#C9A77D !important;
+    background:#221F33 !important;
+    color:#fff !important;
 }
 /* Yes Button */
 [data-slot="alert-dialog-footer"] [data-slot="button"]{
-    background:#2A2321 !important;
-    color:#C9A77D !important;
+    background:#4A4E69 !important;
+    color:#fff !important;
 }
 /* pin, edit, copy, delete */
-[data-v-75d77c10] .common-icon{
-   background-color: #211B1A !important;
-   border: 1px solid #C9A77D;
-   color: #C9A77D !important;
+.edit-icon-box .common-icon{
+   background-color: rgba(123, 75, 96, 0.85) !important;
+   border: 1px solid #fff;
+   color: rgb(200, 193, 226) !important;
 }
 /* Changes the time color */
-[data-v-c490741b] .body-text-time{
-   color: #C9A77D !important;
+.body-text .body-text-time{
+   color: #7B4B60 !important;
 }
 /* Don't Change the block below */
 .rate-container{
@@ -171,100 +187,152 @@ div.bg-muted.mx-auto.mt-4.h-2.w-\[100px\].shrink-0.rounded-full{
 }
 /* before click */
 .like-static .circle, .dislike-static .circle, .rate-container .feedback{
-   background:#211B1A !important;
-   color:#C9A77D !important;
+   background:rgba(200, 193, 226, 0.7) !important;
+   color:rgb(74, 78, 105) !important;
 }
 /* after click */
 .like-active .circle, .dislike-active .circle{
-   background:#211B1A !important;
-   color:#C9A77D !important;
+   background:rgba(200, 193, 226, 0.9) !important;
+   color:rgb(74, 78, 105) !important;
 }
 .chat-list-item .refresh,
 .chat-list-item .o-item.l-item,
 .chat-list-item .o-item.r-item {
-    background: #211B1A !important;
+    background: rgba(200, 193, 226, 0.7) !important;
 }
 .chat-list-item .refresh span,
 .chat-list-item .o-item.l-item span,
 .chat-list-item .o-item.r-item span{
-   color:#E8D2B5 !important;
+   color:rgb(74, 78, 105) !important;
 }
 /* Dialogue Regeneration */
-[data-v-414f0041].border{
-   background:#211B1A !important;
+[data-slot="dialog-content"].border{
+   background:#4A4E69 !important;
 }
 /* Text: Regenerate */
-[data-v-414f0041]> [data-v-a319c704].text-sm{
-   color:#E8D2B5 !important;
+[data-slot="dialog-content"]> .text-sm{
+   color:#fff;
 }
 /* Text below Regenerate */
-[data-v-414f0041]> [data-v-a319c704].mb-4 {
-   color:#E8D2B5 !important;
+[data-slot="dialog-content"]> .mb-4 {
+   color:#E6E1F9;
 }
 /* Regenerated Dialogues */
-[data-v-a319c704] > [data-v-a319c704].bg-fill-light{
-   background: linear-gradient(135deg, #211B1A 0%, #2A2321 48%, #C9A77D 100%) !important;
-   color: #E8D2B5 !important;
-}
-[data-v-a319c704] > [data-v-a319c704].bg-fill-light em{
-    color: #AFC7D8 !important;
+.regenerate-content .message-item > .bg-fill-light{
+   background: #E6E1F9 !important;
+   color: #1c1c1e !important;
 }
 /*Select button*/
-button[data-v-a319c704].bg-main.text-white\!{
-   --color-white:#C9A77D;
-   background: #211B1A !important;
-   border: 1px solid #AFC7D8 !important;
-   color:#C9A77D !important;
+[data-slot="dialog-content"] [data-slot="button"].bg-main{
+   --color-white:#000;
+   background: #E6E1F9 !important;
 }
 /* Cancel Button */
-button[data-v-a319c704].bg-\(--neutral-20\).text-\(--text-4\){
-   background:#211B1A !important;
-   border: 1px solid #AFC7D8 !important;
-   color: #C9A77D !important;
+[data-slot="dialog-content"] [data-slot="button"].bg-\(--neutral-20\){
+   background:#221F33 !important;
+   color:#fff !important;
 }
 /* Feedback Container Color and bg */
-[data-vaul-drawer][data-slot="drawer-content"]{
-   background:linear-gradient(135deg, #211B1A 0%, #2A2321 48%, #C9A77D 100%) !important;
-   color:#E8D2B5;
+[data-slot="drawer-content"]{
+   background:#E6E1F9 !important;
+   color:#000;
 }
-[data-vaul-drawer] > .text-base{
-   color:#E8D2B5;
+[data-slot="drawer-content"] > .text-base{
+   color:#000;
 }
 /* Drag Handle*/
-[data-vaul-drawer] > .bg-muted.rounded-full{
-   background:#C9A77D !important;
+[data-slot="drawer-content"] > .bg-muted.rounded-full{
+   background:#4A4E69 !important;
 }
 /* Textarea */
-[data-vaul-drawer] > .bg-fill-light.rounded-lg.mb-5{
-   background:#211B1A !important;
-   color: #E8D2B5 !important;
+[data-slot="drawer-content"] > .bg-fill-light.rounded-lg.mb-5{
+   background:#4A4E69;
+   color:#fff;
 }
 /* Dont change this*/
-[data-vaul-drawer] textarea[data-slot="textarea"]{
+[data-slot="drawer-content"] textarea[data-slot="textarea"]{
    background:transparent ;
 }
 /* Textarea Placeholder */
-[data-vaul-drawer] textarea::placeholder{
-   color:rgba(232, 210, 181, 0.6) !important;
+[data-slot="drawer-content"] textarea::placeholder{
+   color:#fff !important;
 }
 /* buttons */
-[data-vaul-drawer] button:nth-child(1), [data-vaul-drawer] button:nth-child(2){
-   color:#C9A77D !important;
+[data-slot="drawer-content"] button:nth-child(1), [data-slot="drawer-content"] button:nth-child(2){
+   color:#4A4E69;
 }
 /* Desktop Mode */
 /* Icon Triggering pop */
 [data-slot="popover-trigger"] .size-11 {
-   background:#211B1A !important;
-   color: #C9A77D !important;
+   background:#4A4E69 !important;
+   color: #fff !important;
 }
 /* Chat Setting Container */
-[data-reka-popper-content-wrapper], [data-slot="popover-content"].bg-popover, div[data-slot="popover-content"] > div.p-1{
+div[style*="--reka-popper-"], [data-slot="popover-content"].bg-popover, div[data-slot="popover-content"] > div.p-1{
    box-shadow:none;
-   background: #211B1A !important;
+   background: #E6E1F9 !important;
 }
 /* Selects all 5 Settings */
-[data-slot="popover-content"] div.w-\[200px\] > div.px-3{
-   background:linear-gradient(135deg, #211B1A 0%, #2A2321 48%, #C9A77D 100%) !important;
-   color: #E8D2B5 !important;
+[data-slot="popover-content"] div.min-w-56 > div.px-3{
+   background:#4A4E69 !important;
+   color: #fff !important;
    margin:5px;
+}
+
+/*Persona Container*/
+div.flex.items-center.justify-between.relative.z-2, div.relative.z-2 .text-xs, div.persona-get-pro-title, span.pro-text{
+    color: #4A4E69 !important;
+}
+.persona-get-pro-btn div.black-btn{
+    background: #E6E1F9 !important;
+    border: 1px solid #D5C1DC !important;
+}
+/*last btn in persona*/
+[data-slot="drawer-content"] .relative.flex [data-slot="button"]{
+    --color-white:#4A4E69;
+    background: #E6E1F9 !important;
+    border: 1px solid #D5C1DC !important;
+    color:#4A4E69 !important;
+}
+/*Persona Form that appear after clicking Edit*/
+.persona-form input, .persona-form label,.persona-form .label, .persona-form textarea, .persona-form .form-extra {
+    background: transparent !important;
+    color: #4A4E69 !important;
+}
+.persona-form input::placeholder, .persona-form textarea::placeholder{
+    color: rgba(74, 78, 105, 0.5) !important;
+}
+.persona-form span{
+    color: #4A4E69;
+}
+/* Model Selection */
+[data-slot="dialog-content"] .container .header, [data-slot="dialog-content"] .container .mr-0\.5, [data-slot="dialog-content"] .container .desc{
+    color: #4A4E69 !important;
+}
+/* sidebar */
+/*sidebar header*/
+.bg-sidebar{
+    background: #E6E1F9 !important;
+}
+[data-slot="sidebar-header"] svg{
+    color: #4A4E69 !important;
+}
+/*sidebar content*/
+[data-slot="sidebar-content"] [data-slot="sidebar-menu-item"] div svg,
+[data-slot="sidebar-content"] [data-slot="sidebar-menu-item"] div span {
+    --text-4: #4A4E69;
+    color: #4A4E69 !important;
+}
+[data-slot="sidebar-content"] [data-slot="sidebar-menu-item"] a svg {
+    color: #4A4E69 !important;
+}
+[data-slot="sidebar-content"] [data-slot="sidebar-menu-item"] a span {
+    --text-4: #4A4E69;
+    color: #4A4E69 !important;
+}
+/*sidebar footer*/
+[data-slot="sidebar-footer"] [data-slot="popover-trigger"] div svg,
+[data-slot="sidebar-footer"] [data-slot="popover-trigger"] div span, .text-sidebar-foreground {
+    --sidebar-foreground: #4A4E69;
+    color: #4A4E69 !important;
 }
