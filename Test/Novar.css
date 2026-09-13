@@ -1,0 +1,353 @@
+/* CREATED BY Dora */
+/* Background Main App */
+div.chat-container {
+  background-image: url('https://i.ibb.co/27QyYcgj/1.webp') !important;
+  background-size: cover !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  background-attachment: fixed !important;
+}
+/* back button */
+main .header, main .header .pl-2 > div {
+    background: #2A1C2B !important;
+    color: #F1D9E2 !important;
+}
+span.icon.iconfont.icon-back1 {
+  color: #F1D9E2;
+}
+/* Header avatar/name pill container (back region) */
+.p-1.bg-fill-default\/60.rounded-full.backdrop-blur-\[10px\]{
+  background: rgba(42, 28, 43, 0.2) !important;
+  backdrop-filter: blur(10px) !important;
+  -webkit-backdrop-filter: blur(10px) !important;
+  color: #F1D9E2 !important;
+  border: 1px solid rgba(241, 217, 226, 0.3) !important;
+}
+main .stream .space-x-2 .font-bold {
+    color: #F1D9E2 !important;
+}
+main .stream .space-x-2 .text-xs , header .p-1.bg-fill-default\/60 .text-xs {
+    color: #F0AFC3 !important;
+}
+main .stream .space-x-2 .bg-text-secondary {
+   --text-3: #F0AFC3;
+}
+/* Home and Hamburger/Setting Icon */
+a[href="https://www.joyland.ai/"] .justify-center, [data-slot="drawer-trigger"].justify-center{
+  width: 36px !important;
+  height: 36px !important;
+  border-radius: 50% !important;
+  background: rgba(42, 28, 43, 0.2) !important;
+  backdrop-filter: blur(10px) !important;
+  -webkit-backdrop-filter: blur(10px) !important;
+  border: 1px solid rgba(241, 217, 226, 0.3) !important;
+  box-shadow: 0 4px 12px rgba(42, 28, 43, 0.35) !important;
+  color: #F1D9E2 !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  box-sizing: border-box !important;
+}
+/*notice*/
+.notice-desc{
+  background: rgba(42, 28, 43, 0.2) !important;
+  backdrop-filter: blur(10px) !important;
+  -webkit-backdrop-filter: blur(10px) !important;
+  color:#F1D9E2 !important;
+  border: 1px solid rgba(241, 217, 226, 0.3) !important;
+}
+/* Scenario Container */
+div.background-text .main{
+  background: rgba(42, 28, 43, 0.2) !important;
+  backdrop-filter: blur(4px) !important;
+  border: 1px solid rgba(241, 217, 226, 0.2) !important;
+  -webkit-backdrop-filter: blur(4px) !important;
+}
+/* styles the scenario text and svg */
+div.background-text .intro, div.background-text .desc, div.background-text .expand-button svg.collapse-icon {
+  color:#F1D9E2 !important;
+  stroke: #F1D9E2 !important;
+}
+/* effect for chat bubbles */
+.robot-text-box .body-text, .user-text-box .body-text {
+   --fill-assist:transparent;
+   background: linear-gradient(135deg, #2A1C2B 0%, #3A2940 48%, #C47F9B 100%) !important;
+   color: #F1D9E2 !important;
+}
+.robot-text-box .body-text em,
+.user-text-box .body-text em {
+    color: #F0AFC3 !important;
+}
+/*Action Pills*/
+#chat-footer .action.px-4 > div {
+  background: transparent !important;
+}
+/* Target the actual visible pill surface (3rd nested div) */
+#chat-footer .action.px-4 > div > div:nth-child(3) {
+  background: rgba(42, 28, 43, 0.2) !important;
+  backdrop-filter: blur(14px) !important;
+  -webkit-backdrop-filter: blur(14px) !important;
+  border: 1px solid rgba(241, 217, 226, 0.3) !important;
+  border-radius: 999px !important;
+}
+/* Neutralize Joyland's built-in radial-gradient + secondary blur layers */
+#chat-footer .action.px-4 > div > div:first-child,
+#chat-footer .action.px-4 > div > div:nth-child(2) {
+  background: transparent !important;
+}
+/* Pill text + icons readable */
+#chat-footer .text-xs,
+#chat-footer .icon-persona,
+#chat-footer .text-main {
+  color: #F1D9E2 !important;
+}
+/* Suggestion And textarea Outer-Conatainer */
+#chat-footer .form{
+   background: #2A1C2B !important;
+   color: #F1D9E2 !important;
+}
+/* Suggestion chips */
+li.relative.bg-fill-default {
+  background: linear-gradient(135deg, #2A1C2B 0%, #3A2940 48%, #C47F9B 100%) !important;
+  color: #F1D9E2 !important;
+}
+li.relative.bg-fill-default > div.bg-fill-light {
+  background: linear-gradient(135deg, #2A1C2B 0%, #3A2940 48%, #C47F9B 100%) !important;
+}
+/* Kill the built-in blue radial gradient layer on suggestion chips */
+li.relative > div[class*="bg-radial-"] {
+  background: none !important;
+}
+/*  Message input field only */
+#chat-footer .bg-fill-light {
+  background: linear-gradient(135deg, #2A1C2B 0%, #3A2940 48%, #C47F9B 100%) !important;
+  border-radius: 30px !important;
+}
+#chat-footer textarea.form-input {
+  color: #F1D9E2 !important;
+  background: transparent !important;
+}
+#chat-footer textarea.form-input::placeholder {
+  color: rgba(241, 217, 226, 0.6) !important;
+}
+/* Entire Chat Setting container  having all settings */
+div[data-slot="drawer-content"][role="dialog"]{
+  background: #2A1C2B !important;
+}
+/* Chat Setting drag handle*/
+[data-slot="drawer-content"] .bg-muted.mx-auto{
+  background:#C47F9B !important;
+}
+/* text: Chat Settings */
+[data-slot="drawer-content"] .relative > .space-y-3 > .text-base.text-bold.text-center {
+  color: #F1D9E2 !important;
+}
+/* Selects All 5 Chat Settings */
+[data-slot="drawer-content"] .space-y-3 .bg-fill-light{
+  background: linear-gradient(135deg, #2A1C2B 0%, #3A2940 48%, #C47F9B 100%) !important;
+  color: #F1D9E2 !important;
+}
+/* Save and Start New Chat Conatainer */
+[role="alertdialog"]{
+    background: linear-gradient(135deg, #2A1C2B 0%, #3A2940 48%, #C47F9B 100%) !important;
+}
+/* Text Save and Start New Chat */
+[role="alertdialog"] .text-lg{
+    color:#F1D9E2 !important;
+}
+/* The Text Below Save and Start New Chat */
+[role="alertdialog"] .text-center .text-left{
+    color:#F1D9E2 !important;
+}
+/* No Button */
+[data-slot="alert-dialog-footer"] [type="button"]{
+    background:#2A1C2B !important;
+    color:#C47F9B !important;
+}
+/* Yes Button */
+[data-slot="alert-dialog-footer"] [data-slot="button"]{
+    background:#3A2940 !important;
+    color:#C47F9B !important;
+}
+/* pin, edit, copy, delete */
+.edit-icon-box .common-icon{
+   background-color: #2A1C2B !important;
+   border: 1px solid #C47F9B;
+   color: #C47F9B !important;
+}
+/* Changes the time color */
+.body-text .body-text-time{
+   color: #C47F9B !important;
+}
+/* Don't Change the block below */
+.rate-container{
+   background:transparent !important
+}
+/* before click */
+.like-static .circle, .dislike-static .circle, .rate-container .feedback{
+   background:#2A1C2B !important;
+   color:#C47F9B !important;
+}
+/* after click */
+.like-active .circle, .dislike-active .circle{
+   background:#2A1C2B !important;
+   color:#C47F9B !important;
+}
+.chat-list-item .refresh,
+.chat-list-item .o-item.l-item,
+.chat-list-item .o-item.r-item {
+    background: #2A1C2B !important;
+}
+.chat-list-item .refresh span,
+.chat-list-item .o-item.l-item span,
+.chat-list-item .o-item.r-item span{
+   color:#F1D9E2 !important;
+}
+/* Dialogue Regeneration */
+[data-slot="dialog-content"].border{
+   background:#2A1C2B !important;
+}
+/* Text: Regenerate */
+[data-slot="dialog-content"]> .text-sm{
+   color:#F1D9E2 !important;
+}
+/* Text below Regenerate */
+[data-slot="dialog-content"]> .mb-4 {
+   color:#F1D9E2 !important;
+}
+/* Regenerated Dialogues */
+.regenerate-content .message-item > .bg-fill-light{
+   background: linear-gradient(135deg, #2A1C2B 0%, #3A2940 48%, #C47F9B 100%) !important;
+   color: #F1D9E2 !important;
+}
+.regenerate-content .message-item > .bg-fill-light em{
+    color: #F0AFC3 !important;
+}
+/*Select button*/
+[data-slot="dialog-content"] [data-slot="button"].bg-main{
+   --color-white:#C47F9B;
+   background: #2A1C2B !important;
+   border: 1px solid #F0AFC3 !important;
+   color:#C47F9B !important;
+}
+/* Cancel Button */
+[data-slot="dialog-content"] [data-slot="button"].bg-\(--neutral-20\){
+   background:#2A1C2B !important;
+   border: 1px solid #F0AFC3 !important;
+   color: #C47F9B !important;
+}
+/* Feedback Container Color and bg */
+[data-slot="drawer-content"]{
+   background: #2A1C2B !important;
+   color:#F1D9E2;
+}
+[data-slot="drawer-content"] > .text-base, [data-slot="dialog-content"] > .text-base, [data-slot="dialog-content"] > .flex > span.check-button-base{
+   color:#F1D9E2;
+}
+/* Drag Handle*/
+[data-slot="drawer-content"] > .bg-muted.rounded-full{
+   background:#C47F9B !important;
+}
+/* Textarea */
+[data-slot="drawer-content"] > .bg-fill-light.rounded-lg.mb-5, [data-slot="dialog-content"] > .bg-fill-light.rounded-lg.mb-5{
+   background: rgba(0, 0, 0, 0.2) !important;
+   color: #F1D9E2 !important;
+}
+/* Dont change this*/
+[data-slot="drawer-content"] textarea[data-slot="textarea"], [data-slot="dialog-content"] textarea[data-slot="textarea"] {
+   background:transparent ;
+}
+/* Textarea Placeholder */
+[data-slot="drawer-content"] textarea::placeholder, [data-slot="dialog-content"] textarea::placeholder{
+   color:rgba(241, 217, 226, 0.6) !important;
+}
+/* buttons */
+[data-slot="drawer-content"] button:nth-child(1), [data-slot="drawer-content"] button:nth-child(2){
+   color:#C47F9B !important;
+}
+/* Desktop Mode */
+/* Icon Triggering pop */
+[data-slot="popover-trigger"] .size-11 {
+   background:#2A1C2B !important;
+   color: #C47F9B !important;
+}
+/* Chat Setting Container */
+div[style*="--reka-popper-"], [data-slot="popover-content"].bg-popover, div[data-slot="popover-content"] > div.p-1{
+   box-shadow:none;
+   border-radius: 6px !important;
+   background: #2A1C2B !important;
+}
+/* Selects all 5 Settings */
+[data-slot="popover-content"] div.min-w-56 > div.px-3{
+   background:linear-gradient(135deg, #2A1C2B 0%, #3A2940 48%, #C47F9B 100%) !important;
+   color: #F1D9E2 !important;
+   margin:5px;
+}
+
+/*Persona Container*/
+div.flex.items-center.justify-between.relative.z-2, div.relative.z-2 .text-xs, div.persona-get-pro-title, span.pro-text{
+    color: #F1D9E2 !important;
+}
+.persona-get-pro-btn div.black-btn{
+    background: #2A1C2B !important;
+    border: 1px solid #F0AFC3 !important;
+}
+/*last btn in persona*/
+[data-slot="drawer-content"] .relative.flex [data-slot="button"]{
+    --color-white:#C47F9B;
+    background: #2A1C2B !important;
+    border: 1px solid #F0AFC3 !important;
+    color:#C47F9B !important;
+}
+/*Persona Form that appear after clicking Edit*/
+.persona-form input, .persona-form label,.persona-form .label, .persona-form textarea, .persona-form .form-extra {
+    background: transparent !important; /*Don't change this*/
+    color: #F1D9E2 !important;
+}
+.persona-form input::placeholder, .persona-form textarea::placeholder{
+    color: rgba(241, 217, 226, 0.5) !important;
+}
+.persona-form span{
+    color: #F1D9E2;
+}    
+/* Model Selection */
+[data-slot="dialog-content"] .container .header, [data-slot="dialog-content"] .container .mr-0\.5, [data-slot="dialog-content"] .container .desc{
+    color: #F1D9E2 !important;
+}
+/* sidebar */
+/*sidebar header*/
+.bg-sidebar{
+    background: #2A1C2B !important;
+}
+[data-slot="sidebar-header"] svg{
+    color: #C47F9B !important;
+}
+/*sidebar content*/
+[data-slot="sidebar-content"] [data-slot="sidebar-menu-item"] div svg,
+[data-slot="sidebar-content"] [data-slot="sidebar-menu-item"] div span {
+    --text-4: #F1D9E2;
+    color: #F1D9E2 !important;
+}
+[data-slot="sidebar-content"] [data-slot="sidebar-menu-item"] a svg {
+    color: #C47F9B !important;
+}
+[data-slot="sidebar-content"] [data-slot="sidebar-menu-item"] a span {
+    --text-4: #F1D9E2;
+    color: #F1D9E2 !important;
+}
+/* tooltips (Home/Chats/Search/etc.) */
+div[data-slot="tooltip-content"].bg-primary, div[data-slot="tooltip-content"] svg.fill-primary {
+  background: #9A555B !important;
+  fill: #9A555B !important;
+  color: #FFF5EB !important;
+}
+/*sidebar footer*/
+[data-slot="sidebar-footer"] [data-slot="popover-trigger"] div svg,
+[data-slot="sidebar-footer"] [data-slot="popover-trigger"] div span, .text-sidebar-foreground {
+    --sidebar-foreground: #F1D9E2;
+    color: #F1D9E2 !important;
+}
+/* Comments Container */
+.right-part{
+    background: #2A1C2B !important;
+}
