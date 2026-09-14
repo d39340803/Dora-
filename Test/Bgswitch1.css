@@ -17,7 +17,7 @@ div.chat-container:has(input[name="dora-bg"][value="3"]:checked) {
   background-image: url('https://i.ibb.co/N2GHxBB3/4.webp') !important;
 }
 
-/* Optional styling to make your radio buttons look like clickable pill tabs */
+
 .dora-scene-toggle {
   display: flex;
   gap: 8px;
