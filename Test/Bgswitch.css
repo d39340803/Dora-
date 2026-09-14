@@ -1,0 +1,44 @@
+/* Default / Scene 1 */
+div.chat-container {
+  background-image: var(--dora-bg-img-1) !important; /* Put your Scene 1 / Day image here */
+  background-size: cover !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  background-attachment: fixed !important;
+}
+
+/* Scene 2 (Sunset) */
+div.chat-container:has(input[name="dora-bg"][value="2"]:checked) {
+  background-image: url('https://i.ibb.co/q3VHRNR8/2.webp') !important;
+}
+
+/* Scene 3 (Night) */
+div.chat-container:has(input[name="dora-bg"][value="3"]:checked) {
+  background-image: url('https://i.ibb.co/N2GHxBB3/4.webp') !important;
+}
+
+/* Optional styling to make your radio buttons look like clickable pill tabs */
+.dora-scene-toggle {
+  display: flex;
+  gap: 8px;
+  margin: 10px 0;
+}
+.dora-scene-toggle input[type="radio"] {
+  display: none;
+}
+.dora-scene-btn {
+  padding: 6px 14px;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: #fff;
+  font-size: 12px;
+  cursor: pointer;
+  user-select: none;
+  backdrop-filter: blur(8px);
+}
+.dora-scene-toggle label:has(input:checked) .dora-scene-btn {
+  background: #ffffff;
+  color: #000000;
+  font-weight: bold;
+}
