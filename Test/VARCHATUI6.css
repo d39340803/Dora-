@@ -34,6 +34,25 @@
   --dora-shadow-1: rgba(42, 28, 43, 0.35);
 }
 
+/* Mobile Landscape */
+@media screen and (max-width: 599px) and (orientation: landscape) {
+  :root {
+    --dora-bg-img-1: url('https://i.ibb.co/60KBGqLn/8.webp');
+  }
+}
+/* Tablets(portrait & landscape) */
+@media screen and (min-width: 600px) and (max-width: 1024.98px) {
+  :root {
+    --dora-bg-img-1: url('https://i.ibb.co/RTNZwrBV/9.webp');
+  }
+}
+/* Desktops & Laptops */
+@media screen and (min-width: 1025px) {
+  :root {
+    --dora-bg-img-1: url('https://i.ibb.co/60KBGqLn/8.webp');
+  }
+}
+
 /* Background Main App */
 div.chat-container {
   background-image: var(--dora-bg-img-1) !important;
