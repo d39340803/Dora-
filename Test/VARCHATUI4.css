@@ -195,7 +195,7 @@ div[data-slot="drawer-content"][role="dialog"]{
     color: var(--dora-color-4) !important;
 }
 /* Yes Button */
-[data-slot="alert-dialog-footer"] [data-slot="button"] span{
+[data-slot="alert-dialog-footer"] [data-slot="button"]{
     background: var(--dora-bg-solid-3) !important;
 }
 [data-slot="alert-dialog-footer"] [data-slot="button"] span{
