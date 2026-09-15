@@ -6,6 +6,7 @@
   --dora-color-2: #F0AFC3; /* secondary pink text/svg/border */
   --dora-color-3: rgba(241, 217, 226, 0.6); /* placeholder text */
   --dora-color-4: #C47F9B; /* accent text/svg/solid bg/border */
+  --dora-color-5: #2A12CB;
   --dora-color-6: #9A555B; /* tooltip bg/svg fill */
   --dora-color-7: #FFF5EB; /* tooltip text */
 
@@ -17,6 +18,9 @@
   --dora-bg-solid-2: rgba(42, 28, 43, 0.2);
   --dora-bg-solid-3: #3A2940;
   --dora-bg-solid-4: rgba(0, 0, 0, 0.2);
+  --dora-bg-solid-5: rgba(255, 255, 255, 0.1);
+  --dora-bg-solid-6: rgba(241, 217, 226, 0.6);
+  --dora-bg-solid-7: #F1D9E2;
 
   /* ===== Gradients ===== */
   --dora-bg-gradient-1: linear-gradient(135deg, #2A1C2B 0%, #3A2940 48%, #C47F9B 100%);
@@ -24,6 +28,7 @@
   /* ===== Borders ===== */
   --dora-border-1: rgba(241, 217, 226, 0.3);
   --dora-border-2: rgba(241, 217, 226, 0.2);
+  --dora-border-3: #F0AFC3; 
 
   /* ===== Shadow (box-shadow color, extra) ===== */
   --dora-shadow-1: rgba(42, 28, 43, 0.35);
@@ -377,5 +382,80 @@ div[data-slot="tooltip-content"].bg-primary, div[data-slot="tooltip-content"] sv
 [data-slot="sidebar-footer"] [data-slot="popover-trigger"] div svg,
 [data-slot="sidebar-footer"] [data-slot="popover-trigger"] div span, .text-sidebar-foreground {
     --sidebar-foreground: var(--dora-color-1);
+    color: var(--dora-color-1) !important;
+}
+/* Comments Sidebar icon */
+main > .flex-1 > .main-container > .right-4 svg {
+    color: var(--dora-color-4) !important;
+}
+/* Comments Container */
+.right-part, .right-part .bg-fill-default {
+    background: var(--dora-bg-solid-1) !important;
+}
+/* Avatar hide unhide icon and bot name */ 
+.right-part .bot-info-main .relative .iconfont, .right-part .bot-info-main > .absolute .px-4 .iconfont, .right-part .bot-bottom-info a.bot-name-text, .right-part .bot-info-main > .absolute .flex-1 .leading-4 {
+    color: var(--dora-color-1) !important;
+    --text-4: var(--dora-color-1);
+}
+/* Message icon, chat numbers , creator name and short intro */
+.right-part .bot-bottom-info .bot-name .numbers .iconfont, .right-part .bot-bottom-info .bot-name .numbers .text-sm, .right-part .bot-bottom-info .creator-name, .right-part .bot-info-main > .absolute .flex-1 .leading-3, .right-part .bot-bottom-info .introduce {
+    color: var(--dora-color-2) !important;
+    --text-3: var(--dora-color-2);
+}
+/* bot personality/category tags, edit icon bg */
+.right-part .bot-bottom-info .labels .tag-item > .tag-container, .right-part .bot-bottom-info .labels .edit-tag {
+    --text-3: var(--dora-color-2);
+    background: var(--dora-bg-solid-5) !important; 
+}
+/* edit icon */
+.right-part .bot-bottom-info .labels .edit-tag > .iconfont {
+    color: var(--dora-color-2);
+}
+/* Underline SVG beneath text:Comments */
+.right-part .bg-fill-default a > div.flex > svg path {
+    fill: var(--dora-color-2) !important;
+}
+/* Text:Comments */
+.right-part .bg-fill-default a > div.flex > div.relative.z-10 {
+     color: var(--dora-color-1) !important;
+}
+/* Comment textarea */
+.right-part .bg-fill-default .p-4 > .mb-2 textarea {
+     border-color: var(--dora-border-1) !important;
+     color: var(--dora-color-1) !important;
+}
+.right-part .bg-fill-default .p-4 > .mb-2 textarea::placeholder {
+     color: var(--dora-color-3) !important;
+}
+/* reactions */
+.right-part .bg-fill-default .p-4 > .mb-2 >.flex .border-1, .right-part .bg-fill-default .p-4 > .mb-2 >.flex .cursor-pointer {
+     border-color: var(--dora-border-3) !important;
+     fill: var(--dora-color-2) !important;
+     color: var(--dora-color-2) !important;
+}
+/* reactions seperator */
+.right-part .bg-fill-default .p-4 > .mb-2 >.flex .border-1 > .shrink-0 {
+     background: var(--dora-bg-solid-6) !important;
+}
+/* post button */
+.right-part .bg-fill-default .p-4 > .mb-2 >.flex button {
+    background: var(--dora-bg-solid-7) !important;
+    color: var(--dora-color-5) !important;
+}
+/*comments*/
+.bg-fill-default .p-4 > div .gap-4 > .flex .break-words {
+    color: var(--dora-color-1) !important;
+}
+/* comment  and reactions counter, user name, reaction and delete */
+.right-part .bg-fill-default .p-4 .gap-4 .total, .right-part .bg-fill-default .p-4 .gap-4 .flex-1 .gap-2 .line-clamp-1, .right-part .bg-fill-default .p-4 .gap-4 .flex-1 .ml-2, .right-part .bg-fill-default .p-4 .gap-4 > .flex-col .ml-2 .cursor-pointer {
+    fill: var(--dora-color-2) !important;
+    color: var(--dora-color-2) !important;
+}
+/* reactions seperator */
+.right-part .bg-fill-default .p-4 > div .gap-4 .total > .shrink-0 {
+    background: var(--dora-bg-solid-6) !important;
+}
+/* Confirmation Box */
+[data-slot="alert-dialog-description"] {
     color: var(--dora-color-1) !important;
 }
