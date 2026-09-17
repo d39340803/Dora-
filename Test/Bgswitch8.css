@@ -1,0 +1,117 @@
+/* Container & Hide Native Radio */
+.t {
+  display: flex;
+  gap: 8px;
+  margin: 10px 0;
+  position: relative;
+  z-index: 2;
+}
+
+.t input[type="radio"] {
+  display: none;
+}
+
+/* Button Base with Smooth Hover/Active Transitions */
+.s {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 6px 14px;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: #fff;
+  font-size: 12px;
+  cursor: pointer;
+  user-select: none;
+  backdrop-filter: blur(8px);
+  transition: background-color 0.4s ease, color 0.4s ease, border-color 0.4s ease, transform 0.2s ease;
+}
+
+/* Button Labels via CSS */
+.s:has(#a)::after {
+  content: "Day";
+}
+
+.s:has(#b)::after {
+  content: "Sunset";
+}
+
+/* Active State */
+.s:has(input:checked) {
+  background: #ffffff;
+  color: #000000;
+  font-weight: bold;
+}
+
+/* Cross-Fade Background Structure */
+div.chat-container {
+  position: relative;
+  isolation: isolate;
+  background-image: var(--dora-bg-img-1) !important;
+  background-size: cover !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  background-attachment: fixed !important;
+}
+
+/* Layer for the second background image to fade in/out smoothly */
+div.chat-container::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url('https://i.ibb.co/q3VHRNR8/2.webp');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  opacity: 0;
+  transition: opacity 0.6s ease-in-out;
+  pointer-events: none;
+  z-index: -1;
+}
+
+/* Smooth color transitions for UI elements */
+div.chat-container,
+div.chat-container * {
+  transition: background-color 0.5s ease, color 0.5s ease, border-color 0.5s ease, box-shadow 0.5s ease;
+}
+
+/* Trigger Smooth Background Fade */
+:root:has(#b:checked) div.chat-container::before {
+  opacity: 1;
+}
+
+/* Scene 2 Theme Overrides */
+:root:has(#b:checked) {
+  /* ===== Text colors & SVG fills ===== */
+  --dora-color-1: #D8E2F8;
+  --dora-color-2: #8FA6D8;
+  --dora-color-3: rgba(216, 226, 248, 0.55);
+  --dora-color-4: #5468A3;
+  --dora-color-5: #3A4EA8;
+  --dora-color-6: #1E2B58;
+  --dora-color-7: #F0F4FF;
+  --dora-color-8: #9DB7F5;
+
+  /* ===== Solid backgrounds ===== */
+  --dora-bg-solid-1: #0B0E1B;
+  --dora-bg-solid-2: rgba(11, 14, 27, 0.4);
+  --dora-bg-solid-3: #13182E;
+  --dora-bg-solid-4: rgba(0, 0, 0, 0.45);
+  --dora-bg-solid-5: rgba(216, 226, 248, 0.08);
+  --dora-bg-solid-6: rgba(216, 226, 248, 0.5);
+  --dora-bg-solid-7: #D8E2F8;
+
+  /* ===== Gradients ===== */
+  --dora-bg-gradient-1: linear-gradient(135deg, #0B0E1B 0%, #13182E 50%, #2A3866 100%);
+
+  /* ===== Borders ===== */
+  --dora-border-1: rgba(216, 226, 248, 0.2);
+  --dora-border-2: rgba(216, 226, 248, 0.1);
+  --dora-border-3: #8FA6D8;
+
+  /* ===== Shadow ===== */
+  --dora-shadow-1: rgba(3, 5, 12, 0.6);
+}
+
