@@ -9,6 +9,7 @@
   --dora-color-5: #2A12CB;
   --dora-color-6: #9A555B; /* tooltip bg/svg fill */
   --dora-color-7: #FFF5EB; /* tooltip text */
+  --dora-color-8: #FFCBA4;
 
   /* ===== Background images ===== */
   --dora-bg-img-1: url('https://i.ibb.co/27QyYcgj/1.webp');
@@ -77,10 +78,10 @@ span.icon.iconfont.icon-back1 {
   color: var(--dora-color-1) !important;
   border: 1px solid var(--dora-border-1) !important;
 }
-main .stream .space-x-2 .font-bold {
+main .stream .space-x-2 .font-bold, .chat-display .pl-2 .text-xl{
     color: var(--dora-color-1) !important;
 }
-main .stream .space-x-2 .text-xs , header .p-1.bg-fill-default\/60 .text-xs {
+main .stream .space-x-2 .text-xs , header .p-1.bg-fill-default\/60 .text-xs, .chat-display .pl-2 .mt-0\.5 {
     color: var(--dora-color-2) !important;
 }
 main .stream .space-x-2 .bg-text-secondary {
@@ -122,15 +123,60 @@ div.background-text .intro, div.background-text .desc, div.background-text .expa
   color: var(--dora-color-1) !important;
   stroke: var(--dora-color-1) !important;
 }
+/* pin, edit, copy, delete */
+.edit-icon-box .common-icon{
+   background-color: var(--dora-bg-solid-1) !important;
+   border: 1px solid var(--dora-color-4);
+   color: var(--dora-color-4) !important;
+}
 /* effect for chat bubbles */
-.robot-text-box .body-text, .user-text-box .body-text {
+.robot-text-box .body-text, .user-text-box .body-text, .robot-text-box .gap-4 .gap-2 .px-3 {
    --fill-assist:transparent;
    background: var(--dora-bg-gradient-1) !important;
    color: var(--dora-color-1) !important;
 }
-.robot-text-box .body-text em,
-.user-text-box .body-text em {
+.robot-text-box .gap-4 .markdown-body, .robot-text-box .gap-4 .gap-2 .text-xs {
+   color: var(--dora-color-1) !important;
+}
+.robot-text-box .body-text em, .user-text-box .body-text em, .robot-text-box .gap-4 .markdown-body em {
     color: var(--dora-color-2) !important;
+}
+/* Changes the time color */
+.body-text .body-text-time{
+   color: var(--dora-color-4) !important;
+}
+/* Don't Change the block below */
+.rate-container{
+   background:transparent !important
+}
+/* before click */
+.like-static .circle, .dislike-static .circle, .rate-container .feedback{
+   background: var(--dora-bg-solid-1) !important;
+   color: var(--dora-color-4) !important;
+}
+/* after click */
+.like-active .circle, .dislike-active .circle{
+   background: var(--dora-bg-solid-1) !important;
+   color: var(--dora-color-4) !important;
+}
+.chat-list-item .refresh,
+.chat-list-item .o-item.l-item,
+.chat-list-item .o-item.r-item {
+    background: var(--dora-bg-solid-1) !important;
+}
+.chat-list-item .refresh span,
+.chat-list-item .o-item.l-item span,
+.chat-list-item .o-item.r-item span{
+   color: var(--dora-color-1) !important;
+}
+/* Feedback Pills */
+.robot-text-box .rate-container .text-xs {
+  background: var(--dora-bg-solid-2) !important;
+  color: var(--dora-color-2) !important;
+  backdrop-filter: blur(14px) !important;
+  -webkit-backdrop-filter: blur(14px) !important;
+  border: 1px solid var(--dora-border-1) !important;
+  border-radius: 999px !important;
 }
 /*Action Pills*/
 #chat-footer .action.px-4 > div {
@@ -224,40 +270,6 @@ div[data-slot="drawer-content"][role="dialog"]{
 }
 [data-slot="alert-dialog-footer"] [data-slot="button"] span{
     color: var(--dora-color-1) !important;
-}
-/* pin, edit, copy, delete */
-.edit-icon-box .common-icon{
-   background-color: var(--dora-bg-solid-1) !important;
-   border: 1px solid var(--dora-color-4);
-   color: var(--dora-color-4) !important;
-}
-/* Changes the time color */
-.body-text .body-text-time{
-   color: var(--dora-color-4) !important;
-}
-/* Don't Change the block below */
-.rate-container{
-   background:transparent !important
-}
-/* before click */
-.like-static .circle, .dislike-static .circle, .rate-container .feedback{
-   background: var(--dora-bg-solid-1) !important;
-   color: var(--dora-color-4) !important;
-}
-/* after click */
-.like-active .circle, .dislike-active .circle{
-   background: var(--dora-bg-solid-1) !important;
-   color: var(--dora-color-4) !important;
-}
-.chat-list-item .refresh,
-.chat-list-item .o-item.l-item,
-.chat-list-item .o-item.r-item {
-    background: var(--dora-bg-solid-1) !important;
-}
-.chat-list-item .refresh span,
-.chat-list-item .o-item.l-item span,
-.chat-list-item .o-item.r-item span{
-   color: var(--dora-color-1) !important;
 }
 /* Dialogue Regeneration */
 [data-slot="dialog-content"].border{
@@ -478,3 +490,50 @@ main > .flex-1 > .main-container > .right-4 svg {
 [data-slot="alert-dialog-description"] {
     color: var(--dora-color-1) !important;
 }
+/* Settings Container*/
+[data-slot="dialog-content"]{
+    --fill-default: var(--dora-bg-solid-1);
+    color: var(--dora-color-1) !important;
+    --text-4: var(--dora-color-1);
+    fill: var(--dora-color-1) !important;
+}
+[data-slot="dialog-title"], .speed-title{
+    color: var(--dora-color-1) !important;
+}
+[data-slot="dialog-content"] .px-4 .text-3, [data-slot="dialog-content"] .px-4 .mt-4 .cursor-pointer, .speed-content{
+    color: var(--dora-color-2) !important;
+}
+[data-slot="dialog-content"] .px-4 .bg-fill-light{
+    background:var(--dora-bg-gradient-1) !important;
+    color: var(--dora-color-1) !important;
+    --text-2: var(--dora-color-1);
+}
+/* Login */
+[data-slot="dialog-content"] .foot-login > .text-xs.text-text-secondary, [data-slot="dialog-content"] .safe-area span.text-text-secondary, [data-slot="dialog-content"] .px-8 .mt-5 .text-right span.text-text-secondary {
+  color: var(--dora-color-2) !important;
+  --text-3: var(--dora-color-2);
+}
+[data-slot="dialog-content"] .px-8 .mt-5 .mt-auto a {
+  color: #1a90ff !important;
+  --text-4: #1a90ff;
+}
+[data-slot="dialog-content"] .px-8 .mt-5 form [role="group"] input {
+   --input: var(--dora-bg-solid-4);
+}
+[data-slot="dialog-content"] .px-8 .mt-5 form [role="group"] input::placeholder {
+  color: var(--dora-color-3);
+}
+/* Tooltips */
+.pop-notice .bg-blue, .flow-entry-anchor .bg-\[\#526fff\] {
+   background: var(--dora-color-4) !important;
+}
+.pop-notice .text-blue, .flow-entry-anchor .bg-\[\#526fff\] {
+   color: var(--dora-color-4) !important;
+}
+.pop-notice .text-\[\#f5f5f5\], .flow-entry-anchor .text-\[\#f5f5f5\] {
+   color: var(--dora-color-7) !important;
+}
+.pop-notice .text-\[\#FFDB00\], .flow-entry-anchor .text-\[\#ffdb00\] {
+   color: var(--dora-color-8) !important;
+}
+
