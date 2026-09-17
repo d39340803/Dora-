@@ -523,6 +523,16 @@ main > .flex-1 > .main-container > .right-4 svg {
 [data-slot="dialog-content"] .px-8 .mt-5 form [role="group"] input::placeholder {
   color: var(--dora-color-3);
 }
+/* Alerts */
+[aria-label="Notifications alt+T"] .\!text-text-primary {
+  --text-4: var(--dora-color-1);
+}
+[aria-label="Notifications alt+T"] .bg-fill-default\! {
+  --fill-default: var(--dora-bg-solid-2); 
+  backdrop-filter: blur(14px) !important;
+  -webkit-backdrop-filter: blur(14px) !important;
+  border: 1px solid var(--dora-border-1) !important;
+}
 /* Tooltips */
 .pop-notice .bg-blue, .flow-entry-anchor .bg-\[\#526fff\] {
    background: var(--dora-color-4) !important;
