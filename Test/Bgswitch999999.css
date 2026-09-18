@@ -49,7 +49,7 @@
     color: var(--dora-color-1);
 }
 .t:before {
-  content: 'Select your theme';
+  content: 'Select A Theme';
   color: white;
   font-size: 24px;
   font-weight: 900;
@@ -89,15 +89,14 @@
   cursor: none;
   user-select: none;
   backdrop-filter: blur(8px);
-  transition: background-color 0.4s ease, color 0.4s ease, border-color 0.4s ease, transform 0.2s ease;
 }
 
 .s:has(#a)::after {
-  content: "Twilight-Wishper";
+  content: "Polaroid";
 }
 
 .s:has(#b)::after {
-  content: "Sunset";
+  content: "Platform";
 }
 
 .s:has(input:checked) {
