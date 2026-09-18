@@ -164,11 +164,11 @@
 }
 #p:after{
 content: 'Writer’s Note: You might be wondering what happens next... Sorry, I can’t tell you. (*≧з≦) You’ll have to uncover the truth with Rin yourself. Pay attention to what she says—every answer may lead to another question. And please don’t make Rin lose hope. I worked hard on her. (╥﹏╥) — The Writer';
-font-size: 10px;
+font-size: 13px;
 font-family: Cormorant Garamond, serif;
 margin: 15px 0 0 0;
 text-align: center;
 width: 100%;
 border-top: 1px solid #fff;
-color: #C44569;
+color: red;
 }
