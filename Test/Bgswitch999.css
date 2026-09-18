@@ -179,3 +179,23 @@ div.chat-container * {
     --dora-scroll: #B9786D;
 
 }
+
+/* Mobile Landscape */
+@media screen and (max-width: 599px) and (orientation: landscape) {
+  :root:has(#b:checked) {
+    --dora-bg-img-1: url('https://i.ibb.co/CKQpzTBc/5.webp');
+  }
+}
+/* Tablets(portrait & landscape) */
+@media screen and (min-width: 600px) and (max-width: 1024.98px) {
+  :root:has(#b:checked) {
+    --dora-bg-img-1: url('https://i.ibb.co/WpP8FH3s/6.webp');
+  }
+}
+/* Desktops & Laptops */
+@media screen and (min-width: 1025px) {
+  :root:has(#b:checked) {
+    --dora-bg-img-1: url('https://i.ibb.co/CKQpzTBc/5.webp');
+  }
+}
+
