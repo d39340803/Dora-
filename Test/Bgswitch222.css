@@ -104,22 +104,6 @@
   color: #000000;
   font-weight: bold;
 }
-div.chat-container::before {
-    content: '';
-    inset: 0;
-    z-index: 0;
-    pointer-events: none;
-    background-image: var(--dora-bg-img-1, none);
-    background-size: cover;
-    background-position: center;
-    opacity: 0;
-    transition: opacity 0.8s ease-in-out;
-}
-
-:root:has(#b:checked) div.chat-container::before {
-    opacity: 1;
-}
-
 /* Scene 2 Theme Overrides */
 :root:has(#b:checked) {
  /* ===== Text colors & SVG fills ===== */
@@ -178,12 +162,15 @@ div.chat-container::before {
     --dora-bg-img-1: url('https://i.ibb.co/CKQpzTBc/5.webp');
   }
 }
-#c:after{
-content: 'Writer’s Note: You might be wondering what happens next... Sorry, I can’t tell you. (*≧з≦) You’ll have to uncover the truth with Rin yourself. Pay attention to what she says—every answer may lead to another question. And please don’t make Rin lose hope. I worked hard on her. (╥﹏╥) — The Writer';
-font-size: 10px;
-font-family: Cormorant Garamond, serif;
-margin: 15px 0 0 0;
-text-align: center;
-width: 100%;
-color: #9A555B;
+#p:after {
+    content: "Writer’s Note: You might be wondering what happens next... Sorry, I can’t tell you. (*≧з≦) You’ll have to uncover the truth with Rin yourself. Pay attention to what she says—every answer may lead to another question. And please don’t make Rin lose hope. I worked hard on her. (╥﹏╥) — The Writer";
+    font-size: 13px;
+    display: block;
+    font-family: Cormorant Garamond, serif;
+    padding: 15px 0 0 0;
+    margin: 15px 0 0 0;
+    text-align: center;
+    width: 100%;
+    border-top: 1px solid #fff;
+    color: cyan;
 }
