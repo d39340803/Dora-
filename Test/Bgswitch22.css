@@ -104,6 +104,22 @@
   color: #000000;
   font-weight: bold;
 }
+div.chat-container::before {
+    content: '';
+    inset: 0;
+    z-index: 0;
+    pointer-events: none;
+    background-image: var(--dora-bg-img-1, none);
+    background-size: cover;
+    background-position: center;
+    opacity: 0;
+    transition: opacity 0.8s ease-in-out;
+}
+
+:root:has(#b:checked) div.chat-container::before {
+    opacity: 1;
+}
+
 /* Scene 2 Theme Overrides */
 :root:has(#b:checked) {
  /* ===== Text colors & SVG fills ===== */
