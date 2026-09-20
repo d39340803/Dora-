@@ -60,7 +60,6 @@ div.chat-container {
   background-size: cover !important;
   background-position: center !important;
   background-repeat: no-repeat !important;
-  background-attachment: fixed !important;
 }
 /* back button */
 main .header, main .header .pl-2 > div {
@@ -242,6 +241,13 @@ div[data-slot="drawer-content"][role="dialog"]{
 [data-slot="drawer-content"] .relative > .space-y-3 > .text-base.text-bold.text-center {
   color: var(--dora-color-1) !important;
 }
+
+/* Optimization of drawers */
+div[data-slot="drawer-content"] {
+  will-change: transform !important;
+  transform: translateZ(0) !important;
+}
+
 /* Selects All 5 Chat Settings */
 [data-slot="drawer-content"] .space-y-3 .bg-fill-light{
   background: var(--dora-bg-gradient-1) !important;
