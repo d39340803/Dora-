@@ -64,8 +64,11 @@ div.chat-container {
 }
 /* back button */
 main .header, main .header .pl-2 > div {
-    background: var(--dora-bg-solid-1) !important;
-    color: var(--dora-color-1) !important;
+  background: var(--dora-bg-solid-1) !important;
+  color: var(--dora-color-1) !important;
+  will-change: transform;
+  transform: translateZ(0);
+  contain: paint;
 }
 span.icon.iconfont.icon-back1 {
   color: var(--dora-color-1);
@@ -77,6 +80,9 @@ span.icon.iconfont.icon-back1 {
   -webkit-backdrop-filter: blur(10px) !important;
   color: var(--dora-color-1) !important;
   border: 1px solid var(--dora-border-1) !important;
+  will-change: transform;
+  transform: translateZ(0);
+  contain: paint;
 }
 main .stream .space-x-2 .font-bold, .chat-display .pl-2 .text-xl{
     color: var(--dora-color-1) !important;
@@ -102,6 +108,9 @@ a[href="https://www.joyland.ai/"] .justify-center, [data-slot="drawer-trigger"].
   align-items: center !important;
   justify-content: center !important;
   box-sizing: border-box !important;
+  will-change: transform;
+  transform: translateZ(0);
+  contain: paint;
 }
 /*notice*/
 .notice-desc{
@@ -110,6 +119,9 @@ a[href="https://www.joyland.ai/"] .justify-center, [data-slot="drawer-trigger"].
   -webkit-backdrop-filter: blur(10px) !important;
   color: var(--dora-color-1) !important;
   border: 1px solid var(--dora-border-1) !important;
+  will-change: transform;
+  transform: translateZ(0);
+  contain: paint;
 }
 /* Scenario Container */
 div.background-text .main{
@@ -134,6 +146,9 @@ div.background-text .intro, div.background-text .desc, div.background-text .expa
    --fill-assist:transparent;
    background: var(--dora-bg-gradient-1) !important;
    color: var(--dora-color-1) !important;
+   will-change: transform;
+   transform: translateZ(0);
+   contain: paint;
 }
 .robot-text-box .gap-4 .markdown-body, .robot-text-box .gap-4 .gap-2 .text-xs {
    color: var(--dora-color-1) !important;
@@ -177,6 +192,9 @@ div.background-text .intro, div.background-text .desc, div.background-text .expa
   -webkit-backdrop-filter: blur(14px) !important;
   border: 1px solid var(--dora-border-1) !important;
   border-radius: 999px !important;
+  will-change: transform;
+  transform: translateZ(0);
+  contain: paint;
 }
 /*Action Pills*/
 #chat-footer .action.px-4 > div {
@@ -189,6 +207,9 @@ div.background-text .intro, div.background-text .desc, div.background-text .expa
   -webkit-backdrop-filter: blur(14px) !important;
   border: 1px solid var(--dora-border-1) !important;
   border-radius: 999px !important;
+  will-change: transform;
+  transform: translateZ(0);
+  contain: paint;
 }
 /* Neutralize Joyland's built-in radial-gradient + secondary blur layers */
 #chat-footer .action.px-4 > div > div:first-child,
@@ -203,8 +224,11 @@ div.background-text .intro, div.background-text .desc, div.background-text .expa
 }
 /* Suggestion And textarea Outer-Conatainer */
 #chat-footer .form{
-   background: var(--dora-bg-solid-1) !important;
-   color: var(--dora-color-1) !important;
+  background: var(--dora-bg-solid-1) !important;
+  color: var(--dora-color-1) !important;
+  will-change: transform;
+  transform: translateZ(0);
+  contain: paint;
 }
 /* Suggestion chips */
 li.relative.bg-fill-default {
@@ -222,6 +246,9 @@ li.relative > div[class*="bg-radial-"] {
 #chat-footer .bg-fill-light {
   background: var(--dora-bg-gradient-1) !important;
   border-radius: 30px !important;
+  will-change: transform;
+  transform: translateZ(0);
+  contain: paint;
 }
 #chat-footer textarea.form-input {
   color: var(--dora-color-1) !important;
@@ -233,6 +260,9 @@ li.relative > div[class*="bg-radial-"] {
 /* Entire Chat Setting container  having all settings */
 div[data-slot="drawer-content"][role="dialog"]{
   background: var(--dora-bg-solid-1) !important;
+  will-change: transform;
+  contain: layout style paint;
+  isolation: isolate;
 }
 /* Chat Setting drag handle*/
 [data-slot="drawer-content"] .bg-muted.mx-auto{
@@ -249,7 +279,10 @@ div[data-slot="drawer-content"][role="dialog"]{
 }
 /* Save and Start New Chat Conatainer */
 [role="alertdialog"]{
-    background: var(--dora-bg-gradient-1) !important;
+  background: var(--dora-bg-gradient-1) !important;
+  will-change: transform;
+  contain: layout style paint;
+  isolation: isolate;
 }
 /* Text Save and Start New Chat */
 [role="alertdialog"] .text-lg{
