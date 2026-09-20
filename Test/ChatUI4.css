@@ -2,55 +2,55 @@
 
 :root {
   /* ===== Text colors & SVG fills ===== */
-  --dora-color-1: #D9E1EF; /* primary light blue-gray text/svg */
-  --dora-color-2: #E8D7E7; /* secondary pale mauve text/svg/border */
-  --dora-color-3: rgba(217, 225, 239, 0.6); /* placeholder blue-gray text */
-  --dora-color-4: #9A718F; /* muted dusk-mauve accent text/svg/solid bg/border */
-  --dora-color-5: #101827;
-  --dora-color-6: #252B43; /* tooltip indigo bg/svg fill */
-  --dora-color-7: #E8D7E7; /* tooltip pale mauve text */
-  --dora-color-8: #D6A99D;
+  --dora-color-1: #F1D9E2; /* primary light pink text/svg */
+  --dora-color-2: #F0AFC3; /* secondary pink text/svg/border */
+  --dora-color-3: rgba(241, 217, 226, 0.6); /* placeholder text */
+  --dora-color-4: #C47F9B; /* accent text/svg/solid bg/border */
+  --dora-color-5: #2A12CB;
+  --dora-color-6: #9A555B; /* tooltip bg/svg fill */
+  --dora-color-7: #FFF5EB; /* tooltip text */
+  --dora-color-8: #FFCBA4;
 
   /* ===== Background images ===== */
-  --dora-bg-img-1: url('https://i.ibb.co/Vc1Lqy3Z/2.webp');
+  --dora-bg-img-1: url('https://i.ibb.co/27QyYcgj/1.webp');
 
   /* ===== Solid backgrounds ===== */
-  --dora-bg-solid-1: #101827;
-  --dora-bg-solid-2: rgba(16, 24, 39, 0.2);
-  --dora-bg-solid-3: #252B43;
+  --dora-bg-solid-1: #2A1C2B;
+  --dora-bg-solid-2: rgba(42, 28, 43, 0.2);
+  --dora-bg-solid-3: #3A2940;
   --dora-bg-solid-4: rgba(0, 0, 0, 0.2);
   --dora-bg-solid-5: rgba(255, 255, 255, 0.1);
-  --dora-bg-solid-6: rgba(217, 225, 239, 0.6);
-  --dora-bg-solid-7: #D9E1EF;
+  --dora-bg-solid-6: rgba(241, 217, 226, 0.6);
+  --dora-bg-solid-7: #F1D9E2;
 
   /* ===== Gradients ===== */
-  --dora-bg-gradient-1: linear-gradient(135deg, #101827 0%, #252B43 50%, #765A78 100%);
+  --dora-bg-gradient-1: linear-gradient(135deg, #2A1C2B 0%, #3A2940 48%, #C47F9B 100%);
 
   /* ===== Borders ===== */
-  --dora-border-1: rgba(217, 225, 239, 0.3);
-  --dora-border-2: rgba(217, 225, 239, 0.2);
-  --dora-border-3: #E8D7E7;
+  --dora-border-1: rgba(241, 217, 226, 0.3);
+  --dora-border-2: rgba(241, 217, 226, 0.2);
+  --dora-border-3: #F0AFC3; 
 
   /* ===== Shadow (box-shadow color, extra) ===== */
-  --dora-shadow-1: rgba(16, 24, 39, 0.35);
+  --dora-shadow-1: rgba(42, 28, 43, 0.35);
 }
 
 /* Mobile Landscape */
 @media screen and (max-width: 599px) and (orientation: landscape) {
   :root {
-    --dora-bg-img-1: url('https://i.ibb.co/Mk6p70V0/3.webp');
+    --dora-bg-img-1: url('https://i.ibb.co/60KBGqLn/8.webp');
   }
 }
 /* Tablets(portrait & landscape) */
 @media screen and (min-width: 600px) and (max-width: 1024.98px) {
   :root {
-    --dora-bg-img-1: url('https://i.ibb.co/C5cVY4fN/4.webp');
+    --dora-bg-img-1: url('https://i.ibb.co/RTNZwrBV/9.webp');
   }
 }
 /* Desktops & Laptops */
 @media screen and (min-width: 1025px) {
   :root {
-    --dora-bg-img-1: url('https://i.ibb.co/Mk6p70V0/3.webp');
+    --dora-bg-img-1: url('https://i.ibb.co/60KBGqLn/8.webp');
   }
 }
 
@@ -60,6 +60,7 @@ div.chat-container {
   background-size: cover !important;
   background-position: center !important;
   background-repeat: no-repeat !important;
+  background-attachment: fixed !important;
 }
 /* back button */
 main .header, main .header .pl-2 > div {
@@ -72,6 +73,8 @@ span.icon.iconfont.icon-back1 {
 /* Header avatar/name pill container (back region) */
 .p-1.bg-fill-default\/60.rounded-full.backdrop-blur-\[10px\]{
   background: var(--dora-bg-solid-2) !important;
+  backdrop-filter: blur(10px) !important;
+  -webkit-backdrop-filter: blur(10px) !important;
   color: var(--dora-color-1) !important;
   border: 1px solid var(--dora-border-1) !important;
 }
@@ -90,6 +93,8 @@ a[href="https://www.joyland.ai/"] .justify-center, [data-slot="drawer-trigger"].
   height: 36px !important;
   border-radius: 50% !important;
   background: var(--dora-bg-solid-2) !important;
+  backdrop-filter: blur(10px) !important;
+  -webkit-backdrop-filter: blur(10px) !important;
   border: 1px solid var(--dora-border-1) !important;
   box-shadow: 0 4px 12px var(--dora-shadow-1) !important;
   color: var(--dora-color-1) !important;
@@ -101,13 +106,17 @@ a[href="https://www.joyland.ai/"] .justify-center, [data-slot="drawer-trigger"].
 /*notice*/
 .notice-desc{
   background: var(--dora-bg-solid-2) !important;
+  backdrop-filter: blur(10px) !important;
+  -webkit-backdrop-filter: blur(10px) !important;
   color: var(--dora-color-1) !important;
   border: 1px solid var(--dora-border-1) !important;
 }
 /* Scenario Container */
 div.background-text .main{
   background: var(--dora-bg-solid-2) !important;
+  backdrop-filter: blur(4px) !important;
   border: 1px solid var(--dora-border-2) !important;
+  -webkit-backdrop-filter: blur(4px) !important;
 }
 /* styles the scenario text and svg */
 div.background-text .intro, div.background-text .desc, div.background-text .expand-button svg.collapse-icon {
@@ -164,6 +173,8 @@ div.background-text .intro, div.background-text .desc, div.background-text .expa
 .robot-text-box .rate-container .text-xs {
   background: var(--dora-bg-solid-2) !important;
   color: var(--dora-color-2) !important;
+  backdrop-filter: blur(14px) !important;
+  -webkit-backdrop-filter: blur(14px) !important;
   border: 1px solid var(--dora-border-1) !important;
   border-radius: 999px !important;
 }
@@ -174,6 +185,8 @@ div.background-text .intro, div.background-text .desc, div.background-text .expa
 /* Target the actual visible pill surface (3rd nested div) */
 #chat-footer .action.px-4 > div > div:nth-child(3) {
   background: var(--dora-bg-solid-2) !important;
+  backdrop-filter: blur(14px) !important;
+  -webkit-backdrop-filter: blur(14px) !important;
   border: 1px solid var(--dora-border-1) !important;
   border-radius: 999px !important;
 }
@@ -229,12 +242,6 @@ div[data-slot="drawer-content"][role="dialog"]{
 [data-slot="drawer-content"] .relative > .space-y-3 > .text-base.text-bold.text-center {
   color: var(--dora-color-1) !important;
 }
-
-/* Optimization of drawers */
-div[data-slot="drawer-content"] {
-  will-change: transform !important;
-}
-
 /* Selects All 5 Chat Settings */
 [data-slot="drawer-content"] .space-y-3 .bg-fill-light{
   background: var(--dora-bg-gradient-1) !important;
@@ -522,6 +529,8 @@ main > .flex-1 > .main-container > .right-4 svg {
 }
 [aria-label="Notifications alt+T"] .bg-fill-default\! {
   --fill-default: var(--dora-bg-solid-2); 
+  backdrop-filter: blur(14px) !important;
+  -webkit-backdrop-filter: blur(14px) !important;
   border: 1px solid var(--dora-border-1) !important;
 }
 /* Tooltips */
