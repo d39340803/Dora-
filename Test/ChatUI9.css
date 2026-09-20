@@ -237,6 +237,7 @@ li.relative > div[class*="bg-radial-"] {
     -webkit-backdrop-filter: none !important;
     isolation: isolate !important;
     contain: paint !important;
+    will-change: transform;
 }
 /* Entire Chat Setting container  having all settings */
 div[data-slot="drawer-content"][role="dialog"]{
@@ -316,6 +317,9 @@ div[data-slot="drawer-content"][role="dialog"]{
 [data-slot="drawer-content"]{
    background: var(--dora-bg-solid-1) !important;
    color: var(--dora-color-1);
+   isolation: isolate !important;
+   contain: paint !important;
+   will-change: transform;
 }
 [data-slot="drawer-content"] > .text-base, [data-slot="dialog-content"] > .text-base, [data-slot="dialog-content"] > .flex > span.check-button-base{
    color: var(--dora-color-1);
