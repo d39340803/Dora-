@@ -2,55 +2,55 @@
 
 :root {
   /* ===== Text colors & SVG fills ===== */
-  --dora-color-1: #F1D9E2; /* primary light pink text/svg */
-  --dora-color-2: #F0AFC3; /* secondary pink text/svg/border */
-  --dora-color-3: rgba(241, 217, 226, 0.6); /* placeholder text */
-  --dora-color-4: #C47F9B; /* accent text/svg/solid bg/border */
-  --dora-color-5: #2A12CB;
-  --dora-color-6: #9A555B; /* tooltip bg/svg fill */
-  --dora-color-7: #FFF5EB; /* tooltip text */
-  --dora-color-8: #FFCBA4;
+  --dora-color-1: #D9E1EF; /* primary light blue-gray text/svg */
+  --dora-color-2: #E8D7E7; /* secondary pale mauve text/svg/border */
+  --dora-color-3: rgba(217, 225, 239, 0.6); /* placeholder blue-gray text */
+  --dora-color-4: #9A718F; /* muted dusk-mauve accent text/svg/solid bg/border */
+  --dora-color-5: #101827;
+  --dora-color-6: #252B43; /* tooltip indigo bg/svg fill */
+  --dora-color-7: #E8D7E7; /* tooltip pale mauve text */
+  --dora-color-8: #D6A99D;
 
   /* ===== Background images ===== */
-  --dora-bg-img-1: url('https://i.ibb.co/27QyYcgj/1.webp');
+  --dora-bg-img-1: url('https://i.ibb.co/Vc1Lqy3Z/2.webp');
 
   /* ===== Solid backgrounds ===== */
-  --dora-bg-solid-1: #2A1C2B;
-  --dora-bg-solid-2: rgba(42, 28, 43, 0.2);
-  --dora-bg-solid-3: #3A2940;
+  --dora-bg-solid-1: #101827;
+  --dora-bg-solid-2: rgba(16, 24, 39, 0.2);
+  --dora-bg-solid-3: #252B43;
   --dora-bg-solid-4: rgba(0, 0, 0, 0.2);
   --dora-bg-solid-5: rgba(255, 255, 255, 0.1);
-  --dora-bg-solid-6: rgba(241, 217, 226, 0.6);
-  --dora-bg-solid-7: #F1D9E2;
+  --dora-bg-solid-6: rgba(217, 225, 239, 0.6);
+  --dora-bg-solid-7: #D9E1EF;
 
   /* ===== Gradients ===== */
-  --dora-bg-gradient-1: linear-gradient(135deg, #2A1C2B 0%, #3A2940 48%, #C47F9B 100%);
+  --dora-bg-gradient-1: linear-gradient(135deg, #101827 0%, #252B43 50%, #765A78 100%);
 
   /* ===== Borders ===== */
-  --dora-border-1: rgba(241, 217, 226, 0.3);
-  --dora-border-2: rgba(241, 217, 226, 0.2);
-  --dora-border-3: #F0AFC3; 
+  --dora-border-1: rgba(217, 225, 239, 0.3);
+  --dora-border-2: rgba(217, 225, 239, 0.2);
+  --dora-border-3: #E8D7E7;
 
   /* ===== Shadow (box-shadow color, extra) ===== */
-  --dora-shadow-1: rgba(42, 28, 43, 0.35);
+  --dora-shadow-1: rgba(16, 24, 39, 0.35);
 }
 
 /* Mobile Landscape */
 @media screen and (max-width: 599px) and (orientation: landscape) {
   :root {
-    --dora-bg-img-1: url('https://i.ibb.co/60KBGqLn/8.webp');
+    --dora-bg-img-1: url('https://i.ibb.co/Mk6p70V0/3.webp');
   }
 }
 /* Tablets(portrait & landscape) */
 @media screen and (min-width: 600px) and (max-width: 1024.98px) {
   :root {
-    --dora-bg-img-1: url('https://i.ibb.co/RTNZwrBV/9.webp');
+    --dora-bg-img-1: url('https://i.ibb.co/C5cVY4fN/4.webp');
   }
 }
 /* Desktops & Laptops */
 @media screen and (min-width: 1025px) {
   :root {
-    --dora-bg-img-1: url('https://i.ibb.co/60KBGqLn/8.webp');
+    --dora-bg-img-1: url('https://i.ibb.co/Mk6p70V0/3.webp');
   }
 }
 
