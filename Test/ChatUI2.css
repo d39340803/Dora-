@@ -245,7 +245,6 @@ div[data-slot="drawer-content"][role="dialog"]{
 /* Optimization of drawers */
 div[data-slot="drawer-content"] {
   will-change: transform !important;
-  transform: translateZ(0) !important;
 }
 
 /* Selects All 5 Chat Settings */
