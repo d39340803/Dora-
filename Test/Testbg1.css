@@ -1,0 +1,176 @@
+/* Main Container Theme */
+:root {
+    --dora-bg-gradient-1: linear-gradient(135deg, #101827 0%,  #252B43 50%, #765A78 100%);
+
+    --dora-shadow-2:  0 0 12px rgba(118, 90, 120, 0.45), 0 0 30px rgba(91, 105, 145, 0.35), 0 0 60px rgba(118, 90, 120, 0.22);
+
+    --dora-scroll: #765A78;
+
+    --dora-color-1: #D9E1EF;
+    --dora-color-2: #E8D7E7;
+}
+
+#c {
+    background: var(--dora-bg-gradient-1);
+    background-size: 200% 200%;
+    animation: gradientShift 8s ease infinite;
+    box-shadow: var(--dora-shadow-2);
+}
+
+@keyframes gradientShift {
+    0% {
+        background-position: 0% 0%;
+    }
+
+    50% {
+        background-position: 100% 100%;
+    }
+
+    100% {
+        background-position: 0% 0%;
+    }
+}
+
+/* Scrollbar Theme */
+#c::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+#c::-webkit-scrollbar-thumb {
+    background: var(--dora-scroll);
+}
+
+/* Typography Theme */
+#h {
+    color: var(--dora-color-2);
+}
+
+#p {
+    color: var(--dora-color-1);
+}
+.t:before {
+  content: 'Select A Theme';
+  color: white;
+  font-size: 24px;
+  font-weight: 900;
+  display: block;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 6px;
+}
+
+.t {
+  display: flex;
+  flex-wrap: wrap; 
+  gap: 8px;
+  margin: 10px 0;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+  padding: 0 0 20px 0;
+  border-bottom: 1px solid #fff;
+}
+
+.t input[type="radio"] {
+  display: none;
+}
+
+.s {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 6px 14px;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: #fff;
+  font-size: 12px;
+  cursor: none;
+  user-select: none;
+  backdrop-filter: blur(8px);
+}
+
+.s:has(#a)::after {
+  content: "Polaroid";
+}
+
+.s:has(#b)::after {
+  content: "Platform";
+}
+
+.s:has(input:checked) {
+  background: #ffffff;
+  color: #000000;
+  font-weight: bold;
+}
+/* Scene 2 Theme Overrides */
+:root:has(#b:checked) {
+ /* ===== Text colors & SVG fills ===== */
+--dora-color-1: #DCE2E3; /* primary light slate text/svg */
+--dora-color-2: #F0D6CF; /* secondary warm rose text/svg/border */
+--dora-color-3: rgba(220, 226, 227, 0.6); /* placeholder text */
+--dora-color-4: #B9786D; /* accent text/svg/solid bg/border */
+--dora-color-5: #182326;
+--dora-color-6: #46505B; /* tooltip bg/svg fill */
+--dora-color-7: #F5EAE6; /* tooltip text */
+--dora-color-8: #E8A598;
+
+/* ===== Background images ===== */
+--dora-bg-img-1: url('https://i.ibb.co/zVM4dMqx/1.webp');
+
+/* ===== Solid backgrounds ===== */
+--dora-bg-solid-1: #182326;
+--dora-bg-solid-2: rgba(24, 35, 38, 0.2);
+--dora-bg-solid-3: #2A363A;
+--dora-bg-solid-4: rgba(0, 0, 0, 0.2);
+--dora-bg-solid-5: rgba(255, 255, 255, 0.1);
+--dora-bg-solid-6: rgba(220, 226, 227, 0.6);
+--dora-bg-solid-7: #DCE2E3;
+
+/* ===== Gradients ===== */
+--dora-bg-gradient-1: linear-gradient(135deg, #182326 0%, #46505B 50%, #B9786D 100%);
+
+/* ===== Borders ===== */
+--dora-border-1: rgba(220, 226, 227, 0.3);
+--dora-border-2: rgba(220, 226, 227, 0.2);
+--dora-border-3: #F0D6CF;
+
+/* ===== Shadow (box-shadow color, extra) ===== */
+--dora-shadow-1: rgba(24, 35, 38, 0.35);
+
+    --dora-shadow-2:  0 0 12px rgba(185, 120, 109, 0.42), 0 0 30px rgba(104, 125, 139, 0.35),  0 0 60px rgba(185, 120, 109, 0.20);
+    --dora-scroll: #B9786D;
+
+}
+
+/* Mobile Landscape */
+@media screen and (max-width: 599px) and (orientation: landscape) {
+  :root:has(#b:checked) {
+    --dora-bg-img-1: url('https://i.ibb.co/wFjMfSqk/5.webp');
+  }
+}
+/* Tablets(portrait & landscape) */
+@media screen and (min-width: 600px) and (max-width: 1024.98px) {
+  :root:has(#b:checked) {
+    --dora-bg-img-1: url('https://i.ibb.co/7J36YBMz/6.webp');
+  }
+}
+/* Desktops & Laptops */
+@media screen and (min-width: 1025px) {
+  :root:has(#b:checked) {
+    --dora-bg-img-1: url('https://i.ibb.co/wFjMfSqk/5.webp');
+  }
+}
+#p:after {
+    content: "Writer’s Note: You might be wondering what happens next... Sorry, I can’t tell you. (*≧з≦) You’ll have to uncover the truth with Rin yourself. Pay attention to what she says—every answer may lead to another question. And please don’t make Rin lose hope. I worked hard on her. (╥﹏╥) — The Writer";
+    font-size: 13px;
+    display: block;
+    font-family: Cormorant Garamond, serif;
+    padding: 15px 0 0 0;
+    margin: 15px 0 0 0;
+    text-align: center;
+    width: 100%;
+    border-top: 1px solid #fff;
+    color: cyan;
+}
