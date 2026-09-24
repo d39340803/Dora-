@@ -147,19 +147,19 @@
 /* Mobile Landscape */
 @media screen and (max-width: 599px) and (orientation: landscape) {
   :root:has(#b:checked) {
-    --dora-bg-img-1: url('https://i.ibb.co/wFjMfSqk/5.webp');
+    --dora-bg-img-1: url('https://i.ibb.co/CKQpzTBc/5.webp');
   }
 }
 /* Tablets(portrait & landscape) */
 @media screen and (min-width: 600px) and (max-width: 1024.98px) {
   :root:has(#b:checked) {
-    --dora-bg-img-1: url('https://i.ibb.co/7J36YBMz/6.webp');
+    --dora-bg-img-1: url('https://i.ibb.co/C5cVY4fN/4.webp');
   }
 }
 /* Desktops & Laptops */
 @media screen and (min-width: 1025px) {
   :root:has(#b:checked) {
-    --dora-bg-img-1: url('https://i.ibb.co/wFjMfSqk/5.webp');
+    --dora-bg-img-1: url('https://i.ibb.co/CKQpzTBc/5.webp');
   }
 }
 #p:after {
