@@ -558,7 +558,7 @@ main > .flex-1 > .main-container > .right-4 svg {
    --text-4-reversal: var(--dora-color-5);
    --light-bg: var(--dora-bg-solid-7)
 }
-[data-slot="dialog-close"] svg {
+[data-slot="dialog-close"] svg, [data-slot="drawer-content"] > svg {
    --text-3: var(--dora-color-2);
 }
 [data-slot="drawer-content"] button:nth-child(1), [data-slot="drawer-content"] button:nth-child(2) {
