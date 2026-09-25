@@ -63,7 +63,7 @@ div.chat-container {
   background-attachment: scroll !important;
 }
 /* back button */
-main .header, main .header .pl-2 > div {
+main :is(.header, .header .pl-2 > div) {
     background: var(--dora-bg-solid-1) !important;
     color: var(--dora-color-1) !important;
 }
@@ -78,17 +78,17 @@ span.icon.iconfont.icon-back1 {
   color: var(--dora-color-1) !important;
   border: 1px solid var(--dora-border-1) !important;
 }
-main .stream .space-x-2 .font-bold, .chat-display .pl-2 .text-xl{
+:is(main .stream .space-x-2 .font-bold, .chat-display .pl-2 .text-xl) {
     color: var(--dora-color-1) !important;
 }
-main .stream .space-x-2 .text-xs , header .p-1.bg-fill-default\/60 .text-xs, .chat-display .pl-2 .mt-0\.5 {
+:is(main .stream .space-x-2, header .p-1.bg-fill-default\/60) .text-xs, .chat-display .pl-2 .mt-0\.5 {
     color: var(--dora-color-2) !important;
 }
 main .stream .space-x-2 .bg-text-secondary {
    --text-3: var(--dora-color-2);
 }
 /* Home and Hamburger/Setting Icon */
-a[href="https://www.joyland.ai/"] .justify-center, [data-slot="drawer-trigger"].justify-center{
+:is(a[href="https://www.joyland.ai/"], [data-slot="drawer-trigger"]).justify-center {
   width: 36px !important;
   height: 36px !important;
   border-radius: 50% !important;
@@ -119,7 +119,7 @@ div.background-text .main{
   -webkit-backdrop-filter: blur(4px) !important;
 }
 /* styles the scenario text and svg */
-div.background-text .intro, div.background-text .desc, div.background-text .expand-button svg.collapse-icon {
+div.background-text :is(.intro, .desc, .expand-button svg.collapse-icon) {
   color: var(--dora-color-1) !important;
   stroke: var(--dora-color-1) !important;
 }
@@ -130,15 +130,15 @@ div.background-text .intro, div.background-text .desc, div.background-text .expa
    color: var(--dora-color-4) !important;
 }
 /* effect for chat bubbles */
-.robot-text-box .body-text, .user-text-box .body-text, .robot-text-box .gap-4 .gap-2 .px-3 {
+:is(.robot-text-box, .user-text-box) .body-text, .robot-text-box .gap-4 .gap-2 .px-3 {
    --fill-assist:transparent;
    background: var(--dora-bg-gradient-1) !important;
    color: var(--dora-color-1) !important;
 }
-.robot-text-box .gap-4 .markdown-body, .robot-text-box .gap-4 .gap-2 .text-xs {
+.robot-text-box .gap-4 :is(.markdown-body, .gap-2 .text-xs) {
    color: var(--dora-color-1) !important;
 }
-.robot-text-box .body-text em, .user-text-box .body-text em, .robot-text-box .gap-4 .markdown-body em {
+:is(.robot-text-box, .user-text-box) .body-text em, .robot-text-box .gap-4 .markdown-body em {
     color: var(--dora-color-2) !important;
 }
 /* Changes the time color */
@@ -150,23 +150,19 @@ div.background-text .intro, div.background-text .desc, div.background-text .expa
    background:transparent !important
 }
 /* before click */
-.like-static .circle, .dislike-static .circle, .rate-container .feedback{
+:is(.like-static, .dislike-static) .circle, .rate-container .feedback{
    background: var(--dora-bg-solid-1) !important;
    color: var(--dora-color-4) !important;
 }
 /* after click */
-.like-active .circle, .dislike-active .circle{
+:is(.like-active, .dislike-active) .circle{
    background: var(--dora-bg-solid-1) !important;
    color: var(--dora-color-4) !important;
 }
-.chat-list-item .refresh,
-.chat-list-item .o-item.l-item,
-.chat-list-item .o-item.r-item {
+.chat-list-item :is(.refresh, .o-item.l-item, .o-item.r-item) {
     background: var(--dora-bg-solid-1) !important;
 }
-.chat-list-item .refresh span,
-.chat-list-item .o-item.l-item span,
-.chat-list-item .o-item.r-item span{
+.chat-list-item :is(.refresh, .o-item.l-item, .o-item.r-item) span {
    color: var(--dora-color-1) !important;
 }
 /* Feedback Pills */
@@ -191,14 +187,11 @@ div.background-text .intro, div.background-text .desc, div.background-text .expa
   border-radius: 999px !important;
 }
 /* Neutralize Joyland's built-in radial-gradient + secondary blur layers */
-#chat-footer .action.px-4 > div > div:first-child,
-#chat-footer .action.px-4 > div > div:nth-child(2) {
+#chat-footer .action.px-4 > div > div:is(:first-child, :nth-child(2)) {
   background: transparent !important;
 }
 /* Pill text + icons readable */
-#chat-footer .text-xs,
-#chat-footer .icon-persona,
-#chat-footer .text-main {
+#chat-footer :is(.text-xs, .icon-persona, .text-main) {
   color: var(--dora-color-1) !important;
 }
 /* Suggestion And textarea Outer-Conatainer */
@@ -321,7 +314,7 @@ div[data-slot="drawer-content"][role="dialog"]{
    contain: paint !important;
    will-change: transform;
 }
-[data-slot="drawer-content"] > .text-base, [data-slot="dialog-content"] > .text-base, [data-slot="dialog-content"] > .flex > span.check-button-base{
+:is([data-slot="drawer-content"], [data-slot="dialog-content"]) > .text-base, [data-slot="dialog-content"] > .flex > span.check-button-base{
    color: var(--dora-color-1);
 }
 /* Drag Handle*/
@@ -329,20 +322,20 @@ div[data-slot="drawer-content"][role="dialog"]{
    background: var(--dora-color-4) !important;
 }
 /* Textarea */
-[data-slot="drawer-content"] > .bg-fill-light.rounded-lg.mb-5, [data-slot="dialog-content"] > .bg-fill-light.rounded-lg.mb-5{
+:is([data-slot="drawer-content"], [data-slot="dialog-content"]) > .bg-fill-light.rounded-lg.mb-5 {
    background: var(--dora-bg-solid-4) !important;
    color: var(--dora-color-1) !important;
 }
 /* Dont change this*/
-[data-slot="drawer-content"] textarea[data-slot="textarea"], [data-slot="dialog-content"] textarea[data-slot="textarea"] {
+:is([data-slot="drawer-content"], [data-slot="dialog-content"]) textarea[data-slot="textarea"] {
    background:transparent ;
 }
 /* Textarea Placeholder */
-[data-slot="drawer-content"] textarea::placeholder, [data-slot="dialog-content"] textarea::placeholder{
+:is([data-slot="drawer-content"], [data-slot="dialog-content"]) textarea::placeholder {
    color: var(--dora-color-3) !important;
 }
 /* buttons */
-[data-slot="drawer-content"] button:nth-child(1), [data-slot="drawer-content"] button:nth-child(2){
+[data-slot="drawer-content"] button:is(:nth-child(1), :nth-child(2)){
    color: var(--dora-color-4) !important;
 }
 /* Desktop Mode */
@@ -352,7 +345,7 @@ div[data-slot="drawer-content"][role="dialog"]{
    color: var(--dora-color-4) !important;
 }
 /* Chat Setting Container */
-div[style*="--reka-popper-"], [data-slot="popover-content"].bg-popover, div[data-slot="popover-content"] > div.p-1{
+:is(div[style*="--reka-popper-"], [data-slot="popover-content"].bg-popover, div[data-slot="popover-content"] > div.p-1) {
    box-shadow:none;
    border-radius: 6px !important;
    background: var(--dora-bg-solid-1) !important;
@@ -365,7 +358,7 @@ div[style*="--reka-popper-"], [data-slot="popover-content"].bg-popover, div[data
 }
 
 /*Persona Container*/
-div.flex.items-center.justify-between.relative.z-2, div.relative.z-2 .text-xs, div.persona-get-pro-title, span.pro-text{
+:is(div.flex.items-center.justify-between.relative.z-2, div.relative.z-2 .text-xs, div.persona-get-pro-title, span.pro-text) {
     color: var(--dora-color-1) !important;
 }
 .persona-get-pro-btn div.black-btn{
@@ -380,18 +373,18 @@ div.flex.items-center.justify-between.relative.z-2, div.relative.z-2 .text-xs, d
     color: var(--dora-color-4) !important;
 }
 /*Persona Form that appear after clicking Edit*/
-.persona-form input, .persona-form label,.persona-form .label, .persona-form textarea, .persona-form .form-extra {
+.persona-form :is(input, label, .label, textarea, .form-extra) {
     background: transparent !important; /*Don't change this*/
     color: var(--dora-color-1) !important;
 }
-.persona-form input::placeholder, .persona-form textarea::placeholder{
+.persona-form :is(input, textarea)::placeholder {
     color: var(--dora-color-3) !important;
 }
 .persona-form span{
     color: var(--dora-color-1);
 }    
 /* Model Selection */
-[data-slot="dialog-content"] .container .header, [data-slot="dialog-content"] .container .mr-0\.5, [data-slot="dialog-content"] .container .desc{
+[data-slot="dialog-content"] .container :is(.header, .mr-0\.5, .desc) {
     color: var(--dora-color-1) !important;
 }
 /* sidebar */
@@ -403,8 +396,7 @@ div.flex.items-center.justify-between.relative.z-2, div.relative.z-2 .text-xs, d
     color: var(--dora-color-4) !important;
 }
 /*sidebar content*/
-[data-slot="sidebar-content"] [data-slot="sidebar-menu-item"] div svg,
-[data-slot="sidebar-content"] [data-slot="sidebar-menu-item"] div span {
+[data-slot="sidebar-content"] [data-slot="sidebar-menu-item"] div :is(svg, span) {
     --text-4: var(--dora-color-1);
     color: var(--dora-color-1) !important;
 }
@@ -416,14 +408,13 @@ div.flex.items-center.justify-between.relative.z-2, div.relative.z-2 .text-xs, d
     color: var(--dora-color-1) !important;
 }
 /* tooltips (Home/Chats/Search/etc.) */
-div[data-slot="tooltip-content"].bg-primary, div[data-slot="tooltip-content"] svg.fill-primary {
+:is(div[data-slot="tooltip-content"].bg-primary, div[data-slot="tooltip-content"] svg.fill-primary) {
   background: var(--dora-color-6) !important;
   fill: var(--dora-color-6) !important;
   color: var(--dora-color-7) !important;
 }
 /*sidebar footer*/
-[data-slot="sidebar-footer"] [data-slot="popover-trigger"] div svg,
-[data-slot="sidebar-footer"] [data-slot="popover-trigger"] div span, .text-sidebar-foreground {
+:is([data-slot="sidebar-footer"] [data-slot="popover-trigger"] div :is(svg, span), .text-sidebar-foreground) {
     --sidebar-foreground: var(--dora-color-1);
     color: var(--dora-color-1) !important;
 }
@@ -432,21 +423,21 @@ main > .flex-1 > .main-container > .right-4 svg {
     color: var(--dora-color-4) !important;
 }
 /* Comments Container */
-.right-part, .right-part .bg-fill-default {
+:is(.right-part, .right-part .bg-fill-default) {
     background: var(--dora-bg-solid-1) !important;
 }
 /* Avatar hide unhide icon and bot name */ 
-.right-part .bot-info-main .relative .iconfont, .right-part .bot-info-main > .absolute .px-4 .iconfont, .right-part .bot-bottom-info a.bot-name-text, .right-part .bot-info-main > .absolute .flex-1 .leading-4 {
+.right-part :is(.bot-info-main :is(.relative .iconfont, > .absolute .px-4 .iconfont, > .absolute .flex-1 .leading-4), .bot-bottom-info a.bot-name-text) {
     color: var(--dora-color-1) !important;
     --text-4: var(--dora-color-1);
 }
 /* Message icon, chat numbers , creator name and short intro */
-.right-part .bot-bottom-info .bot-name .numbers .iconfont, .right-part .bot-bottom-info .bot-name .numbers .text-sm, .right-part .bot-bottom-info .creator-name, .right-part .bot-info-main > .absolute .flex-1 .leading-3, .right-part .bot-bottom-info .introduce {
+.right-part :is(.bot-bottom-info :is(.bot-name .numbers :is(.iconfont, .text-sm), .creator-name, .introduce), .bot-info-main > .absolute .flex-1 .leading-3) {
     color: var(--dora-color-2) !important;
     --text-3: var(--dora-color-2);
 }
 /* bot personality/category tags, edit icon bg */
-.right-part .bot-bottom-info .labels .tag-item > .tag-container, .right-part .bot-bottom-info .labels .edit-tag {
+.right-part .bot-bottom-info .labels :is(.tag-item > .tag-container, .edit-tag) {
     --text-3: var(--dora-color-2);
     background: var(--dora-bg-solid-5) !important; 
 }
@@ -471,17 +462,17 @@ main > .flex-1 > .main-container > .right-4 svg {
      color: var(--dora-color-3) !important;
 }
 /* reactions */
-.right-part .bg-fill-default .p-4 > .mb-2 >.flex .border-1, .right-part .bg-fill-default .p-4 > .mb-2 >.flex .cursor-pointer {
+.right-part .bg-fill-default .p-4 > .mb-2 > .flex :is(.border-1, .cursor-pointer) {
      border-color: var(--dora-border-3) !important;
      fill: var(--dora-color-2) !important;
      color: var(--dora-color-2) !important;
 }
 /* reactions seperator */
-.right-part .bg-fill-default .p-4 > .mb-2 >.flex .border-1 > .shrink-0 {
+.right-part .bg-fill-default .p-4 > .mb-2 > .flex .border-1 > .shrink-0 {
      background: var(--dora-bg-solid-6) !important;
 }
 /* post button */
-.right-part .bg-fill-default .p-4 > .mb-2 >.flex button {
+.right-part .bg-fill-default .p-4 > .mb-2 > .flex button {
     background: var(--dora-bg-solid-7) !important;
     color: var(--dora-color-5) !important;
 }
@@ -490,7 +481,7 @@ main > .flex-1 > .main-container > .right-4 svg {
     color: var(--dora-color-1) !important;
 }
 /* comment  and reactions counter, user name, reaction and delete */
-.right-part .bg-fill-default .p-4 .gap-4 .total, .right-part .bg-fill-default .p-4 .gap-4 .flex-1 .gap-2 .line-clamp-1, .right-part .bg-fill-default .p-4 .gap-4 .flex-1 .ml-2, .right-part .bg-fill-default .p-4 .gap-4 > .flex-col .ml-2 .cursor-pointer {
+.right-part .bg-fill-default .p-4 .gap-4 :is(.total, .flex-1 :is(.gap-2 .line-clamp-1, .ml-2), > .flex-col .ml-2 .cursor-pointer) {
     fill: var(--dora-color-2) !important;
     color: var(--dora-color-2) !important;
 }
@@ -509,10 +500,10 @@ main > .flex-1 > .main-container > .right-4 svg {
     --text-4: var(--dora-color-1);
     fill: var(--dora-color-1) !important;
 }
-[data-slot="dialog-title"], .speed-title{
+:is([data-slot="dialog-title"], .speed-title) {
     color: var(--dora-color-1) !important;
 }
-[data-slot="dialog-content"] .px-4 .text-3, [data-slot="dialog-content"] .px-4 .mt-4 .cursor-pointer, .speed-content{
+:is([data-slot="dialog-content"] .px-4 :is(.text-3, .mt-4 .cursor-pointer), .speed-content) {
     color: var(--dora-color-2) !important;
 }
 [data-slot="dialog-content"] .px-4 .bg-fill-light{
@@ -521,7 +512,7 @@ main > .flex-1 > .main-container > .right-4 svg {
     --text-2: var(--dora-color-1);
 }
 /* Login */
-[data-slot="dialog-content"] .foot-login > .text-xs.text-text-secondary, [data-slot="dialog-content"] .safe-area span.text-text-secondary, [data-slot="dialog-content"] .px-8 .mt-5 .text-right span.text-text-secondary {
+[data-slot="dialog-content"] :is(.foot-login > .text-xs, :is(.safe-area, .px-8 .mt-5 .text-right) span).text-text-secondary {
   color: var(--dora-color-2) !important;
   --text-3: var(--dora-color-2);
 }
@@ -546,16 +537,16 @@ main > .flex-1 > .main-container > .right-4 svg {
   border: 1px solid var(--dora-border-1) !important;
 }
 /* Tooltips */
-.pop-notice .bg-blue, .flow-entry-anchor .bg-\[\#526fff\] {
+:is(.pop-notice .bg-blue, .flow-entry-anchor .bg-\[\#526fff\]) {
    background: var(--dora-color-4) !important;
 }
-.pop-notice .text-blue, .flow-entry-anchor .bg-\[\#526fff\] {
+:is(.pop-notice .text-blue, .flow-entry-anchor .bg-\[\#526fff\]) {
    color: var(--dora-color-4) !important;
 }
-.pop-notice .text-\[\#f5f5f5\], .flow-entry-anchor .text-\[\#f5f5f5\] {
+:is(.pop-notice, .flow-entry-anchor) .text-\[\#f5f5f5\] {
    color: var(--dora-color-7) !important;
 }
-.pop-notice .text-\[\#FFDB00\], .flow-entry-anchor .text-\[\#ffdb00\] {
+:is(.pop-notice, .flow-entry-anchor) .text-\[\#FFDB00\] {
    color: var(--dora-color-8) !important;
 }
 /* Share Dialog */
@@ -570,10 +561,10 @@ main > .flex-1 > .main-container > .right-4 svg {
    --text-4-reversal: var(--dora-color-5);
    --light-bg: var(--dora-bg-solid-7)
 }
-[data-slot="dialog-close"] svg, [data-slot="drawer-content"] > svg {
+:is([data-slot="dialog-close"] svg, [data-slot="drawer-content"] > svg) {
    --text-3: var(--dora-color-2);
 }
-[data-slot="drawer-content"] button:nth-child(1), [data-slot="drawer-content"] button:nth-child(2) {
+[data-slot="drawer-content"] button:is(:nth-child(1), :nth-child(2)) {
    --text-3: var(--dora-color-2);
 }
 /* Models Reminder */
