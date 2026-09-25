@@ -576,4 +576,25 @@ main > .flex-1 > .main-container > .right-4 svg {
 [data-slot="drawer-content"] button:nth-child(1), [data-slot="drawer-content"] button:nth-child(2) {
    --text-3: var(--dora-color-2);
 }
-
+/* Models Reminder */
+.chat-main-container > .h-fit .bg-fill-light .bg-main\/10 {
+  --color-blue: transparent;
+}
+.chat-main-container > .h-fit .bg-fill-light {
+  background: var(--dora-bg-solid-2) !important;
+  backdrop-filter: blur(10px) !important;
+  -webkit-backdrop-filter: blur(10px) !important;
+  color: var(--dora-color-1) !important;
+  border: 1px solid var(--dora-border-1) !important;
+}
+.chat-main-container > .h-fit .bg-fill-light [data-slot="button"] { 
+   background: var(--dora-bg-solid-1) !important;
+   --color-white: var(--dora-color-1) !important;
+   border: 1px solid var(--dora-color-2) !important;
+   color: var(--dora-color-1) !important;
+}
+.chat-main-container > .h-fit > .box:before {
+  background: none !important;
+  -webkit-animation: none !important;
+  animation: none !important;
+}
