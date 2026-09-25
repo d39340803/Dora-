@@ -60,7 +60,7 @@ div.chat-container {
   background-size: cover !important;
   background-position: center !important;
   background-repeat: no-repeat !important;
-  background-attachment: fixed !important;
+  background-attachment: scroll !important;
 }
 /* back button */
 main .header, main .header .pl-2 > div {
@@ -73,8 +73,8 @@ span.icon.iconfont.icon-back1 {
 /* Header avatar/name pill container (back region) */
 .p-1.bg-fill-default\/60.rounded-full.backdrop-blur-\[10px\]{
   background: var(--dora-bg-solid-2) !important;
-  backdrop-filter: blur(10px) !important;
-  -webkit-backdrop-filter: blur(10px) !important;
+  backdrop-filter: blur(6px) !important;
+  -webkit-backdrop-filter: blur(6px) !important;
   color: var(--dora-color-1) !important;
   border: 1px solid var(--dora-border-1) !important;
 }
@@ -93,8 +93,8 @@ a[href="https://www.joyland.ai/"] .justify-center, [data-slot="drawer-trigger"].
   height: 36px !important;
   border-radius: 50% !important;
   background: var(--dora-bg-solid-2) !important;
-  backdrop-filter: blur(10px) !important;
-  -webkit-backdrop-filter: blur(10px) !important;
+  backdrop-filter: blur(6px) !important;
+  -webkit-backdrop-filter: blur(6px) !important;
   border: 1px solid var(--dora-border-1) !important;
   box-shadow: 0 4px 12px var(--dora-shadow-1) !important;
   color: var(--dora-color-1) !important;
@@ -106,8 +106,8 @@ a[href="https://www.joyland.ai/"] .justify-center, [data-slot="drawer-trigger"].
 /*notice*/
 .notice-desc{
   background: var(--dora-bg-solid-2) !important;
-  backdrop-filter: blur(10px) !important;
-  -webkit-backdrop-filter: blur(10px) !important;
+  backdrop-filter: blur(6px) !important;
+  -webkit-backdrop-filter: blur(6px) !important;
   color: var(--dora-color-1) !important;
   border: 1px solid var(--dora-border-1) !important;
 }
@@ -173,8 +173,8 @@ div.background-text .intro, div.background-text .desc, div.background-text .expa
 .robot-text-box .rate-container .text-xs {
   background: var(--dora-bg-solid-2) !important;
   color: var(--dora-color-2) !important;
-  backdrop-filter: blur(14px) !important;
-  -webkit-backdrop-filter: blur(14px) !important;
+  backdrop-filter: blur(6px) !important;
+  -webkit-backdrop-filter: blur(6px) !important;
   border: 1px solid var(--dora-border-1) !important;
   border-radius: 999px !important;
 }
@@ -185,8 +185,8 @@ div.background-text .intro, div.background-text .desc, div.background-text .expa
 /* Target the actual visible pill surface (3rd nested div) */
 #chat-footer .action.px-4 > div > div:nth-child(3) {
   background: var(--dora-bg-solid-2) !important;
-  backdrop-filter: blur(14px) !important;
-  -webkit-backdrop-filter: blur(14px) !important;
+  backdrop-filter: blur(6px) !important;
+  -webkit-backdrop-filter: blur(6px) !important;
   border: 1px solid var(--dora-border-1) !important;
   border-radius: 999px !important;
 }
@@ -229,6 +229,15 @@ li.relative > div[class*="bg-radial-"] {
 }
 #chat-footer textarea.form-input::placeholder {
   color: var(--dora-color-3) !important;
+}
+
+/* Drawers */
+[data-slot="drawer-content"] {
+    backdrop-filter: none !important;
+    -webkit-backdrop-filter: none !important;
+    isolation: isolate !important;
+    contain: paint !important;
+    will-change: transform;
 }
 /* Entire Chat Setting container  having all settings */
 div[data-slot="drawer-content"][role="dialog"]{
@@ -308,6 +317,9 @@ div[data-slot="drawer-content"][role="dialog"]{
 [data-slot="drawer-content"]{
    background: var(--dora-bg-solid-1) !important;
    color: var(--dora-color-1);
+   isolation: isolate !important;
+   contain: paint !important;
+   will-change: transform;
 }
 [data-slot="drawer-content"] > .text-base, [data-slot="dialog-content"] > .text-base, [data-slot="dialog-content"] > .flex > span.check-button-base{
    color: var(--dora-color-1);
@@ -529,8 +541,8 @@ main > .flex-1 > .main-container > .right-4 svg {
 }
 [aria-label="Notifications alt+T"] .bg-fill-default\! {
   --fill-default: var(--dora-bg-solid-2); 
-  backdrop-filter: blur(14px) !important;
-  -webkit-backdrop-filter: blur(14px) !important;
+  backdrop-filter: blur(6px) !important;
+  -webkit-backdrop-filter: blur(6px) !important;
   border: 1px solid var(--dora-border-1) !important;
 }
 /* Tooltips */
@@ -546,4 +558,43 @@ main > .flex-1 > .main-container > .right-4 svg {
 .pop-notice .text-\[\#FFDB00\], .flow-entry-anchor .text-\[\#ffdb00\] {
    color: var(--dora-color-8) !important;
 }
-
+/* Share Dialog */
+[data-slot="dialog-content"] .content :is( .title, .mdl-share, .invite-info .button, .des, .share-link-content .link, .share-btns .my-4 > div) {
+   color: var(--dora-color-1) !important;
+}
+[data-slot="dialog-content"] .content :is(.mdl-share .number, .invite-info .credits .number){
+   color: var(--dora-color-2) !important;
+}
+[data-slot="dialog-content"] .content :is( .share-btns .my-4 > div, .share-link-content .copy-link) {
+   --neutral-40: var(--dora-bg-solid-7);
+   --text-4-reversal: var(--dora-color-5);
+   --light-bg: var(--dora-bg-solid-7)
+}
+[data-slot="dialog-close"] svg, [data-slot="drawer-content"] > svg {
+   --text-3: var(--dora-color-2);
+}
+[data-slot="drawer-content"] button:nth-child(1), [data-slot="drawer-content"] button:nth-child(2) {
+   --text-3: var(--dora-color-2);
+}
+/* Models Reminder */
+.chat-main-container > .h-fit .bg-fill-light .bg-main\/10 {
+  --color-blue: transparent;
+}
+.chat-main-container > .h-fit .bg-fill-light {
+  background: var(--dora-bg-solid-2) !important;
+  backdrop-filter: blur(10px) !important;
+  -webkit-backdrop-filter: blur(10px) !important;
+  color: var(--dora-color-1) !important;
+  border: 1px solid var(--dora-border-1) !important;
+}
+.chat-main-container > .h-fit .bg-fill-light [data-slot="button"] { 
+   background: var(--dora-bg-solid-1) !important;
+   --color-white: var(--dora-color-1) !important;
+   border: 1px solid var(--dora-color-2) !important;
+   color: var(--dora-color-1) !important;
+}
+.chat-main-container > .h-fit > .box:before {
+  background: none !important;
+  -webkit-animation: none !important;
+  animation: none !important;
+}
