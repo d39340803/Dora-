@@ -1,39 +1,6 @@
 /* CREATED BY Dora */
 
-:root {  
-  /* ===== Text colors & SVG fills ===== */  
-  --dora-color-1: #D6DAE7; /* primary cool silver-blue text/svg */  
-  --dora-color-2: #C4C0D0; /* secondary muted silver-lilac text/svg/border */  
-  --dora-color-3: rgba(190, 194, 207, 0.6); /* placeholder muted silver-blue text */  
-  --dora-color-4: #9C5865; /* muted rose-red accent text/svg/solid bg/border */  
-  --dora-color-5: #1B2029; /* deep blue-gray */  
-  --dora-color-6: #313645; /* tooltip deep slate bg/svg fill */  
-  --dora-color-7: #E0DCE5; /* tooltip soft silver-lilac text */  
-  --dora-color-8: #C47D88; /* soft rose highlight */  
-  
-  /* ===== Background images ===== */  
-  --dora-bg-img-1: url('https://i.ibb.co/Vc1Lqy3Z/2.webp');  
-  
-  /* ===== Solid backgrounds ===== */  
-  --dora-bg-solid-1: #1B2029; /* deep blue-gray background */  
-  --dora-bg-solid-2: rgba(27, 32, 41, 0.2); /* translucent deep blue-gray */  
-  --dora-bg-solid-3: #313645; /* muted slate background */  
-  --dora-bg-solid-4: rgba(27, 32, 41, 0.2); /* translucent deep blue-gray */  
-  --dora-bg-solid-5: rgba(255, 255, 255, 0.1); /* translucent white */  
-  --dora-bg-solid-6: rgba(196, 192, 208, 0.6); /* translucent silver-lilac */  
-  --dora-bg-solid-7: #D6DAE7; /* cool silver-blue */  
-  
-  /* ===== Gradients ===== */  
-  --dora-bg-gradient-1: linear-gradient(135deg, #1B2029 0%, #43475A 50%, #8C5662 100%); /* deep blue-gray to slate to muted rose */  
-  
-  /* ===== Borders ===== */  
-  --dora-border-1: rgba(214, 218, 231, 0.3); /* translucent cool silver-blue */  
-  --dora-border-2: rgba(214, 218, 231, 0.2); /* subtle translucent silver-blue */  
-  --dora-border-3: #C4C0D0; /* muted silver-lilac border */  
-  
-  /* ===== Shadow (box-shadow color, extra) ===== */  
-  --dora-shadow-1: rgba(27, 32, 41, 0.35); /* deep blue-gray shadow */  
-}
+
 
 /* Mobile Landscape */
 @media screen and (max-width: 599px) and (orientation: landscape) {
