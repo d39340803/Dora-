@@ -38,19 +38,19 @@
 /* Mobile Landscape */
 @media screen and (max-width: 599px) and (orientation: landscape) {
   :root {
-    --dora-bg-img-1: url('https://i.ibb.co/MxqYgnqr/9.webp');
+    --dora-bg-img-1: url('https://i.ibb.co/DHr54vbn/4.webp');
   }
 }
 /* Tablets(portrait & landscape) */
 @media screen and (min-width: 600px) and (max-width: 1024.98px) {
   :root {
-    --dora-bg-img-1: url('https://i.ibb.co/7NX9dmbv/7.webp');
+    --dora-bg-img-1: url('https://i.ibb.co/LhbFz5bf/5.webp');
   }
 }
 /* Desktops & Laptops */
 @media screen and (min-width: 1025px) {
   :root {
-    --dora-bg-img-1: url('https://i.ibb.co/MxqYgnqr/9.webp');
+    --dora-bg-img-1: url('https://i.ibb.co/DHr54vbn/4.webp');
   }
 }
 
