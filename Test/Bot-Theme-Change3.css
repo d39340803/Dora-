@@ -96,11 +96,11 @@
 }
 
 .s:has(#b)::after {
-  content: "Ocean";
+  content: "Ember";
 }
 
 .s:has(#d)::after {
-  content: "Ember";
+  content: "Ocean";
 }
 
 .s:has(input:checked) {
@@ -182,20 +182,35 @@
 }
 /* Mobile Landscape */
 @media screen and (max-width: 599px) and (orientation: landscape) {
+    /* Scene 2 */
   :root:has(#b:checked) {
-    --dora-bg-img-1: url('https://i.ibb.co/CKQpzTBc/5.webp');
+    --dora-bg-img-1: url('https://i.ibb.co/wFjMfSqk/5.webp');
+  }
+    /* Scene 3 */
+  :root:has(#d:checked) {
+    --dora-bg-img-1: url('https://i.ibb.co/Mk6p70V0/3.webp');
   }
 }
 /* Tablets(portrait & landscape) */
 @media screen and (min-width: 600px) and (max-width: 1024.98px) {
+    /* Scene 2 */
   :root:has(#b:checked) {
+    --dora-bg-img-1: url('https://i.ibb.co/7J36YBMz/6.webp');
+  }
+    /* Scene 3 */
+  :root:has(#d:checked) {
     --dora-bg-img-1: url('https://i.ibb.co/WpP8FH3s/6.webp');
   }
 }
 /* Desktops & Laptops */
 @media screen and (min-width: 1025px) {
+    /* Scene 2 */
   :root:has(#b:checked) {
-    --dora-bg-img-1: url('https://i.ibb.co/CKQpzTBc/5.webp');
+    --dora-bg-img-1: url('https://i.ibb.co/wFjMfSqk/5.webp');
+  }
+    /* Scene 3 */
+  :root:has(#d:checked) {
+    --dora-bg-img-1: url('https://i.ibb.co/Mk6p70V0/3.webp');
   }
 }
 #p:after {
