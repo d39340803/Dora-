@@ -144,7 +144,7 @@
 }
 /* Scene 2 Theme Overrides */
 :root:has(#b:checked) {
-  /* ===== Text colors & SVG fills ===== */  
+  /* Text colors & SVG fills */  
   --dora-color-1: #C8D8D5; /* primary text/svg */  
   --dora-color-2: #E2B89A; /* secondary text/svg/border */  
   --dora-color-3: rgba(200, 216, 213, 0.6); /* placeholder text */  
@@ -154,10 +154,7 @@
   --dora-color-7: #E5D6C8; /* tooltip text */  
   --dora-color-8: #D28F72;  
   
-/* ===== Background images ===== */  
-  --dora-bg-img-1: url('https://i.ibb.co/W4h02gHR/2.webp');  
-  
-/* ===== Solid backgrounds ===== */  
+/* Solid backgrounds */  
   --dora-bg-solid-1: #1B2B32;  
   --dora-bg-solid-2: rgba(27, 43, 50, 0.2);  
   --dora-bg-solid-3: #294651;  
@@ -166,21 +163,21 @@
   --dora-bg-solid-6: rgba(120, 153, 137, 0.6);  
   --dora-bg-solid-7: #D7D7C8;  
   
-/* ===== Gradients ===== */  
+/* Gradients */  
   --dora-bg-gradient-1: linear-gradient(135deg, #1B2B32 0%, #31515B 50%, #607C76 100%);  
   
-/* ===== Borders ===== */  
+/* Borders */  
   --dora-border-1: rgba(120, 153, 137, 0.3);  
   --dora-border-2: rgba(120, 153, 137, 0.2);  
   --dora-border-3: #E2B89A;  
   
-/* ===== Shadow (box-shadow color, extra) ===== */  
+/* Shadow (box-shadow color, extra) */  
   --dora-shadow-1: rgba(15, 27, 32, 0.35);  
   --dora-shadow-2: 0 3px 8px rgba(10, 23, 27, 0.45), 0 8px 20px rgba(10, 23, 27, 0.35), 0 16px 38px rgba(10, 23, 27, 0.22);
 }
 /* Scene 3 Themes Override */
 :root:has(#d:checked) {  
-/* ===== Text colors & SVG fills ===== */  
+/* Text colors & SVG fills */  
 --dora-color-1: #DCE8F2; /* primary cool blue-gray text/svg */  
 --dora-color-2: #B9CBD9; /* secondary soft steel-blue text/svg/border */  
 --dora-color-3: rgba(220, 232, 242, 0.6); /* placeholder cool blue-gray text */  
@@ -188,12 +185,9 @@
 --dora-color-5: #172738;  
 --dora-color-6: #31495D; /* tooltip deep steel-blue bg/svg fill */  
 --dora-color-7: #DCE8F2; /* tooltip cool blue-gray text */  
---dora-color-8: #D39A9A;  
+--dora-color-8: #D39A9A;   
   
-/* ===== Background images ===== */  
---dora-bg-img-1: url('https://i.ibb.co/C3hYWmvn/1.webp');  
-  
-/* ===== Solid backgrounds ===== */  
+/* Solid backgrounds */  
 --dora-bg-solid-1: #172738;  
 --dora-bg-solid-2: rgba(23, 39, 56, 0.2);  
 --dora-bg-solid-3: #31495D;  
@@ -202,50 +196,17 @@
 --dora-bg-solid-6: rgba(185, 203, 217, 0.6);  
 --dora-bg-solid-7: #C9D9E4;  
   
-/* ===== Gradients ===== */  
+/* Gradients */  
 --dora-bg-gradient-1: linear-gradient(135deg, #172738 0%, #2C4357 50%, #526A7B 100%);  
   
-/* ===== Borders ===== */  
+/* Borders */  
 --dora-border-1: rgba(185, 203, 217, 0.3);  
 --dora-border-2: rgba(185, 203, 217, 0.2);  
 --dora-border-3: #B9CBD9;  
   
-/* ===== Shadow (box-shadow color, extra) ===== */  
+/* Shadow (box-shadow color, extra) */  
 --dora-shadow-1: rgba(10, 24, 38, 0.35);  
 --dora-shadow-2: 0 3px 8px rgba(10, 19, 28, 0.45), 0 8px 20px rgba(15, 29, 42, 0.35), 0 18px 36px rgba(25, 43, 56, 0.22);
-}
-/* Mobile Landscape */
-@media screen and (max-width: 599px) and (orientation: landscape) {
-    /* Scene 2 */
-  :root:has(#b:checked) {
-    --dora-bg-img-1: url('https://i.ibb.co/HfP4KVVx/6.webp');
-  }
-    /* Scene 3 */
-  :root:has(#d:checked) {
-    --dora-bg-img-1: url('https://i.ibb.co/MxqYgnqr/9.webp');
-  }
-}
-/* Tablets(portrait & landscape) */
-@media screen and (min-width: 600px) and (max-width: 1024.98px) {
-    /* Scene 2 */
-  :root:has(#b:checked) {
-    --dora-bg-img-1: url('https://i.ibb.co/7NX9dmbv/7.webp');
-  }
-    /* Scene 3 */
-  :root:has(#d:checked) {
-    --dora-bg-img-1: url('https://i.ibb.co/DHC0kMtJ/8.webp');
-  }
-}
-/* Desktops & Laptops */
-@media screen and (min-width: 1025px) {
-    /* Scene 2 */
-  :root:has(#b:checked) {
-    --dora-bg-img-1: url('https://i.ibb.co/HfP4KVVx/6.webp');
-  }
-    /* Scene 3 */
-  :root:has(#d:checked) {
-    --dora-bg-img-1: url('https://i.ibb.co/MxqYgnqr/9.webp');
-  }
 }
 
 /* Animation */
@@ -253,24 +214,11 @@
   background: #ffffff;
   color: #000000;
   font-weight: bold;
-  transition: all 0.5s ease;
+  transition: all 1s ease;
 }
 .chat-container {
     position: relative;
-    transition: all 0.5s ease;
-}
-
-.chat-container::before {
-    content: "";
-    position: absolute;
-    background-image: var(--dora-bg-img-1);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    z-index: 0;
-    opacity: 1;
-    pointer-events: none;
-    transition: all 0.5s ease;
+    transition: all 1s ease;
 }
 
 .chat-container > * {
@@ -278,27 +226,55 @@
     z-index: 1;
 }
 
-:root:has(#a:checked) .chat-container::before {
-    animation: AllBg 0.5s ease;
-}
-
-:root:has(#b:checked) .chat-container::before {
-    animation: AllBg 0.5s ease;
-}
-
-:root:has(#d:checked) .chat-container::before {
-    animation: AllBg 0.5s ease;
-}
-
-@keyframes AllBg {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
-}
-
 .chat-container, #c, #h, #p, .t, .s, #c::-webkit-scrollbar-thumb {
-    transition: all 0.5s ease;
+    transition: all 1s ease;
+}
+
+/*  Scene 2 & 3 background images (responsive)  */
+:root {
+  --dora-bg-img-2: url('https://i.ibb.co/W4h02gHR/2.webp');
+  --dora-bg-img-3: url('https://i.ibb.co/C3hYWmvn/1.webp');
+}
+@media screen and (max-width: 599px) and (orientation: landscape) {
+  :root {
+    --dora-bg-img-2: url('https://i.ibb.co/HfP4KVVx/6.webp');
+    --dora-bg-img-3: url('https://i.ibb.co/MxqYgnqr/9.webp');
   }
+}
+@media screen and (min-width: 600px) and (max-width: 1024.98px) {
+  :root {
+    --dora-bg-img-2: url('https://i.ibb.co/7NX9dmbv/7.webp');
+    --dora-bg-img-3: url('https://i.ibb.co/DHC0kMtJ/8.webp');
+  }
+}
+@media screen and (min-width: 1025px) {
+  :root {
+    --dora-bg-img-2: url('https://i.ibb.co/HfP4KVVx/6.webp');
+    --dora-bg-img-3: url('https://i.ibb.co/MxqYgnqr/9.webp');
+  }
+}
+
+/* Crossfade layers  */
+.chat-container::before,
+.chat-container::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+.chat-container::before { 
+  background-image: var(--dora-bg-img-2); 
+}
+.chat-container::after  { 
+  background-image: var(--dora-bg-img-3); 
+}
+
+:root:has(#b:checked) .chat-container::before , :root:has(#d:checked) .chat-container::before , :root:has(#d:checked) .chat-container::after  { 
+  opacity: 1; 
+}
