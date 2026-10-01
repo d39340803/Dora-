@@ -243,14 +243,14 @@
 }
 @media screen and (min-width: 600px) and (max-width: 1024.98px) {
   :root {
-    --dora-bg-img-2: url('https://i.ibb.co/7NX9dmbv/7.webp');
-    --dora-bg-img-3: url('https://i.ibb.co/DHC0kMtJ/8.webp');
+    --dora-bg-img-2: url('https://i.ibb.co/7J36YBMz/6.webp');
+    --dora-bg-img-3: url('https://i.ibb.co/WpP8FH3s/6.webp');
   }
 }
 @media screen and (min-width: 1025px) {
   :root {
-    --dora-bg-img-2: url('https://i.ibb.co/HfP4KVVx/6.webp');
-    --dora-bg-img-3: url('https://i.ibb.co/MxqYgnqr/9.webp');
+    --dora-bg-img-2: url('https://i.ibb.co/wFjMfSqk/5.webp');
+    --dora-bg-img-3: url('https://i.ibb.co/Mk6p70V0/3.webp');
   }
 }
 
