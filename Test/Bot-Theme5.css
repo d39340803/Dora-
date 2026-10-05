@@ -114,9 +114,9 @@ a[href="https://www.joyland.ai/"] .justify-center, [data-slot="drawer-trigger"].
 /* Scenario Container */
 div.background-text .main{
   background: var(--dora-bg-solid-2) !important;
-  backdrop-filter: blur(0px) !important;
+  backdrop-filter: blur(4px) !important;
   border: 1px solid var(--dora-border-2) !important;
-  -webkit-backdrop-filter: blur(0px) !important;
+  -webkit-backdrop-filter: blur(4px) !important;
 }
 /* styles the scenario text and svg */
 div.background-text .intro, div.background-text .desc, div.background-text .expand-button svg.collapse-icon {
