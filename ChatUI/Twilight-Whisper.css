@@ -1,6 +1,6 @@
 /* CREATED BY Dora */
 /* Background/Main App */
-div[data-v-69bc9330].chat-main {
+div.chat-main {
   background-image: url('https://files.catbox.moe/ifb4jm.webp') !important;
   background-size: cover !important;
   background-position: center !important;
@@ -41,14 +41,14 @@ a[href="https://www.joyland.ai/"] .justify-center, [data-slot="drawer-trigger"].
 }
 
 /* Scenario Container */
-div[data-v-94151dcb].background-text-container .main{
+div.background-text .main{
   background: rgba(255, 255, 255, 0.3) !important;
   backdrop-filter: blur(0px) !important;
   border: 1px solid rgba(255, 255, 255, 0.2) !important;
   -webkit-backdrop-filter: blur(0px) !important;
 }
 /* styles the scenario text and svg */
-div[data-v-94151dcb] [data-v-94151dcb], div[data-v-94151dcb] svg{
+div.background-text .intro, div.background-text .desc, div.background-text .expand-button svg.collapse-icon {
   color:#000 !important ;
   stroke: #000 !important;
 }
