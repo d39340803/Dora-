@@ -276,7 +276,7 @@ div[data-slot="drawer-content"][role="dialog"]{
    color: #fff !important;
 }
 /* Chat Setting Container */
-[data-reka-popper-content-wrapper], [data-slot="popover-content"].bg-popover, div[data-slot="popover-content"] > div.p-1{
+div[style*="--reka-popper-"], [data-slot="popover-content"].bg-popover, div[data-slot="popover-content"] > div.p-1{
    box-shadow:none;
    background: #E6E1F9 !important ;
 }
