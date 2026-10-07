@@ -80,7 +80,7 @@ div.background-text .intro, div.background-text .desc, div.background-text .expa
 }
 
 /* Target the actual visible pill surface (3rd nested div) */
-#chat-footer.action.px-4 > div > div:nth-child(3) {
+#chat-footer .action.px-4 > div > div:nth-child(3) {
   background: rgba(255, 255, 255, 0.10) !important;
   backdrop-filter: blur(14px) !important;
   -webkit-backdrop-filter: blur(14px) !important;
@@ -89,8 +89,8 @@ div.background-text .intro, div.background-text .desc, div.background-text .expa
 }
 
 /* Neutralize Joyland's built-in radial-gradient + secondary blur layers */
-#chat-footer.action.px-4 > div > div:first-child,
-#chat-footer.action.px-4 > div > div:nth-child(2) {
+#chat-footer .action.px-4 > div > div:first-child,
+#chat-footer .action.px-4 > div > div:nth-child(2) {
   background: transparent !important;
 }
 
@@ -102,7 +102,7 @@ div.background-text .intro, div.background-text .desc, div.background-text .expa
 }
 
 /* Suggestion And textarea Outer-Conatainer */
-#chat-footer.form{
+#chat-footer .form{
    background: #E6E1F9 !important; 
    color: #1c1c1e !important;
    border-radius:16px 16px 16px 4px !important;
