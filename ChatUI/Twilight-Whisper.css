@@ -213,60 +213,60 @@ div[data-slot="drawer-content"][role="dialog"]{
    color:rgb(74, 78, 105) !important;
 }
 /* Dialogue Regeneration */
-[data-v-414f0041].border{
+[data-slot="dialog-content"].border{
    background:#4A4E69 !important;
 }
 /* Text: Regenerate */
-[data-v-414f0041]> [data-v-a319c704].text-sm{
+[data-slot="dialog-content"]> .text-sm{
    color:#fff;
 }
 /* Text below Regenerate */
-[data-v-414f0041]> [data-v-a319c704].mb-4 {
+[data-slot="dialog-content"]> .mb-4 {
    color:#E6E1F9;
 }
 /* Regenerated Dialogues */
-[data-v-a319c704] > [data-v-a319c704].bg-fill-light{
+.regenerate-content .message-item > .bg-fill-light{
    background: #E6E1F9 !important; 
    color: #1c1c1e !important;
    border-radius:16px 16px 16px 4px !important;
 }
 /*Select button*/
-button[data-v-a319c704].bg-main.text-white\!{
+[data-slot="dialog-content"] [data-slot="button"].bg-main{
    --color-white:#000;
    background: #E6E1F9 !important; 
 }
 /* Cancel Button */
-button[data-v-a319c704].bg-\(--neutral-20\).text-\(--text-4\){
+[data-slot="dialog-content"] [data-slot="button"].bg-\(--neutral-20\){
    background:#221F33 !important;
    color:#fff !important;
 }
 /* Feedback Container Color and bg */
-[data-vaul-drawer][data-slot="drawer-content"]{
+[data-slot="drawer-content"]{
    background:#E6E1F9 !important;
    color:#000;
 }
-[data-vaul-drawer] > .text-base{
+[data-slot="drawer-content"] > .text-base{
    color:#000;
 }
 /* Drag Handle*/
-[data-vaul-drawer] > .bg-muted.rounded-full{
+[data-slot="drawer-content"] > .bg-muted.rounded-full{
    background:#4A4E69 !important;
 }
 /* Textarea */
-[data-vaul-drawer] > .bg-fill-light.rounded-lg.mb-5{
+[data-slot="drawer-content"] > .bg-fill-light.rounded-lg.mb-5{
    background:#4A4E69 ;
    color:#fff;
 }
 /* Dont change this*/
-[data-vaul-drawer] textarea[data-slot="textarea"]{
+[data-slot="drawer-content"] textarea[data-slot="textarea"]{
    background:transparent ;
 }
 /* Textarea Placeholder */
-[data-vaul-drawer] textarea::placeholder{
+[data-slot="drawer-content"] textarea::placeholder{
    color:#fff !important;
 }
 /* buttons */
-[data-vaul-drawer]  button:nth-child(1), [data-vaul-drawer] button:nth-child(2){
+[data-slot="drawer-content"] button:nth-child(1), [data-slot="drawer-content"] button:nth-child(2){
    color:#4A4E69;
 }
 /* Desktop Mode */
