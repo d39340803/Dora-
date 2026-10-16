@@ -2,55 +2,57 @@
 
 :root {
   /* ===== Text colors & SVG fills ===== */
-  --dora-color-1: #D9E1EF; /* primary light blue-gray text/svg */
-  --dora-color-2: #E8D7E7; /* secondary pale mauve text/svg/border */
-  --dora-color-3: rgba(217, 225, 239, 0.6); /* placeholder blue-gray text */
-  --dora-color-4: #9A718F; /* muted dusk-mauve accent text/svg/solid bg/border */
-  --dora-color-5: #101827;
-  --dora-color-6: #252B43; /* tooltip indigo bg/svg fill */
-  --dora-color-7: #E8D7E7; /* tooltip pale mauve text */
-  --dora-color-8: #D6A99D;
+  --dora-color-1: #F8F2EF; /* Primary: soft ivory from her shirt */
+  --dora-color-2: #E6C8D2; /* Secondary: muted lavender*/
+  --dora-color-3: rgba(248, 242, 239, 0.6); /* Placeholder ivory */
+  --dora-color-4: #F05A70; /* Accent: cherry red from her cap */
+  --dora-color-5: #202B40; /* Deep navy from her hair and jeans */
+  --dora-color-6: #344761; /* Tooltip: denim blue */
+  --dora-color-7: #FFF5F0; /* Tooltip text: warm white */
+  --dora-color-8: #FF986F; /* Secondary accent: coral orange */
 
   /* ===== Background images ===== */
-  --dora-bg-img-1: url('https://i.ibb.co/Vc1Lqy3Z/2.webp');
+  --dora-bg-img-1: url('https://i.ibb.co/WwMc9RR/1.webp');
 
   /* ===== Solid backgrounds ===== */
-  --dora-bg-solid-1: #101827;
-  --dora-bg-solid-2: rgba(16, 24, 39, 0.2);
-  --dora-bg-solid-3: #252B43;
-  --dora-bg-solid-4: rgba(0, 0, 0, 0.2);
-  --dora-bg-solid-5: rgba(255, 255, 255, 0.1);
-  --dora-bg-solid-6: rgba(217, 225, 239, 0.6);
-  --dora-bg-solid-7: #D9E1EF;
+  --dora-bg-solid-1: #202B40; /* Deep navy */
+  --dora-bg-solid-2: rgba(32, 43, 64, 0.55); /* Translucent navy */
+  --dora-bg-solid-3: #344761; /* Denim blue */
+  --dora-bg-solid-4: rgba(32, 43, 64, 0.35);
+  --dora-bg-solid-5: rgba(248, 242, 239, 0.1);
+  --dora-bg-solid-6: rgba(248, 242, 239, 0.6);
+  --dora-bg-solid-7: #F8F2EF; /* Ivory */
 
   /* ===== Gradients ===== */
-  --dora-bg-gradient-1: linear-gradient(135deg, #101827 0%, #252B43 50%, #765A78 100%);
+  --dora-bg-gradient-1: linear-gradient(135deg, #202B40 0%, #344761 45%, #8C5268 75%, #F05A70 100%);
 
   /* ===== Borders ===== */
-  --dora-border-1: rgba(217, 225, 239, 0.3);
-  --dora-border-2: rgba(217, 225, 239, 0.2);
-  --dora-border-3: #E8D7E7;
+  --dora-border-1: rgba(248, 242, 239, 0.25);
+  --dora-border-2: rgba(248, 242, 239, 0.15);
+  --dora-border-3: #C5B5C2;
 
-  /* ===== Shadow (box-shadow color, extra) ===== */
-  --dora-shadow-1: rgba(16, 24, 39, 0.35);
+  /* ===== Shadow ===== */
+  --dora-shadow-1: rgba(17, 24, 39, 0.4);
 }
 
 /* Mobile Landscape */
 @media screen and (max-width: 599px) and (orientation: landscape) {
   :root {
-    --dora-bg-img-1: url('https://i.ibb.co/Mk6p70V0/3.webp');
+    --dora-bg-img-1: url('https://i.ibb.co/4g0jb5vJ/3.webp');
   }
 }
-/* Tablets(portrait & landscape) */
+
+/* Tablets (portrait & landscape) */
 @media screen and (min-width: 600px) and (max-width: 1024.98px) {
   :root {
-    --dora-bg-img-1: url('https://i.ibb.co/C5cVY4fN/4.webp');
+    --dora-bg-img-1: url('https://i.ibb.co/nGPsnyM/2.webp');
   }
 }
+
 /* Desktops & Laptops */
 @media screen and (min-width: 1025px) {
   :root {
-    --dora-bg-img-1: url('https://i.ibb.co/Mk6p70V0/3.webp');
+    --dora-bg-img-1: url('https://i.ibb.co/4g0jb5vJ/3.webp');
   }
 }
 
