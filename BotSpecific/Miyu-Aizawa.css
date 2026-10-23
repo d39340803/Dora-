@@ -22,7 +22,7 @@
     margin: 30px auto;
     border-radius: 20px;
 }
-#p p:nth-child(54)::after {
+#p p:nth-child(39)::after {
     content:'';
     background: url('https://i.ibb.co/RxLcBBR/6.webp') no-repeat center;
     background-size: cover;
