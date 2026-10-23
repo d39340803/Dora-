@@ -8,7 +8,7 @@
   --dora-color-7: #FFF0FA;
   --dora-color-8: #F4B9CF;
 
-  --dora-bg-img-1: url('https://i.ibb.co/sprSv617/1.webp');
+  --dora-bg-img-1: url('https://i.ibb.co/tp2mDtxH/7.webp');
 
   --dora-bg-solid-1: #29223D;
   --dora-bg-solid-2: rgba(55, 42, 76, 0.3);
@@ -29,19 +29,19 @@
 
 @media screen and (max-width: 599px) and (orientation: landscape) {
   :root {
-    --dora-bg-img-1: url('https://i.ibb.co/RTTQ0Vvx/3.webp');
+    --dora-bg-img-1: url('https://i.ibb.co/4wq7sNBM/9.webp');
   }
 }
 
 @media screen and (min-width: 600px) and (max-width: 1024.98px) {
   :root {
-    --dora-bg-img-1: url('https://i.ibb.co/W4zz0Tqg/2.webp');
+    --dora-bg-img-1: url('https://i.ibb.co/sdcHFT8K/8.webp');
   }
 }
 
 @media screen and (min-width: 1025px) {
   :root {
-    --dora-bg-img-1: url('https://i.ibb.co/RTTQ0Vvx/3.webp');
+    --dora-bg-img-1: url('https://i.ibb.co/4wq7sNBM/9.webp');
   }
 }
 
