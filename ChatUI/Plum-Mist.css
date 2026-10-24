@@ -124,12 +124,15 @@ div.background-text .intro, div.background-text .desc, div.background-text .expa
    --fill-assist:transparent;
    background: var(--dora-bg-gradient-1) !important;
    color: var(--dora-color-1) !important;
+   text-shadow: 0 0 5px rgba(35,22,48,0.35), 1px 0 5px rgba(35,22,48,0.4), -1px 0 5px rgba(35,22,48,0.4), 0 1px 5px rgba(35,22,48,0.4), 0 -1px 5px rgba(35,22,48,0.4);
 }
 .robot-text-box .gap-4 .markdown-body, .robot-text-box .gap-4 .gap-2 .text-xs {
    color: var(--dora-color-1) !important;
+   text-shadow: 0 0 5px rgba(35,22,48,0.35), 1px 0 5px rgba(35,22,48,0.4), -1px 0 5px rgba(35,22,48,0.4), 0 1px 5px rgba(35,22,48,0.4), 0 -1px 5px rgba(35,22,48,0.4);
 }
 .robot-text-box .body-text em, .user-text-box .body-text em, .robot-text-box .gap-4 .markdown-body em {
     color: var(--dora-color-2) !important;
+    text-shadow: 0 0 5px rgba(35,22,48,0.35), 1px 0 5px rgba(35,22,48,0.4), -1px 0 5px rgba(35,22,48,0.4), 0 1px 5px rgba(35,22,48,0.4), 0 -1px 5px rgba(35,22,48,0.4);
 }
 
 .body-text .body-text-time{
