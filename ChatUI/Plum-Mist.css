@@ -11,7 +11,7 @@
   --dora-bg-img-1: url('https://i.ibb.co/tp2mDtxH/7.webp');
 
   --dora-bg-solid-1: #29223D;
-  --dora-bg-solid-2: rgba(55, 42, 76, 0.5);
+  --dora-bg-solid-2: rgba(55, 42, 76, 0.6);
   --dora-bg-solid-3: #554568;
   --dora-bg-solid-4: rgba(25, 19, 39, 0.2);
   --dora-bg-solid-5: rgba(255, 255, 255, 0.1);
@@ -95,7 +95,7 @@ a[href="https://www.joyland.ai/"] .justify-center, [data-slot="drawer-trigger"].
 }
 
 .notice-desc{
-  background: var(--dora-bg-solid-2) !important;
+  background: rgba(55, 42, 76, 0.3) !important;
   backdrop-filter: blur(0px) !important;
   -webkit-backdrop-filter: blur(0px) !important;
   color: var(--dora-color-1) !important;
@@ -103,7 +103,7 @@ a[href="https://www.joyland.ai/"] .justify-center, [data-slot="drawer-trigger"].
 }
 
 div.background-text .main{
-  background: var(--dora-bg-solid-2) !important;
+  background: rgba(55, 42, 76, 0.3) !important;
   backdrop-filter: blur(0px) !important;
   border: 1px solid var(--dora-border-2) !important;
   -webkit-backdrop-filter: blur(0px) !important;
