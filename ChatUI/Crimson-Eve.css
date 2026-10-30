@@ -20,7 +20,7 @@
 
   --dora-bg-gradient-1: linear-gradient(135deg, #170D16 0%, #301423 38%, #542438 72%, #762B43 100%);
 
-  --dora-border-1: rgba(217, 168, 184, 0.28);
+  --dora-border-1: rgba(217, 168, 184, 0.4);
   --dora-border-2: rgba(192, 90, 120, 0.22);
   --dora-border-3: #A64D68;
 
@@ -105,7 +105,7 @@ a[href="https://www.joyland.ai/"] .justify-center, [data-slot="drawer-trigger"].
 div.background-text .main{
   background: rgba(55, 42, 76, 0.3) !important;
   backdrop-filter: blur(0px) !important;
-  border: 1px solid var(--dora-border-2) !important;
+  border: 1px solid var(--dora-border-1) !important;
   -webkit-backdrop-filter: blur(0px) !important;
 }
 
