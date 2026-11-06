@@ -18,7 +18,7 @@
     position: relative ;
     display: block;
     width: 100%;
-    aspect-ratio: 3 / 4;
+    aspect-ratio: 1 / 1;
     margin: 30px auto;
     border-radius: 20px;
 }
@@ -30,7 +30,7 @@
     position: relative ;
     display: block;
     width: 100%;
-    aspect-ratio: 3 / 4;
+    aspect-ratio: 1 / 1;
     margin: 30px auto;
     border-radius: 20px;
 }
@@ -42,7 +42,7 @@
     position: relative ;
     display: block;
     width: 100%;
-    aspect-ratio: 3 / 4;
+    aspect-ratio: 1 / 1;
     margin: 30px auto;
     border-radius: 20px;
 }
@@ -54,7 +54,7 @@
     position: relative ;
     display: block;
     width: 100%;
-    aspect-ratio: 3 / 4;
+    aspect-ratio: 1 / 1;
     margin: 30px auto;
     border-radius: 20px;
 }
