@@ -21,9 +21,9 @@
 
   --dora-bg-gradient-1: linear-gradient(135deg, #080D24 0%, #11234C 38%, #193D78 72%, #4964B4 100%); 
 
-  --dora-border-1: 1px solid rgba(225, 225, 255, 0.9);
-  --dora-border-2: 1px solid rgba(225, 225, 255, 0.8);
-  --dora-border-3: 1px solid #6B9DD8; 
+  --dora-border-1: rgba(144, 191, 255, 0.4);
+  --dora-border-2: rgba(144, 191, 255, 0.3);
+  --dora-border-3: #6B9DD8; 
 
   --dora-shadow-1: 0px 4px 6px -1px rgba(2, 6, 24, 0.65);
 }
