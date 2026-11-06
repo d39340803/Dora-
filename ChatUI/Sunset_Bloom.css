@@ -12,7 +12,7 @@
   --dora-color-8: #FFCBA4;
 
   /* ===== Background images ===== */
-  --dora-bg-img-1: url('https://i.ibb.co/27QyYcgj/1.webp');
+  --dora-bg-img-1: url('https://cdn.jsdelivr.net/gh/d39340803/Dora-@main/Assets/Airi-Tachibana/1.webp');
 
   /* ===== Solid backgrounds ===== */
   --dora-bg-solid-1: #2A1C2B;
@@ -38,19 +38,19 @@
 /* Mobile Landscape */
 @media screen and (max-width: 599px) and (orientation: landscape) {
   :root {
-    --dora-bg-img-1: url('https://i.ibb.co/60KBGqLn/8.webp');
+    --dora-bg-img-1: url('https://cdn.jsdelivr.net/gh/d39340803/Dora-@main/Assets/Airi-Tachibana/9.webp');
   }
 }
 /* Tablets(portrait & landscape) */
 @media screen and (min-width: 600px) and (max-width: 1024.98px) {
   :root {
-    --dora-bg-img-1: url('https://i.ibb.co/RTNZwrBV/9.webp');
+    --dora-bg-img-1: url('https://cdn.jsdelivr.net/gh/d39340803/Dora-@main/Assets/Airi-Tachibana/8.webp');
   }
 }
 /* Desktops & Laptops */
 @media screen and (min-width: 1025px) {
   :root {
-    --dora-bg-img-1: url('https://i.ibb.co/60KBGqLn/8.webp');
+    --dora-bg-img-1: url('https://cdn.jsdelivr.net/gh/d39340803/Dora-@main/Assets/Airi-Tachibana/9.webp');
   }
 }
 
