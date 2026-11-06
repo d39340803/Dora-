@@ -22,7 +22,7 @@
     margin: 30px auto;
     border-radius: 20px;
 }
-#p p:nth-child(31)::after {
+#p p:nth-child(31)::aftr {
     content:'';
     background: url('https://cdn.jsdelivr.net/gh/d39340803/Dora-@main/Assets/Mahiru-Shiina/6.webp') no-repeat center;
     background-size: cover;
