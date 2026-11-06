@@ -12,32 +12,40 @@
 }
 
 #p p:nth-child(3)::after {
-    content:'';
-    background: url('https://cdn.jsdelivr.net/gh/d39340803/Dora-@main/Assets/Luna-Kuromiya/4.webp') no-repeat center;
+    content: '';
+    background-image: url('https://cdn.jsdelivr.net/gh/d39340803/Dora-@main/Assets/Luna-Kuromiya/4.webp');
+    background-repeat: no-repeat;
+    background-position: center;
     background-size: cover;
-    position: relative ;
+    position: relative;
     display: block;
     width: 100%;
     aspect-ratio: 1 / 1;
     margin: 30px auto;
     border-radius: 20px;
 }
+
 #p p:nth-child(19)::after {
-    content:'';
-    background: url('https://cdn.jsdelivr.net/gh/d39340803/Dora-@main/Assets/Luna-Kuromiya/8.webp') no-repeat center;
+    content: '';
+    background-image: url('https://cdn.jsdelivr.net/gh/d39340803/Dora-@main/Assets/Luna-Kuromiya/8.webp');
+    background-repeat: no-repeat;
+    background-position: center;
     background-size: cover;
-    position: relative ;
+    position: relative;
     display: block;
     width: 100%;
     aspect-ratio: 1 / 1;
     margin: 30px auto;
     border-radius: 20px;
 }
+
 #p p:nth-child(20)::after {
-    content:'';
-    background: url('https://cdn.jsdelivr.net/gh/d39340803/Dora-@main/Assets/Luna-Kuromiya/5.webp') no-repeat center;
+    content: '';
+    background-image: url('https://cdn.jsdelivr.net/gh/d39340803/Dora-@main/Assets/Luna-Kuromiya/5.webp');
+    background-repeat: no-repeat;
+    background-position: center;
     background-size: cover;
-    position: relative ;
+    position: relative;
     display: block;
     width: 100%;
     aspect-ratio: 1 / 1;
@@ -46,10 +54,12 @@
 }
 
 #p p:nth-child(27)::after {
-    content:'';
-    background: url('https://cdn.jsdelivr.net/gh/d39340803/Dora-@main/Assets/Luna-Kuromiya/6.webp') no-repeat center;
+    content: '';
+    background-image: url('https://cdn.jsdelivr.net/gh/d39340803/Dora-@main/Assets/Luna-Kuromiya/6.webp');
+    background-repeat: no-repeat;
+    background-position: center;
     background-size: cover;
-    position: relative ;
+    position: relative;
     display: block;
     width: 100%;
     aspect-ratio: 1 / 1;
