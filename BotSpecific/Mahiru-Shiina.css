@@ -27,7 +27,7 @@
     background: url('https://cdn.jsdelivr.net/gh/d39340803/Dora-@main/Assets/Mahiru-Shiina/6.webp') no-repeat center;
     background-size: cover;
     position: relative ;
-    display: block;
+    display: flex;
     width: 100%;
     aspect-ratio: 1 / 1;
     margin: 30px auto;
