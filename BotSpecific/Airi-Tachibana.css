@@ -1,3 +1,9 @@
+#p img {
+    display: none;
+}
+
+
+
 /* Main Container Theme */        
 #c {        
     background: linear-gradient(135deg, #2A1C2B 0%, #3A2940 48%, #C47F9B 100%);
