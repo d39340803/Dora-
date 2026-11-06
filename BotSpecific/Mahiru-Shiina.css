@@ -11,7 +11,7 @@
     letter-spacing: 1px;
 }
 
-#p p:nth-child(6)::before {
+#p p:nth-child(5)::after {
     content:'';
     background: url('https://cdn.jsdelivr.net/gh/d39340803/Dora-@main/Assets/Mahiru-Shiina/4.webp') no-repeat center;
     background-size: cover;
@@ -22,18 +22,18 @@
     margin: 30px auto;
     border-radius: 20px;
 }
-#p p:nth-child(31)::after {
+#p p:nth-child(32)::before {
     content:'';
     background: url('https://cdn.jsdelivr.net/gh/d39340803/Dora-@main/Assets/Mahiru-Shiina/6.webp') no-repeat center;
     background-size: cover;
     position: relative ;
-    display: flex;
+    display: block;
     width: 100%;
     aspect-ratio: 1 / 1;
     margin: 30px auto;
     border-radius: 20px;
 }
-#p p:nth-child(55)::before {
+#p p:nth-child(54)::after {
     content:'';
     background: url('https://cdn.jsdelivr.net/gh/d39340803/Dora-@main/Assets/Mahiru-Shiina/5.webp') no-repeat center;
     background-size: cover;
