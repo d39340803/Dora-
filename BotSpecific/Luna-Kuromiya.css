@@ -11,7 +11,7 @@
     letter-spacing: 1px;
 }
 
-#p p:nth-child(3)::after {
+#p p:nth-child(4)::before {
     content:'';
     background: url('https://cdn.jsdelivr.net/gh/d39340803/Dora-@main/Assets/Luna-Kuromiya/4.webp') no-repeat center;
     background-size: cover;
@@ -35,7 +35,7 @@
     border-radius: 20px;
 }
 
-#p p:nth-child(20)::after {
+#p p:nth-child(21)::before {
     content:'';
     background: url('https://cdn.jsdelivr.net/gh/d39340803/Dora-@main/Assets/Luna-Kuromiya/5.webp') no-repeat center;
     background-size: cover;
