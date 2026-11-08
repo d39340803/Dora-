@@ -1,3 +1,31 @@
+#p img {
+    display: none;
+}
+
+#p p:nth-child(12)::before {
+    content:'';
+    background: url('https://cdn.jsdelivr.net/gh/d39340803/Dora-@main/Assets/Rin-Amamiya/8.webp') no-repeat center;
+    background-size: cover;
+    position: relative ;
+    display: block;
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    margin: 30px auto;
+    border-radius: 20px;
+}
+#p p:nth-child(54)::after {
+    content:'';
+    background: url('https://cdn.jsdelivr.net/gh/d39340803/Dora-@main/Assets/Rin-Amamiya/7.webp') no-repeat center;
+    background-size: cover;
+    position: relative ;
+    display: block;
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    margin: 30px auto;
+    border-radius: 20px;
+}
+
+
 /* Main Container Theme */
 :root {
     --dora-bg-gradient-1: linear-gradient(135deg, #101827 0%,  #252B43 50%, #765A78 100%);
@@ -117,7 +145,7 @@
 --dora-color-8: #E8A598;
 
 /* ===== Background images ===== */
---dora-bg-img-1: url('https://i.ibb.co/zVM4dMqx/1.webp');
+--dora-bg-img-1: url('https://cdn.jsdelivr.net/gh/d39340803/Dora-@main/Assets/Rin-Amamiya/1.webp');
 
 /* ===== Solid backgrounds ===== */
 --dora-bg-solid-1: #182326;
@@ -147,19 +175,19 @@
 /* Mobile Landscape */
 @media screen and (max-width: 599px) and (orientation: landscape) {
   :root:has(#b:checked) {
-    --dora-bg-img-1: url('https://i.ibb.co/CKQpzTBc/5.webp');
+    --dora-bg-img-1: url('https://cdn.jsdelivr.net/gh/d39340803/Dora-@main/Assets/Rin-Amamiya/5.webp');
   }
 }
 /* Tablets(portrait & landscape) */
 @media screen and (min-width: 600px) and (max-width: 1024.98px) {
   :root:has(#b:checked) {
-    --dora-bg-img-1: url('https://i.ibb.co/WpP8FH3s/6.webp');
+    --dora-bg-img-1: url('https://cdn.jsdelivr.net/gh/d39340803/Dora-@main/Assets/Rin-Amamiya/6.webp');
   }
 }
 /* Desktops & Laptops */
 @media screen and (min-width: 1025px) {
   :root:has(#b:checked) {
-    --dora-bg-img-1: url('https://i.ibb.co/CKQpzTBc/5.webp');
+    --dora-bg-img-1: url('https://cdn.jsdelivr.net/gh/d39340803/Dora-@main/Assets/Rin-Amamiya/5.webp');
   }
 }
 #p:after {
