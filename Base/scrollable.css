@@ -57,8 +57,10 @@
     position: relative;
     z-index: 2;
 }
-p {
+#p p {
     margin:10px 0 0 0;
+    display: block;
+    width: 100%;
 }
 /* Main Header Title (h1) */
 #h {
