@@ -2,7 +2,7 @@
     display: none;
 }
 
-#p p:nth-child(12)::before {
+#p p:nth-child(11)::after {
     content:'';
     background: url('https://cdn.jsdelivr.net/gh/d39340803/Dora-@main/Assets/Rin-Amamiya/8.webp') no-repeat center;
     background-size: cover;
@@ -13,7 +13,7 @@
     margin: 30px auto;
     border-radius: 20px;
 }
-#p p:nth-child(54)::after {
+#p p:nth-child(55)::before {
     content:'';
     background: url('https://cdn.jsdelivr.net/gh/d39340803/Dora-@main/Assets/Rin-Amamiya/7.webp') no-repeat center;
     background-size: cover;
