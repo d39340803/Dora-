@@ -9,7 +9,7 @@
   --dora-color-7: #FFF5F0; 
   --dora-color-8: #FF986F; 
 
-  --dora-bg-img-1: url('https://i.ibb.co/WwMc9RR/1.webp');
+  --dora-bg-img-1: url('https://cdn.jsdelivr.net/gh/d39340803/Dora-@main/Assets/Mio-Kisaragi/1.webp');
 
   --dora-bg-solid-1: #202B40; 
   --dora-bg-solid-2: rgba(32, 43, 64, 0.4); 
@@ -30,19 +30,19 @@
 
 @media screen and (max-width: 599px) and (orientation: landscape) {
   :root {
-    --dora-bg-img-1: url('https://i.ibb.co/4g0jb5vJ/3.webp');
+    --dora-bg-img-1: url('https://cdn.jsdelivr.net/gh/d39340803/Dora-@main/Assets/Mio-Kisaragi/3.webp');
   }
 }
 
 @media screen and (min-width: 600px) and (max-width: 1024.98px) {
   :root {
-    --dora-bg-img-1: url('https://i.ibb.co/nGPsnyM/2.webp');
+    --dora-bg-img-1: url('https://cdn.jsdelivr.net/gh/d39340803/Dora-@main/Assets/Mio-Kisaragi/2.webp');
   }
 }
 
 @media screen and (min-width: 1025px) {
   :root {
-    --dora-bg-img-1: url('https://i.ibb.co/4g0jb5vJ/3.webp');
+    --dora-bg-img-1: url('https://cdn.jsdelivr.net/gh/d39340803/Dora-@main/Assets/Mio-Kisaragi/3.webp');
   }
 }
 
