@@ -1,7 +1,7 @@
 
 #p p:nth-child(9)::after {
     content:'';
-    background: url('https://i.ibb.co/k6xy6TkL/4.webp') no-repeat center;
+    background: url('https://cdn.jsdelivr.net/gh/d39340803/Dora-@main/Assets/Mio-Kisaragi/4.webp') no-repeat center;
     background-size: cover;
     position: relative ;
     display: block;
