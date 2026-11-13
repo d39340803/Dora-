@@ -30,19 +30,19 @@
 
 @media screen and (max-width: 599px) and (orientation: landscape) {
   :root {
-    --dora-bg-img-1: url('https://cdn.jsdelivr.net/gh/d39340803/Dora-@main/Assets/Mahiru-Shiina/8.webp');
+    --dora-bg-img-1: url('https://cdn.jsdelivr.net/gh/d39340803/Dora-@main/Assets/Rin-Tachibana/3.webp');
   }
 }
 
 @media screen and (min-width: 600px) and (max-width: 1024.98px) {
   :root {
-    --dora-bg-img-1: url('https://cdn.jsdelivr.net/gh/d39340803/Dora-@main/Assets/Mahiru-Shiina/7.webp');
+    --dora-bg-img-1: url('https://cdn.jsdelivr.net/gh/d39340803/Dora-@main/Assets/Rin-Tachibana/2.webp');
   }
 }
 
 @media screen and (min-width: 1025px) {
   :root {
-    --dora-bg-img-1: url('https://cdn.jsdelivr.net/gh/d39340803/Dora-@main/Assets/Mahiru-Shiina/8.webp');
+    --dora-bg-img-1: url('https://cdn.jsdelivr.net/gh/d39340803/Dora-@main/Assets/Rin-Tachibana/3.webp');
   }
 }
 
