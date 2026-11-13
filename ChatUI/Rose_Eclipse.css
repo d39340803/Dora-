@@ -26,7 +26,7 @@
   --dora-border-3: #D85D91;
 
   --dora-shadow-1: rgba(43, 13, 29, 0.62);
-  --dora-text-shadow: 0 0 5px rgba(91, 12, 52, 0.35), 1px 0 5px rgba(91, 12, 52, 0.35), -1px 0 5px rgba(91, 12, 52, 0.35), 0 1px 5px rgba(91, 12, 52, 0.35), 0 -1px 5px rgba(91, 12, 52, 0.35);
+  --dora-text-shadow-1: 0 0 5px rgba(91, 12, 52, 0.35), 1px 0 5px rgba(91, 12, 52, 0.35), -1px 0 5px rgba(91, 12, 52, 0.35), 0 1px 5px rgba(91, 12, 52, 0.35), 0 -1px 5px rgba(91, 12, 52, 0.35);
 }
 
 @media screen and (max-width: 599px) and (orientation: landscape) {
