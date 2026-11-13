@@ -116,8 +116,7 @@ div.background-text .main{
 div.background-text .intro, div.background-text .desc, div.background-text .expand-button svg.collapse-icon {
   color: var(--dora-color-1) !important;
   stroke: var(--dora-color-1) !important;
-  text-shadow: 0 0 5px rgba(23,28,39,0.35), 1px 0 5px rgba(23,28,39,0.35), -1px 0 5px rgba(23,28,39,0.35), 0 1px 5px rgba(23,28,39,0.35), 0 -1px 5px rgba(23,28,39,0.35);
-}
+  text-shadow: 0 0 5px rgba(91, 12, 52, 0.70), 1px 0 5px rgba(91, 12, 52, 0.60), -1px 0 5px rgba(91, 12, 52, 0.60), 0 1px 5px rgba(91, 12, 52, 0.60), 0 -1px 5px rgba(91, 12, 52, 0.60);
 
 .edit-icon-box .common-icon{
    background-color: var(--dora-bg-solid-1) !important;
