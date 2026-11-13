@@ -1,0 +1,118 @@
+#p p:nth-child(1)::before {
+    content:"The Masquerade of Hidden Feelings";
+    display:block ;
+    color: var(--dora-color-2);
+    width:100%;
+    text-align: center; 
+    font-family: 'Cormorant Garamond', serif; 
+    font-size: 34px; 
+    margin: 8px 0; 
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+#p p:nth-child(5)::after {
+    content:'';
+    background: url('https://cdn.jsdelivr.net/gh/d39340803/Dora-@main/Assets/Rin-Tachibana/4.webp') no-repeat center;
+    background-size: cover;
+    position: relative ;
+    display: block;
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    margin: 30px auto;
+    border-radius: 20px;
+}
+#p p:nth-child(11)::after {
+    content:'';
+    background: url('https://cdn.jsdelivr.net/gh/d39340803/Dora-@main/Assets/Rin-Tachibana/5.webp') no-repeat center;
+    background-size: cover;
+    position: relative ;
+    display: block;
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    margin: 30px auto;
+    border-radius: 20px;
+}
+#p p:nth-child(18)::after {
+    content:'';
+    background: url('https://cdn.jsdelivr.net/gh/d39340803/Dora-@main/Assets/Rin-Tachibana/6.webp') no-repeat center;
+    background-size: cover;
+    position: relative ;
+    display: block;
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    margin: 30px auto;
+    border-radius: 20px;
+}
+#p p:nth-child(28)::after {
+    content:'';
+    background: url('https://cdn.jsdelivr.net/gh/d39340803/Dora-@main/Assets/Rin-Tachibana/7.webp') no-repeat center;
+    background-size: cover;
+    position: relative ;
+    display: block;
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    margin: 30px auto;
+    border-radius: 20px;
+}
+#p p:nth-child(34)::after {
+    content:'';
+    background: url('https://cdn.jsdelivr.net/gh/d39340803/Dora-@main/Assets/Rin-Tachibana/8.webp') no-repeat center;
+    background-size: cover;
+    position: relative ;
+    display: block;
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    margin: 30px auto;
+    border-radius: 20px;
+}
+#p p:nth-child(53)::after {
+    content:'';
+    background: url('https://cdn.jsdelivr.net/gh/d39340803/Dora-@main/Assets/Rin-Tachibana/9.webp') no-repeat center;
+    background-size: cover;
+    position: relative ;
+    display: block;
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    margin: 30px auto;
+    border-radius: 20px;
+}
+
+#c {
+    background: var(--dora-bg-gradient-1);
+    background-size: 200% 200%;
+    animation: gradientShift 8s ease infinite;
+    box-shadow:0 8px 20px rgba(255, 20, 147, 0.60), 0 0 18px rgba(255, 47, 174, 0.70), 0 0 35px rgba(255, 111, 174, 0.55), 0 0 60px rgba(255, 20, 147, 0.30);
+}
+
+@keyframes gradientShift {
+    0% {
+        background-position: 0% 0%;
+    }
+
+    50% {
+        background-position: 100% 100%;
+    }
+
+    100% {
+        background-position: 0% 0%;
+    }
+}
+
+/* Scrollbar Theme */
+#c::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+#c::-webkit-scrollbar-thumb {
+    background: var(--dora-scroll);
+}
+
+/* Typography Theme */
+#h {
+    color: var(--dora-color-2);
+}
+
+#p {
+    color: var(--dora-color-1);
+}
