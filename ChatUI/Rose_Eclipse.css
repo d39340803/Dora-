@@ -71,12 +71,15 @@ span.icon.iconfont.icon-back1 {
 }
 main .stream .space-x-2 .font-bold, .chat-display .pl-2 .text-xl{
     color: var(--dora-color-1) !important;
+    text-shadow: 0 0 5px rgba(91, 12, 52, 0.70), 1px 0 5px rgba(91, 12, 52, 0.60), -1px 0 5px rgba(91, 12, 52, 0.60), 0 1px 5px rgba(91, 12, 52, 0.60), 0 -1px 5px rgba(91, 12, 52, 0.60);
 }
 main .stream .space-x-2 .text-xs , header .p-1.bg-fill-default\/60 .text-xs, .chat-display .pl-2 .mt-0\.5 {
     color: var(--dora-color-2) !important;
+    text-shadow: 0 0 5px rgba(91, 12, 52, 0.70), 1px 0 5px rgba(91, 12, 52, 0.60), -1px 0 5px rgba(91, 12, 52, 0.60), 0 1px 5px rgba(91, 12, 52, 0.60), 0 -1px 5px rgba(91, 12, 52, 0.60);
 }
 main .stream .space-x-2 .bg-text-secondary {
-   --text-3: var(--dora-color-2);
+    --text-3: var(--dora-color-2);
+    text-shadow: 0 0 5px rgba(91, 12, 52, 0.70), 1px 0 5px rgba(91, 12, 52, 0.60), -1px 0 5px rgba(91, 12, 52, 0.60), 0 1px 5px rgba(91, 12, 52, 0.60), 0 -1px 5px rgba(91, 12, 52, 0.60);
 }
 
 a[href="https://www.joyland.ai/"] .justify-center, [data-slot="drawer-trigger"].justify-center{
@@ -126,15 +129,15 @@ div.background-text .intro, div.background-text .desc, div.background-text .expa
    --fill-assist:transparent;
    background: var(--dora-bg-gradient-1) !important;
    color: var(--dora-color-1) !important;
-   text-shadow: 0 0 5px rgba(35,22,48,0.35), 1px 0 5px rgba(35,22,48,0.4), -1px 0 5px rgba(35,22,48,0.4), 0 1px 5px rgba(35,22,48,0.4), 0 -1px 5px rgba(35,22,48,0.4);
+   text-shadow: 0 0 5px rgba(91, 12, 52, 0.70), 1px 0 5px rgba(91, 12, 52, 0.60), -1px 0 5px rgba(91, 12, 52, 0.60), 0 1px 5px rgba(91, 12, 52, 0.60), 0 -1px 5px rgba(91, 12, 52, 0.60);
 }
 .robot-text-box .gap-4 .markdown-body, .robot-text-box .gap-4 .gap-2 .text-xs {
    color: var(--dora-color-1) !important;
-   text-shadow: 0 0 5px rgba(35,22,48,0.35), 1px 0 5px rgba(35,22,48,0.4), -1px 0 5px rgba(35,22,48,0.4), 0 1px 5px rgba(35,22,48,0.4), 0 -1px 5px rgba(35,22,48,0.4);
+   text-shadow: 0 0 5px rgba(91, 12, 52, 0.70), 1px 0 5px rgba(91, 12, 52, 0.60), -1px 0 5px rgba(91, 12, 52, 0.60), 0 1px 5px rgba(91, 12, 52, 0.60), 0 -1px 5px rgba(91, 12, 52, 0.60);
 }
 .robot-text-box .body-text em, .user-text-box .body-text em, .robot-text-box .gap-4 .markdown-body em {
-    color: var(--dora-color-2) !important;
-    text-shadow: 0 0 5px rgba(35,22,48,0.35), 1px 0 5px rgba(35,22,48,0.4), -1px 0 5px rgba(35,22,48,0.4), 0 1px 5px rgba(35,22,48,0.4), 0 -1px 5px rgba(35,22,48,0.4);
+   color: var(--dora-color-2) !important;
+   text-shadow: 0 0 5px rgba(91, 12, 52, 0.70), 1px 0 5px rgba(91, 12, 52, 0.60), -1px 0 5px rgba(91, 12, 52, 0.60), 0 1px 5px rgba(91, 12, 52, 0.60), 0 -1px 5px rgba(91, 12, 52, 0.60);
 }
 
 .body-text .body-text-time{
