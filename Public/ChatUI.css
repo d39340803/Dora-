@@ -95,6 +95,7 @@ div.background-text .intro, div.background-text .desc, div.background-text .expa
    --fill-assist:transparent;
    background: var(--dora-bg-gradient-1) !important;
    color: var(--dora-color-1) !important;
+   box-shadow: var(--dora-shadow-1) !important;
 }
 .robot-text-box .gap-4 .markdown-body, .robot-text-box .gap-4 .gap-2 .text-xs {
    color: var(--dora-color-1) !important;
