@@ -34,10 +34,10 @@ span.icon.iconfont.icon-back1 {
 
 .p-1.bg-fill-default\/60.rounded-full.backdrop-blur-\[10px\]{
   background: var(--dora-bg-solid-2) !important;
-  backdrop-filter: blur(0px) !important;
-  -webkit-backdrop-filter: blur(0px) !important;
+  backdrop-filter: blur(4px) !important;
+  -webkit-backdrop-filter: blur(4px) !important;
   color: var(--dora-color-1) !important;
-  border: 1px solid var(--dora-border-1) !important;
+  border: var(--dora-border-1) !important;
 }
 main .stream .space-x-2 .font-bold, .chat-display .pl-2 .text-xl{
     color: var(--dora-color-1) !important;
@@ -54,10 +54,10 @@ a[href="https://www.joyland.ai/"] .justify-center, [data-slot="drawer-trigger"].
   height: 36px !important;
   border-radius: 50% !important;
   background: var(--dora-bg-solid-2) !important;
-  backdrop-filter: blur(0px) !important;
-  -webkit-backdrop-filter: blur(0px) !important;
-  border: 1px solid var(--dora-border-1) !important;
-  box-shadow: 0 4px 12px var(--dora-shadow-1) !important;
+  backdrop-filter: blur(4px) !important;
+  -webkit-backdrop-filter: blur(4px) !important;
+  border: var(--dora-border-1) !important;
+  box-shadow: var(--dora-shadow-1) !important;
   color: var(--dora-color-1) !important;
   display: flex !important;
   align-items: center !important;
@@ -67,17 +67,17 @@ a[href="https://www.joyland.ai/"] .justify-center, [data-slot="drawer-trigger"].
 
 .notice-desc{
   background: var(--dora-bg-solid-2) !important;
-  backdrop-filter: blur(0px) !important;
-  -webkit-backdrop-filter: blur(0px) !important;
+  backdrop-filter: blur(4px) !important;
+  -webkit-backdrop-filter: blur(4px) !important;
   color: var(--dora-color-1) !important;
-  border: 1px solid var(--dora-border-1) !important;
+  border: var(--dora-border-1) !important;
 }
 
 div.background-text .main{
   background: var(--dora-bg-solid-2) !important;
-  backdrop-filter: blur(0px) !important;
-  border: 1px solid var(--dora-border-2) !important;
-  -webkit-backdrop-filter: blur(0px) !important;
+  backdrop-filter: blur(4px) !important;
+  border: var(--dora-border-2) !important;
+  -webkit-backdrop-filter: blur(4px) !important;
 }
 
 div.background-text .intro, div.background-text .desc, div.background-text .expand-button svg.collapse-icon {
@@ -87,7 +87,7 @@ div.background-text .intro, div.background-text .desc, div.background-text .expa
 
 .edit-icon-box .common-icon{
    background-color: var(--dora-bg-solid-1) !important;
-   border: 1px solid var(--dora-color-4);
+   border: var(--dora-color-4);
    color: var(--dora-color-4) !important;
 }
 
@@ -134,9 +134,9 @@ div.background-text .intro, div.background-text .desc, div.background-text .expa
 .robot-text-box .rate-container .text-xs {
   background: var(--dora-bg-solid-2) !important;
   color: var(--dora-color-2) !important;
-  backdrop-filter: blur(0px) !important;
-  -webkit-backdrop-filter: blur(0px) !important;
-  border: 1px solid var(--dora-border-1) !important;
+  backdrop-filter: blur(4px) !important;
+  -webkit-backdrop-filter: blur(4px) !important;
+  border: var(--dora-border-1) !important;
   border-radius: 999px !important;
 }
 
@@ -146,9 +146,9 @@ div.background-text .intro, div.background-text .desc, div.background-text .expa
 
 #chat-footer .action.px-4 > div > div:nth-child(3) {
   background: var(--dora-bg-solid-2) !important;
-  backdrop-filter: blur(0px) !important;
-  -webkit-backdrop-filter: blur(0px) !important;
-  border: 1px solid var(--dora-border-1) !important;
+  backdrop-filter: blur(4px) !important;
+  -webkit-backdrop-filter: blur(4px) !important;
+  border: var(--dora-border-1) !important;
   border-radius: 999px !important;
 }
 
@@ -264,13 +264,13 @@ div[data-slot="drawer-content"][role="dialog"]{
 [data-slot="dialog-content"] [data-slot="button"].bg-main{
    --color-white: var(--dora-color-4);
    background: var(--dora-bg-solid-1) !important;
-   border: 1px solid var(--dora-color-2) !important;
+   border: var(--dora-color-2) !important;
    color: var(--dora-color-4) !important;
 }
 
 [data-slot="dialog-content"] [data-slot="button"].bg-\(--neutral-20\){
    background: var(--dora-bg-solid-1) !important;
-   border: 1px solid var(--dora-color-2) !important;
+   border: var(--dora-color-2) !important;
    color: var(--dora-color-4) !important;
 }
 
@@ -328,13 +328,13 @@ div.flex.items-center.justify-between.relative.z-2, div.relative.z-2 .text-xs, d
 }
 .persona-get-pro-btn div.black-btn{
     background: var(--dora-bg-solid-1) !important;
-    border: 1px solid var(--dora-color-2) !important;
+    border: var(--dora-color-2) !important;
 }
 
 [data-slot="drawer-content"] .relative.flex [data-slot="button"]{
     --color-white: var(--dora-color-4);
     background: var(--dora-bg-solid-1) !important;
-    border: 1px solid var(--dora-color-2) !important;
+    border: var(--dora-color-2) !important;
     color: var(--dora-color-4) !important;
 }
 
@@ -500,7 +500,7 @@ main > .flex-1 > .main-container > .right-4 svg {
   --fill-default: var(--dora-bg-solid-2); 
   backdrop-filter: blur(4px) !important;
   -webkit-backdrop-filter: blur(4px) !important;
-  border: 1px solid var(--dora-border-1) !important;
+  border: var(--dora-border-1) !important;
 }
 
 .pop-notice .bg-blue, .flow-entry-anchor .bg-\[\#526fff\] {
@@ -542,12 +542,12 @@ main > .flex-1 > .main-container > .right-4 svg {
   backdrop-filter: blur(4px) !important;
   -webkit-backdrop-filter: blur(4px) !important;
   color: var(--dora-color-1) !important;
-  border: 1px solid var(--dora-border-1) !important;
+  border: var(--dora-border-1) !important;
 }
 .chat-main-container > .h-fit .bg-fill-light [data-slot="button"] { 
    background: var(--dora-bg-solid-1) !important;
    --color-white: var(--dora-color-1) !important;
-   border: 1px solid var(--dora-color-2) !important;
+   border: var(--dora-color-2) !important;
    color: var(--dora-color-1) !important;
 }
 .chat-main-container > .h-fit > .box:before {
