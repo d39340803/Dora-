@@ -2,6 +2,7 @@
     position: relative;
     padding: 22px;
     border-radius: 16px;
+    text-align:center;
     min-height: 155px;
 }
 .b h1, .b h3 {
