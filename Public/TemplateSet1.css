@@ -1,0 +1,18 @@
+.b {
+    position: relative;
+    padding: 22px;
+    border-radius: 16px;
+    min-height: 155px;
+}
+.b h1, .b h3 {
+    font-family: "Cormorant Garamond", serif;
+    margin: 0 0 12px;
+}
+.b p {
+    font-family: "Inter", sans-serif;
+    line-height: 1.7;
+    margin: 0 0 12px;
+}
+.b i {
+    margin-top: 12px;
+}
